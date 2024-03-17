@@ -1,0 +1,51 @@
+.container {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #f8fafc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 32px;
+  width: 100%;
+  padding: 0 80px;
+}
+
+.navWrapper {
+  display: flex;
+  list-style-type: none;
+}
+
+.logoWrapper {
+  display: flex;
+}
+
+.logo {
+  font-size: 32px;
+  color: #f8fafc;
+  font-weight: 300;
+  padding: 0 8px;
+}
+
+.navLink {
+  padding: 0 16px;
+}
+
+.button1 {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
+  margin: 12px;
+  border: none;
+  cursor: pointer;
+  color: #f8fafc;
+  padding: 12px 24px;
+}
+
+.button2 {
+  background-color: #f7ce46;
+  border-radius: 5px;
+  margin: 12px;
+  border: none;
+  cursor: pointer;
+  color: #191f3f;
+  padding: 12px 24px;
+}
