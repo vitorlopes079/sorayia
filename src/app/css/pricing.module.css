@@ -49,7 +49,6 @@
 }
 
 .listItem {
-  font-size: 16px;
   color: #e2e8f0;
   margin-bottom: 16px;
   display: flex;
@@ -80,13 +79,8 @@
 
 .cardSubHeading {
   color: #f8fafc;
-  font-size: 16px;
   line-height: 24px;
   text-transform: capitalize;
-}
-
-.buttonFullWidth {
-  width: 100%;
 }
 
 .lineBreck {
@@ -124,4 +118,32 @@
 
 .textOverCardCenter {
   margin-bottom: 15px;
+}
+
+/*  Form Section */
+
+.formSection {
+  width: 895px;
+  color: #e2e8f0;
+  margin-top: 180px;
+}
+
+.formIconsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  
+}
+
+.formIconContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 12px 32px 0 32px;
+
+}
+
+.icon{
+  margin-right: 8px;
 }

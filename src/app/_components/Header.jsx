@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className={styles.container}>
       <div className={styles.logoWrapper}>
-        <Image src={logo} />
+        <Image src={logo} alt="logo"/>
         <p className={`${Montagu.className} ${styles.logo}`}>Soraya</p>
       </div>
       <nav>

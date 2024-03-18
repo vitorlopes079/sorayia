@@ -34,16 +34,16 @@ const Footer = () => {
           </p>
           <div className={styles.socialsContainer}>
             <div className={styles.socialSingleContainer}>
-              <Image src={inst} width={17} height={17} />
+              <Image src={inst} width={17} height={17} alt="instagram"/>
             </div>
             <div className={styles.socialSingleContainer}>
-              <Image src={faceb} width={9} height={17} />
+              <Image src={faceb} width={9} height={17} alt="facebook"/>
             </div>
             <div className={styles.socialSingleContainer}>
-              <Image src={link} width={17} height={17} />
+              <Image src={link} width={17} height={17} alt="linkedIn"/>
             </div>
             <div className={styles.socialSingleContainer}>
-              <Image src={x} width={17} height={17} />
+              <Image src={x} width={17} height={17} alt="x"/>
             </div>
           </div>
         </div>
@@ -71,11 +71,11 @@ const Footer = () => {
         <div className={styles.column}>
           <h2 className={styles.subLinkHeader}>Support</h2>
           <div className={styles.iconWrapper}>
-            <Image src={emailIcon} className={styles.icon} />
+            <Image src={emailIcon} className={styles.icon} alt="email icon"/>
             <p>Contact@Sorayia.com</p>
           </div>
           <div className={styles.iconWrapper}>
-            <Image src={locationIcon} className={styles.icon} />
+            <Image src={locationIcon} className={styles.icon} alt="location icon"/>
             <p>US</p>
           </div>
         </div>

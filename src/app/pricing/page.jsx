@@ -3,13 +3,14 @@ import styles from "../css/pricing.module.css";
 import Image from "next/image";
 import checked from "../images/checked.svg";
 import checkedInverse from "../images/checkedInverse.svg";
-import emailIcon from "../images/email.svg"
-import locationIcon from "../images/location.svg"
+import emailIcon from "../images/email.svg";
+import locationIcon from "../images/location.svg";
 import PricingForm from "../_components/PricingForm";
-
+import Elipse from "../_components/Elipse";
 const page = () => {
   return (
     <div className={styles.container}>
+      <Elipse numberOfEllipses={3} />
       <section className={styles.hero}>
         <div className={styles.heroHeadingContainer}>
           <h1 className={styles.heroHeading}>
@@ -44,6 +45,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       10,000 Credits
                     </li>
@@ -53,6 +55,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       GPT 3.5 16K
                     </li>
@@ -62,6 +65,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       GPT 4
                     </li>
@@ -71,6 +75,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       15 User
                     </li>
@@ -80,6 +85,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       10,000 Documents
                     </li>
@@ -89,6 +95,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       10,000 Website pages
                     </li>
@@ -98,6 +105,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       Website crawler
                     </li>
@@ -107,6 +115,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       Embed website widget ( 3 Websites )
                     </li>
@@ -116,6 +125,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       API
                     </li>
@@ -125,6 +135,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       Remove Sorayia Branding on widget
                     </li>
@@ -165,6 +176,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       1000 credit
                     </li>
@@ -174,6 +186,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       GPT 3.5 16K
                     </li>
@@ -183,6 +196,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       1 User
                     </li>
@@ -192,6 +206,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       50 PDF Documents
                     </li>
@@ -201,6 +216,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       Embed website widget
                     </li>
@@ -210,6 +226,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       customized website widget
                     </li>
@@ -219,6 +236,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       3D Avatar customizing
                     </li>
@@ -228,6 +246,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       Basic Dashboard Acces
                     </li>
@@ -261,6 +280,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       25,000 Credits
                     </li>
@@ -270,6 +290,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       GPT 3.5 16K
                     </li>
@@ -279,6 +300,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       GPT 4
                     </li>
@@ -288,6 +310,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       50 User
                     </li>
@@ -297,6 +320,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       25,000 Documents
                     </li>
@@ -306,6 +330,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       25,000 Website pages
                     </li>
@@ -315,6 +340,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       Website crawler
                     </li>
@@ -324,6 +350,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       Embed website widget ( 50 Websites )
                     </li>
@@ -333,6 +360,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       API
                     </li>
@@ -342,6 +370,7 @@ const page = () => {
                         width={15}
                         height={15}
                         className={styles.checkedIcon}
+                        alt="Descriptive Alt Text"
                       />
                       Remove Sorayia Branding on widget
                     </li>
@@ -358,20 +387,34 @@ const page = () => {
       </section>
       <section className={styles.formSection}>
         <div>
-          <h1>Contact us for custom Pricing</h1>
-          <p>
+          <h1 className="centralizedHeading">Contact us for custom Pricing</h1>
+          <p className="centralizedText">
             Do you have question about our pricing plan or need a custom quote
             tailored to your specific needs? Fill out the form below, and our
             team will reach out you promptly to discuss the options that best
             suit you.
           </p>
-          <div>
-            <Image src={emailIcon} width={24} height={24}/>
-            <p>Contact@Sorayia.com</p>
-          </div>
-          <div>
-            <Image src={locationIcon} width={24} height={24}/>
-            <p>California, US</p>
+          <div className={styles.formIconsContainer}>
+            <div className={styles.formIconContainer}>
+              <Image
+                src={emailIcon}
+                width={24}
+                height={24}
+                className={styles.icon}
+                alt="Descriptive Alt Text"
+              />
+              <p>Contact@Sorayia.com</p>
+            </div>
+            <div className={styles.formIconContainer}>
+              <Image
+                src={locationIcon}
+                width={24}
+                height={24}
+                className={styles.icon}
+                alt="Descriptive Alt Text"
+              />
+              <p>California, US</p>
+            </div>
           </div>
         </div>
         <PricingForm />

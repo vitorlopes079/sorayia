@@ -9,8 +9,18 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Ensure the body takes at least the viewport's full height */
-  font-size: 18px;
-  background-color: #191f3f;
+  background: repeating-linear-gradient(
+    180deg,
+    #0a0017 0px,
+    #191f3f 1125px,
+    #0a0017 2250px,
+    #191f3f 3375px,
+    #0a0017 4500px,
+    #191f3f 5625px,
+    #0a0017 6750px,
+    #191f3f 7875px,
+    #0a0017 9000px
+  );
 }
 
 .mainContainer {
@@ -21,19 +31,28 @@ body {
 .centralizedHeading {
   position: relative;
   color: #ffffff;
-  padding-bottom: 10px;
+  margin: 12px 0;
   font-size: 44px;
   text-align: center;
   text-transform: capitalize;
   line-height: 70px;
 }
 
+.centralizedSubHeading {
+  position: relative;
+  color: #ffffff;
+  margin: 12px 0;
+  font-size: 32px;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 70px;
+}
+
 .centralizedText {
-  font-size: 16px;
   text-align: center;
   color: #e2e8f0;
   line-height: 32px;
-  
+  margin: 12px 0;
 }
 
 .leftHeading {
@@ -46,7 +65,6 @@ body {
 }
 
 .leftText {
-  font-size: 16px;
   text-transform: capitalize;
   color: #e2e8f0;
   line-height: 32px;
@@ -96,8 +114,11 @@ body {
   margin: 12px;
 }
 
+.buttonFullWidth {
+  width: 100%;
+}
+
 .yellowSpan {
   color: #f7ce46;
   text-transform: capitalize;
 }
-
