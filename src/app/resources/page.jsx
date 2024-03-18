@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../css/resources.module.css";
 import Image from "next/image";
 import resourcesBanner from "../images/resourcersBanner.png";
-import openAi from "../images/openAI.png";
+import openai from "../images/openai.png";
 import avatar2 from "../images/avatar2.png";
 import plus from "../images/plus.png";
 import gpt from "../images/gpt.png";
@@ -67,7 +67,7 @@ const page = () => {
           </div>
           <div className={styles.guideImageContainer}>
             <Image
-              src={openAi}
+              src={openai}
               width={573}
               height={303}
               alt="Descriptive Alt Text"
