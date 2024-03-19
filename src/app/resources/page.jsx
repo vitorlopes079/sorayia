@@ -81,7 +81,7 @@ const page = () => {
           <div className={styles.avatarContainer}>
             <div className={styles.speechBalloonsContainer}>
               <div className={styles.speechBalloon}>
-                <p>I’m your virtual 3D avatar</p>
+                <p>I'm your virtual 3D avatar</p>
               </div>
               <div className={styles.speechBalloon}>
                 <p>Hi there!</p>

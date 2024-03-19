@@ -99,7 +99,7 @@ export default function Home() {
           <div className={styles.avatarContainer}>
             <div className={styles.speechBalloonsContainer}>
               <div className={styles.speechBalloon}>
-                <p>I’m your virtual 3D avatar</p>
+                <p>I'm your virtual 3D avatar</p>
               </div>
               <div className={styles.speechBalloon}>
                 <p>Hi there!</p>
@@ -379,7 +379,7 @@ export default function Home() {
                   className={styles.checkedIcon}
                   alt="checked symbol"
                 />
-                Resolve customer’s problem
+                Resolve customer's problem
               </li>
               <li className={styles.listItem}>
                 <Image
@@ -494,7 +494,7 @@ export default function Home() {
                   className={styles.checkedIcon}
                   alt="checked"
                 />
-                Resolve employees’ problems
+                Resolve employees' problems
               </li>
               <li className={styles.listItem}>
                 <Image
@@ -723,7 +723,7 @@ export default function Home() {
                   className={styles.checkedIcon}
                   alt="checked"
                 />
-                Resolve students’ problems
+                Resolve students' problems
               </li>
               <li className={styles.listItem}>
                 <Image
@@ -913,7 +913,7 @@ export default function Home() {
             <div>
               <p className={styles.testimonyText}>
                 Implementing the chatbot has significantly reduced our customer
-                support costs. It’s like having an extra team member without the
+                support costs. It's like having an extra team member without the
                 overhead.
               </p>
             </div>
@@ -944,7 +944,7 @@ export default function Home() {
             <div>
               <p className={styles.testimonyText}>
                 Our customers appreciate the 24/7 availability of the chatbot.
-                Whether they’re seeking product information, troubleshooting, or
+                Whether they're seeking product information, troubleshooting, or
                 just saying hello, the chatbot is there to assist.
               </p>
             </div>
@@ -972,7 +972,7 @@ export default function Home() {
             </div>
             <div>
               <p className={styles.testimonyText}>
-                The chatbot’s ability to understand and respond to user input
+                The chatbot's ability to understand and respond to user input
                 using NLP is impressive. It feels like having a real
                 conversation with a knowledgeable assistant.
               </p>
