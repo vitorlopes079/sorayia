@@ -204,7 +204,7 @@ export default function Home() {
               database and conducting website scans for pertinent information.
               With its advanced natural language processing capabilities,
               Sorayia.com engages with customers in a human-like manner,
-              delivering accurate and helpful responses." Beyond mere
+              delivering accurate and helpful responses. Beyond mere
               conversation, Sorayia.com
             </p>
             <p className="leftText">
@@ -645,8 +645,8 @@ export default function Home() {
               The Virtual Tutor Revolutionizing Student Learning
             </h1>
             <p className="leftText">
-              Instructing and addressing students&apos; inquiries is fundamental to
-              enhancing their knowledge, facilitated by our chatbot. Our
+              Instructing and addressing students&apos; inquiries is fundamental
+              to enhancing their knowledge, facilitated by our chatbot. Our
               approach focuses on delivering comprehensive explanations tailored
               to individual learning needs, fostering critical thinking skills
               through interactive sessions and personalized feedback. We
@@ -913,8 +913,8 @@ export default function Home() {
             <div>
               <p className={styles.testimonyText}>
                 Implementing the chatbot has significantly reduced our customer
-                support costs. It&apos;s like having an extra team member without the
-                overhead.
+                support costs. It&apos;s like having an extra team member
+                without the overhead.
               </p>
             </div>
           </div>
@@ -944,8 +944,9 @@ export default function Home() {
             <div>
               <p className={styles.testimonyText}>
                 Our customers appreciate the 24/7 availability of the chatbot.
-                Whether they&apos;re seeking product information, troubleshooting, or
-                just saying hello, the chatbot is there to assist.
+                Whether they&apos;re seeking product information,
+                troubleshooting, or just saying hello, the chatbot is there to
+                assist.
               </p>
             </div>
           </div>
@@ -972,8 +973,8 @@ export default function Home() {
             </div>
             <div>
               <p className={styles.testimonyText}>
-                The chatbot&apos;s ability to understand and respond to user input
-                using NLP is impressive. It feels like having a real
+                The chatbot&apos;s ability to understand and respond to user
+                input using NLP is impressive. It feels like having a real
                 conversation with a knowledgeable assistant.
               </p>
             </div>
