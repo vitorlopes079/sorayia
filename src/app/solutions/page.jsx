@@ -23,7 +23,7 @@ const page = () => {
           </h1>
           <p className="centralizedText">
             Revolutionize your marketing game with Sorayia.com! Elevate your
-            brand's presence, engage your audience, and dominate your market
+            brand&apos;s presence, engage your audience, and dominate your market
             with our cutting-edge solutions. Unleash the power of Sorayia.com to
             propel your business to new heights of success.
           </p>

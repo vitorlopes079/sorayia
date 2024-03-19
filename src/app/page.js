@@ -53,7 +53,7 @@ export default function Home() {
             Elevate their experience with comprehensive customer service
             automation, human resource inquiry automation, and an AI-powered
             e-learning guide that efficiently resolves inquiries while
-            delivering an unparalleled user experience. Don't settle for
+            delivering an unparalleled user experience. Don&apos;t settle for
             mediocrity; choose innovation and excellence and invest in the
             future for your business.
           </p>
@@ -99,7 +99,7 @@ export default function Home() {
           <div className={styles.avatarContainer}>
             <div className={styles.speechBalloonsContainer}>
               <div className={styles.speechBalloon}>
-                <p>I'm your virtual 3D avatar</p>
+                <p>I&apos;m your virtual 3D avatar</p>
               </div>
               <div className={styles.speechBalloon}>
                 <p>Hi there!</p>
@@ -379,7 +379,7 @@ export default function Home() {
                   className={styles.checkedIcon}
                   alt="checked symbol"
                 />
-                Resolve customer's problem
+                Resolve customer&apos;s problem
               </li>
               <li className={styles.listItem}>
                 <Image
@@ -444,7 +444,7 @@ export default function Home() {
             <p className="leftText">
               Beyond mere conversation, Sorayia.com delves into data analysis,
               extracting actionable insights to formulate effective Human
-              Resource strategies. By understanding employees' needs and
+              Resource strategies. By understanding employees&apos; needs and
               behaviors, Sorayia.com paves the way for revenue-generating
             </p>
             <p className={`leftText ${styles.flex}`}>
@@ -494,7 +494,7 @@ export default function Home() {
                   className={styles.checkedIcon}
                   alt="checked"
                 />
-                Resolve employees' problems
+                Resolve employees&apos; problems
               </li>
               <li className={styles.listItem}>
                 <Image
@@ -645,7 +645,7 @@ export default function Home() {
               The Virtual Tutor Revolutionizing Student Learning
             </h1>
             <p className="leftText">
-              Instructing and addressing students' inquiries is fundamental to
+              Instructing and addressing students&apos; inquiries is fundamental to
               enhancing their knowledge, facilitated by our chatbot. Our
               approach focuses on delivering comprehensive explanations tailored
               to individual learning needs, fostering critical thinking skills
@@ -681,7 +681,7 @@ export default function Home() {
 
         <div>
           <h1 className="centralizedSubHeading">
-            Instruct and address students' inquiries to{" "}
+            Instruct and address students&apos; inquiries to{" "}
             <span className="yellowSpan">Enhance Their Knowledge</span>
           </h1>
           <p className="centralizedText">
@@ -723,7 +723,7 @@ export default function Home() {
                   className={styles.checkedIcon}
                   alt="checked"
                 />
-                Resolve students' problems
+                Resolve students&apos; problems
               </li>
               <li className={styles.listItem}>
                 <Image
@@ -913,7 +913,7 @@ export default function Home() {
             <div>
               <p className={styles.testimonyText}>
                 Implementing the chatbot has significantly reduced our customer
-                support costs. It's like having an extra team member without the
+                support costs. It&apos;s like having an extra team member without the
                 overhead.
               </p>
             </div>
@@ -944,7 +944,7 @@ export default function Home() {
             <div>
               <p className={styles.testimonyText}>
                 Our customers appreciate the 24/7 availability of the chatbot.
-                Whether they're seeking product information, troubleshooting, or
+                Whether they&apos;re seeking product information, troubleshooting, or
                 just saying hello, the chatbot is there to assist.
               </p>
             </div>
@@ -972,7 +972,7 @@ export default function Home() {
             </div>
             <div>
               <p className={styles.testimonyText}>
-                The chatbot's ability to understand and respond to user input
+                The chatbot&apos;s ability to understand and respond to user input
                 using NLP is impressive. It feels like having a real
                 conversation with a knowledgeable assistant.
               </p>

@@ -61,7 +61,7 @@ const page = () => {
               Through our groundbreaking platform, businesses can now
               communicate with their customers in a more human and engaging
               manner than ever before. Our 3D avatar chatbots, powered by Open
-              AI's AI intelligence, understand and respond to customer inquiries
+              AI&apos;s AI intelligence, understand and respond to customer inquiries
               with exceptional accuracy and speed.
             </p>
           </div>
@@ -81,7 +81,7 @@ const page = () => {
           <div className={styles.avatarContainer}>
             <div className={styles.speechBalloonsContainer}>
               <div className={styles.speechBalloon}>
-                <p>I'm your virtual 3D avatar</p>
+                <p>I&apos;m your virtual 3D avatar</p>
               </div>
               <div className={styles.speechBalloon}>
                 <p>Hi there!</p>
@@ -105,7 +105,7 @@ const page = () => {
             <h2 className="leftHeading">Personalization and Creativity</h2>
             <p className="leftText">
               At Sorayia.com, we believe in the power of individual expression.
-              That's why we've integrated Ready Player Me's 3D avatar creation
+              That&apos;s why we&apos;ve integrated Ready Player Me&apos;s 3D avatar creation
               technology into our platform, allowing our clients to customize
               their avatars according to their preferences and unique style.
             </p>
