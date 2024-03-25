@@ -23,8 +23,8 @@ import marketcall from "../images/marketcall.png";
 import spyware from "../images/spyware.png";
 import issue from "../images/issue.png";
 import MarketingCard from "../_components/MarketingCard";
+import Elipse from "../_components/Elipse";
 
-/* this page will hava all the alts set */
 
 const page = () => {
   return (

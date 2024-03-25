@@ -14,6 +14,7 @@ import productScreenshot4 from "../images/productScreenshot4.png";
 import digitalBloom from "../images/digitalBloom.png";
 import digitalBloom2 from "../images/digitalBloom2.png";
 import digitalBloom3 from "../images/digitalBloom3.png";
+import Elipse from "../_components/Elipse";
 
 const page = () => {
   return (
