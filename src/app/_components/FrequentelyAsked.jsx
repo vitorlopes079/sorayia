@@ -30,7 +30,7 @@ const FrequentelyAsked = () => {
           "Step 2: Navigate to the settings or integration section.",
           "Step 3: Generate the embed code for your chatbot widget.",
           "Step 4: Copy the provided HTML code snippet.",
-          "Step 5: Log in to your website's CMS or website builder.",
+          "Step 5: Log in to your website&apos;s CMS or website builder.",
           "Step 6: Access the HTML code of the webpage where you want to add the chatbot.",
           "Step 7: Paste the copied embed code into the appropriate location in the HTML code.",
           "Step 8: Save and publish your changes.",
@@ -45,7 +45,7 @@ const FrequentelyAsked = () => {
       <Question
         question={"What is the difference between chat and chatbot?"}
         answer={
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s."
         }
       />
       <Question
@@ -179,7 +179,7 @@ const FrequentelyAsked = () => {
       <Question
         question={"What is an example of a learning chatbot?"}
         answer={
-          "An example of a learning chatbot is Duolingo's chatbot, which uses AI to provide language learning exercises and personalized feedback. Sorayia.com offers similar educational chatbot solutions, empowering learners with interactive and engaging experiences."
+          "An example of a learning chatbot is Duolingo&apos;s chatbot, which uses AI to provide language learning exercises and personalized feedback. Sorayia.com offers similar educational chatbot solutions, empowering learners with interactive and engaging experiences."
         }
       />
     </div>

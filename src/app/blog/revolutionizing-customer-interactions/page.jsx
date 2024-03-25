@@ -3,7 +3,7 @@ import styles from "../../css/post.module.css";
 import Image from "next/image";
 import articleImage from "../../images/revolutionizing-article.png";
 import QuizForm from "../../_components/QuizForm";
-// import SaveArticle from "../../_components/saveArticle";
+import SaveArticle from "../../_components/SaveArticle";
 import PublishedDate from "../../_components/PublishedDate";
 import MoreArticlesCard from "../../_components/MoreArticlesCard"
 import moreBlogsImage1 from "../../images/moreBlogs1.png";
@@ -27,7 +27,7 @@ const page = () => {
           Revolutionizing Customer Interactions: The Power of Bespoke Chatbots
         </h1>
         <p className={styles.subTitle}>
-          In today's fast-paced digital landscape, businesses are constantly
+          In today&apos;s fast-paced digital landscape, businesses are constantly
           seeking innovative ways to engage with their customers and streamline
           operations. Enter the era of bespoke chatbots - dynamic virtual
         </p>
@@ -80,7 +80,7 @@ const page = () => {
           transforming the way businesses interact with their customers. In the
           e-commerce sector, chatbots are redefining the online shopping
           experience, providing personalized recommendations and assistance at
-          every step of the buyer's journey. In the healthcare industry,
+          every step of the buyer&apos;s journey. In the healthcare industry,
           chatbots are streamlining appointment scheduling and patient
           inquiries, improving accessibility and efficiency. And in the
           education sector, chatbots are revolutionizing online learning,
@@ -118,7 +118,7 @@ const page = () => {
           a global enterprise, integrating chatbots into your operations can
           lead to tangible benefits and long-term success. Embrace the future of
           customer interactions with bespoke chatbots and stay ahead of the
-          curve in today's dynamic business landscape
+          curve in today&apos;s dynamic business landscape
         </p>
 
         <div className={styles.bottomMeta}>

@@ -180,7 +180,7 @@ const page = () => {
             title={"Artificial intelligence"}
             image={digitalBloom2}
             text={
-              "Dive into the world of artificial intelligence and discover how it powers Sorayia's advanced capabilities to meet the changing needs of your business."
+              "Dive into the world of artificial intelligence and discover how it powers Sorayia&apos;s advanced capabilities to meet the changing needs of your business."
             }
             centralized={true}
           />

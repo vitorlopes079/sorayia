@@ -3,7 +3,7 @@ import styles from "../../css/post.module.css";
 import Image from "next/image";
 import articleImage from "../../images/maximazing-article.png";
 import QuizForm from "../../_components/QuizForm";
-import SaveArticle from "../../_components/saveArticle";
+import SaveArticle from "../../_components/SaveArticle";
 import PublishedDate from "../../_components/PublishedDate";
 import MoreArticlesCard from "../../_components/MoreArticlesCard";
 import moreBlogsImage1 from "../../images/moreBlogs1.png";
@@ -27,7 +27,7 @@ const page = () => {
           Maximizing Customer Service Efficiency with Chatbots
         </h1>
         <p className={styles.subTitle}>
-          Dear subscriber, In today's digital age, providing exceptional
+          Dear subscriber, In today&apos;s digital age, providing exceptional
           customer service is paramount for businesses looking to stay
           competitive. One innovative solution that has gained significant
           traction
@@ -70,7 +70,7 @@ const page = () => {
             Exploring Different Types of Chatbots
           </span>{" "}
           There are several types of chatbots, each tailored to specific needs
-          and industries. Here's a breakdown of the main types
+          and industries. Here&apos;s a breakdown of the main types
         </p>
         <p className={styles.text}>
           <span className={styles.highlightText}>Basic Chatbots:</span> These
@@ -87,7 +87,7 @@ const page = () => {
           <span className={styles.highlightText}>Advanced Chatbots:</span> These
           highly intelligent virtual assistants leverage AI and seamlessly
           integrate with enterprise systems, enabling personalized interactions
-          and dynamic responses tailored to individual users' needs. At Webotit,
+          and dynamic responses tailored to individual users&apos; needs. At Webotit,
           we prioritize advanced chatbot solutions to ensure our clients benefit
           from cutting-edge technology and deliver unparalleled customer
           experiences.

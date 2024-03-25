@@ -142,7 +142,7 @@ const page = () => {
             with Sorayia.com
           </h1>
           <p className="centralizedText">
-            In today's competitive market, optimizing the sales process is
+            In today&apos;s competitive market, optimizing the sales process is
             essential for driving revenue growth and enhancing customer
             experience. Sorayia.com offers a cutting-edge solution that
             leverages chatbots to automate and streamline your sales pipeline,
@@ -235,9 +235,9 @@ const page = () => {
                 Automate Sales Processes and Scale Efficiently
               </h1>
               <p className="leftText">
-                By leveraging Sorayia.com's smart chatbot for sales, you can
+                By leveraging Sorayia.com&apos;s smart chatbot for sales, you can
                 scale your operations without adding unnecessary overhead.
-                Create new sales opportunities, drive your sales team's efforts
+                Create new sales opportunities, drive your sales team&apos;s efforts
                 forward, diversify your lead generation strategy, and improve
                 sales efficiency—all without the need to increase headcount or
                 resources.
@@ -316,7 +316,7 @@ const page = () => {
             automating the answering of repetitive questions with Sorayia.com.
             Our chatbots handle common inquiries swiftly and accurately,
             freeing up valuable time for your team to address complex issues
-            and provide personalized support where it's needed most.`}
+            and provide personalized support where it&apos;s needed most.`}
           />
         </div>
 
@@ -346,7 +346,7 @@ const page = () => {
             and streamlining processes are paramount. Sorayia.com, with its
             advanced chatbot technology, offers a groundbreaking solution to
             automate various HR tasks, from initial recruitment to staff
-            training and leave management. Let's delve into how Sorayia.com can
+            training and leave management. Let&apos;s delve into how Sorayia.com can
             revolutionize HR practices, enhancing efficiency and reducing
             administrative burdens.
           </p>
@@ -368,7 +368,7 @@ const page = () => {
             imageSrc={continuous2}
             listItems={[
               "Efficient Candidate Screening",
-              "Sorayia.com's chatbots streamline the initial recruitment process by efficiently screening resumes based on predefined criteria",
+              "Sorayia.com&apos;s chatbots streamline the initial recruitment process by efficiently screening resumes based on predefined criteria",
               "Discuss how chatbots can schedule interviews with candidates, saving time for HR professionals",
             ]}
           />
@@ -410,7 +410,7 @@ const page = () => {
               fostering engagement and improving learning outcomes. Sorayia.com
               introduces a groundbreaking solution with its advanced chatbot
               technology, revolutionizing the way learning and training are
-              conducted. Let's explore how Sorayia.com chatbots automate
+              conducted. Let&apos;s explore how Sorayia.com chatbots automate
               learning processes, provide personalized responses, and facilitate
               access to educational resources, enhancing the educational
               experience for both students and staff.
@@ -425,8 +425,8 @@ const page = () => {
             }
             imageSrc={solutionsMarketing}
             listItems={[
-              "Introducing Sorayia.com's Educational Chatbots",
-              "Overview of Sorayia.com's role in transforming traditional learning and training methods",
+              "Introducing Sorayia.com&apos;s Educational Chatbots",
+              "Overview of Sorayia.com&apos;s role in transforming traditional learning and training methods",
               "Highlight the benefits of using chatbots for interactive and personalized learning experiences",
             ]}
           />
@@ -436,7 +436,7 @@ const page = () => {
             imageSrc={onlineStore}
             listItems={[
               "Seamless Resource Access",
-              "Sorayia.com's chatbots facilitate access to a wide range of educational resources, including textbooks, articles, and multimedia materials",
+              "Sorayia.com&apos;s chatbots facilitate access to a wide range of educational resources, including textbooks, articles, and multimedia materials",
               "Discuss the advantages of interactive learning in enhancing student engagement and retention",
             ]}
           />
@@ -448,7 +448,7 @@ const page = () => {
             imageSrc={solutionsMarketing}
             listItems={[
               "Tailored Support and Assistance",
-              "Sorayia.com's chatbots provide personalized responses to student or staff inquiries, addressing their specific needs and concerns",
+              "Sorayia.com&apos;s chatbots provide personalized responses to student or staff inquiries, addressing their specific needs and concerns",
               "Explore how personalized support improves learning outcomes and boosts confidence",
             ]}
           />
@@ -457,7 +457,7 @@ const page = () => {
             imageSrc={onlineStore}
             listItems={[
               "Interactive Learning Modules",
-              "Sorayia.com's chatbots deliver interactive lessons and modules tailored to individual learning styles and preferences",
+              "Sorayia.com&apos;s chatbots deliver interactive lessons and modules tailored to individual learning styles and preferences",
               "Discuss the advantages of interactive learning in enhancing student engagement and retention",
             ]}
           />

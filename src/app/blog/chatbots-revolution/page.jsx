@@ -3,7 +3,7 @@ import styles from "../../css/post.module.css";
 import Image from "next/image";
 import articleImage from "../../images/chatbot-article.png";
 import QuizForm from "../../_components/QuizForm";
-// import SaveArticle from "../../_components/saveArticle";
+import SaveArticle from "../../_components/SaveArticle";
 
 import PublishedDate from "../../_components/PublishedDate";
 import MoreArticlesCard from "../../_components/MoreArticlesCard"
@@ -45,7 +45,7 @@ const page = () => {
           </span>{" "}
           HR chatbots are AI tools designed to simplify communication between
           the company and its employees. They are integrated into internal
-          messaging platforms, providing instant answers to employees' questions
+          messaging platforms, providing instant answers to employees&apos; questions
           regarding leave, benefits, and more.
         </p>
         <p className={styles.text}>
