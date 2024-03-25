@@ -3,7 +3,7 @@ import styles from "../../css/post.module.css";
 import Image from "next/image";
 import articleImage from "../../images/revolutionizing-article.png";
 import QuizForm from "../../_components/QuizForm";
-import SaveArticle from "../../_components/saveArticle";
+// import SaveArticle from "../../_components/saveArticle";
 import PublishedDate from "../../_components/PublishedDate";
 import MoreArticlesCard from "../../_components/MoreArticlesCard"
 import moreBlogsImage1 from "../../images/moreBlogs1.png";
