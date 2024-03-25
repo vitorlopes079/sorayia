@@ -7,6 +7,7 @@
 
 body {
   display: flex;
+  position: relative;
   flex-direction: column;
   min-height: 100vh; /* Ensure the body takes at least the viewport's full height */
   background: repeating-linear-gradient(
@@ -26,6 +27,7 @@ body {
 .mainContainer {
   flex-grow: 1;
   margin-bottom: 150px;
+
 }
 
 .centralizedHeading {

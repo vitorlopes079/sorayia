@@ -18,6 +18,8 @@ import digitalBloom3 from "../images/digitalBloom3.png";
 const page = () => {
   return (
     <div className={styles.container}>
+      <Elipse numberOfEllipses={7} />
+
       <div className={styles.topContainer}>
         <Stack />
         <div className={styles.inputContainer}>

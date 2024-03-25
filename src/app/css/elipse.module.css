@@ -1,9 +1,10 @@
 /* Base style for all ellipses */
 .elipseContainer {
-  position: relative;
+  position: absolute;
   width: 100%;
   max-width: 100vw;
   overflow: hidden;
+  height: 100%;
 }
 
 .Elipse {
@@ -11,6 +12,7 @@
   height: 300px;
   border-radius: 50%;
   background: rgba(217, 217, 217, 0.32);
+
   filter: blur(150px);
   position: absolute;
   transform: translateY(-50%);
