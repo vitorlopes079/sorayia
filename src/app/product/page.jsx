@@ -18,7 +18,7 @@ import digitalBloom3 from "../images/digitalBloom3.png";
 const page = () => {
   return (
     <div className={styles.container}>
-      {/* <div className={styles.topContainer}>
+      <div className={styles.topContainer}>
         <Stack />
         <div className={styles.inputContainer}>
           <input className={styles.input} placeholder="Your Email Address" />
@@ -223,7 +223,7 @@ const page = () => {
           />
         </div>
       </section>
-      <FrequentelyAsked /> */}
+      <FrequentelyAsked />
     </div>
   );
 };
