@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   position: absolute;
+  z-index: 100;
   top: 32px;
   width: 100%;
   padding: 0 80px;
