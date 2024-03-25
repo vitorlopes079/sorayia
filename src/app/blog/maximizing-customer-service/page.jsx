@@ -14,7 +14,7 @@ import benefits from "../../images/benefits.png";
 const page = () => {
   return (
     <div className={styles.container}>
-      <nav className={styles.breadcrumbContainer}>
+      {/* <nav className={styles.breadcrumbContainer}>
         <ul className={styles.breadcrumb}>
           <li className="breadcrumb-item">Blog</li>
           <li> &gt; </li>
@@ -143,7 +143,7 @@ const page = () => {
         </p>
 
         <br />
-        <br />
+        <br /> */}
 
         <p className={styles.text}>
           <span className={styles.highlightText}>
