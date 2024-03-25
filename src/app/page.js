@@ -361,7 +361,7 @@ export default function Home() {
             title="Employee Assistance"
             imageSrc={cahier}
             listItems={[
-              "Resolve employees' problems",
+              "Resolve employees&apos; problems",
               "Send links, educational content, documents and help center articles",
               "Transfer to live HR agents",
             ]}
@@ -453,7 +453,7 @@ export default function Home() {
             imageSrc={courseAssistance}
             listItems={[
               "Answer common question about course with a virtual teacher agent",
-              "Resolve students' problems",
+              "Resolve students&apos; problems",
               "Send articles and educational content",
               "Create support tickets",
             ]}

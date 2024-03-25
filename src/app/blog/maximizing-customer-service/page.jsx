@@ -136,7 +136,7 @@ const page = () => {
         <br />
         <br />
 
-        {/* <p className={styles.text}>
+        <p className={styles.text}>
           <span className={styles.highlightText} style={{ fontSize: "28px" }}>
             Common Use Cases for Customer Service Chatbots
           </span>
@@ -167,7 +167,7 @@ const page = () => {
         </p>
 
         <p className={styles.text}>
-          At Webotit, we've successfully implemented chatbots for diverse
+          At Webotit, we&apos;fve successfully implemented chatbots for diverse
           clients, including:
         </p>
 
@@ -208,7 +208,7 @@ const page = () => {
           customers and organizations. Stay tuned for more insights and updates
           from Webotit. Subscribe to our newsletter to receive the latest
           articles and industry news directly to your inbox. Best Regards,
-        </p> */}
+        </p> 
 
         <div className={styles.bottomMeta}>
           <SaveArticle />
