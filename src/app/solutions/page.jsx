@@ -29,7 +29,7 @@ import MarketingCard from "../_components/MarketingCard";
 const page = () => {
   return (
     <div className={styles.container}>
-      <Elipse numberOfEllipses={4} />
+      {/* <Elipse numberOfEllipses={4} />
       <section className={styles.hero}>
         <div className={styles.heroHeadingContainer}>
           <h1 className={styles.heroHeading}>
@@ -473,7 +473,7 @@ const page = () => {
             <Image src={arrowDown} width={32} height={32} alt="arrow down" />
           </button>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
