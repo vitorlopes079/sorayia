@@ -4,6 +4,7 @@
   color: #e2e8f0;
   padding: 0 80px;
   margin-top: auto;
+  overflow: hidden;
 }
 
 .newsLetter {
@@ -96,6 +97,7 @@
 
 .iconWrapper {
   display: flex;
+  align-items: center;
   padding: 12px 0;
 }
 

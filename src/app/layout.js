@@ -3,6 +3,10 @@ import "./globals.css";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
 
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { config } from '@fortawesome/fontawesome-svg-core';
+config.autoAddCss = false; 
+
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {

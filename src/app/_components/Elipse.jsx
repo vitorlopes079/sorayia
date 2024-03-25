@@ -7,7 +7,7 @@ const Elipse = ({ numberOfEllipses }) => {
   ));
 
   return (
-    <div>
+    <div className={styles.elipseContainer}>
       {ellipses}
     </div>
   );

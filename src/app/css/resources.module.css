@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 80px;
 }
 
 .hero {
@@ -53,14 +54,9 @@
   flex: 1;
 }
 
-.guideSection {
-  padding: 0 80px;
-}
-
 /* avatar section */
 
 .avatarSection {
-  padding: 0 80px;
   margin-top: 50px;
 }
 
@@ -101,15 +97,29 @@
 }
 
 .imageContainer {
-  background-color: rgba(255, 255, 255, 0.08);
-  height: 425px;
-  width: 425px;
+  height: 401.5px;
+  width: 344px;
   border-radius: 50%;
-  margin-left: 160px;
+  margin-left: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+}
+
+.imageContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-image: url("../images/avatarBackground2.png");
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: screen;
+  z-index: -1;
 }
 
 .avatarImage {

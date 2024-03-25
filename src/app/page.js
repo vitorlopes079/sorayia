@@ -1,23 +1,23 @@
 import Image from "next/image";
 import styles from "./css/homepage.module.css";
 import star from "./images/star.png";
-import conversationImage from "./images/conversationImage.png";
+import heroscreeshot from "./images/heroscreeshot.png";
 import arrowUp from "./images/arrow-up.png";
 import arrowDown from "./images/arrow-down.svg";
 import avatar from "./images/avatar.png";
 import foldIcon from "./images/foldIcon.png";
 import aiIcon from "./images/aiIcon.png";
 import dbdIcon from "./images/dbIcon.png";
-import group from "./images/group.png";
+import screenshot from "./images/screenshot.png";
+import screenshot2 from "./images/screenshot2.png";
+import screenshot3 from "./images/screenshot3.png";
 import sales from "./images/sales.png";
 import checked from "./images/checked.svg";
 import support from "./images/support.png";
 import marketing from "./images/marketing.png";
-import chat from "./images/chat.png";
 import assitance from "./images/assitance.png";
 import cahier from "./images/cahier.png";
 import performace from "./images/performace.png";
-import cards3 from "./images/cards3.png";
 import courseAssistance from "./images/courseAssistance.png";
 import progresstracking from "./images/progresstracking.png";
 import personalize from "./images/personalize.png";
@@ -25,27 +25,26 @@ import testimonyPhoto from "./images/testmphoto.svg";
 import testimonyPhoto2 from "./images/testmphoto2.svg";
 import testimonyPhoto3 from "./images/testmphoto3.svg";
 import quotes from "./images/quotes.svg";
-import wix from "./images/wix.png";
-import square from "./images/square.png";
-import w from "./images/w.png";
-import shopify from "./images/shopify.png";
-import wp from "./images/wp.png";
 import Elipse from "./_components/Elipse";
+import Stack from "./_components/Stack";
+import chatbotChatImage from "./images/chatbotConv.svg";
+import RoundedWidget from "./_components/RoundedWidget";
+import MarketingCard from "./_components/MarketingCard";
+import imageCover from "./images/imageCover.png";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Elipse numberOfEllipses={8} />
       <section className={styles.hero}>
-        <div className="roundedContainer">
-          <p className={styles.roundedText}>
-            Something here is Fast & Efficient with AI
-          </p>
-          <Image src={star} width={18} height={18} alt="star" />
-        </div>
+        <RoundedWidget
+          text={"Something here is Fast & Efficient with AI"}
+          star={true}
+        />
+
         <div className={styles.heroHeadingContainer}>
-          <h1 className={styles.heroHeading}>
-            Help customer and employees instantly with an personalized
+          <h1 className="centralizedHeading">
+            Help customer and employees instantly with a personalized
             <span className={styles.firstLine}>&nbsp;AI-driven chatbot</span>
           </h1>
           <p className="centralizedText">
@@ -68,22 +67,29 @@ export default function Home() {
             <Image src={arrowDown} width={32} height={32} alt="arrow down" />
           </button>
         </div>
-        <div>
-          <Image
-            src={conversationImage}
-            width={1061}
-            height={690}
-            alt="Descriptive Alt Text"
-          />
+        <div className={styles.heroImageContainer}>
+          <div className={styles.heroscreeshotContainer}>
+            <Image
+              src={heroscreeshot}
+              width={869}
+              height={621}
+              alt="Dashboard Screenshot"
+              className={styles.heroImage}
+            />
+            <div className={`gradientCover ${styles.gradientCoverHero}`}></div>
+          </div>
+
+          <div className={styles.heroImageCoverContainer}>
+            <Image src={imageCover} width={273} height={345} alt="Ai-chat screenchot"/>
+          </div>
         </div>
       </section>
 
       <section className={styles.avatarSection}>
         <div className={styles.avatarTopDiv}>
           <div className={styles.avatarSectionTextContainer}>
-            <div className="roundedContainer">
-              <p>Your 3D Avatar </p>
-            </div>
+            <RoundedWidget text={"Your 3D Avatar"} />
+
             <h2 className="leftHeading">
               Transform yourself into a Virtual Star:
               <span className="yellowSpan"> Create a 3D Avatar</span> that looks
@@ -147,12 +153,20 @@ export default function Home() {
             </div>
             <div className={styles.card}>
               <div className={styles.figureContainer}>
-                <Image
-                  src={aiIcon}
-                  width={94}
-                  height={94}
-                  alt="Descriptive Alt Text"
-                />
+                <div className={`${styles.chatbotChat} ${styles.chat1}`}>
+                  <Image src={testimonyPhoto2} width={32} height={32} />
+                  <p className={styles.chatbotText}>
+                    Can you connect me with a sales agent?
+                  </p>
+                </div>
+                <div className={`${styles.chatbotChat} ${styles.chat2}`}>
+                  <Image src={testimonyPhoto} width={32} height={32} />
+                  <p className={styles.chatbotText}>How long does it takes?</p>
+                </div>
+                <div className={`${styles.chatbotChat} ${styles.chat3}`}>
+                  <Image src={chatbotChatImage} width={32} height={32} />
+                  <p className={styles.chatbotText}>Thank you!</p>
+                </div>
               </div>
               <h4 className={styles.cardTitle}>Right answer in a flash</h4>
               <p className="centralizedText">
@@ -190,13 +204,13 @@ export default function Home() {
       </section>
 
       <section className={styles.guideSection}>
-        <div className="roundedContainer">
-          <p>AI customer service agent</p>
-        </div>
+        <RoundedWidget text={"AI customer service agent"} />
+
         <div className={styles.guideSectionContent}>
           <div className={styles.guideSectionText}>
             <h1 className="leftHeading">
-              The virtual guide who help you to growing business
+              The virtual guide who help you to{" "}
+              <span className="yellowSpan">growing business</span>
             </h1>
             <p className="leftText">
               Sorayia.com guarantees swift response times, resolving customer
@@ -220,11 +234,13 @@ export default function Home() {
           </div>
           <div className={styles.guideImageContainer}>
             <Image
-              src={group}
-              width={600}
-              height={600}
+              src={screenshot}
+              width={628}
+              height={497}
               alt="Descriptive Alt Text"
             />
+            <div className="gradientCover"></div>
+            <div className={styles.blurContainer}></div>
           </div>
         </div>
 
@@ -240,194 +256,58 @@ export default function Home() {
             personalized attention for top-tier clients.
           </p>
         </div>
-        <div className={styles.guideCardsContainer}>
-          <div className={styles.guideSectionCard}>
-            <div className={styles.guideSectionImageContainer}>
-              <Image src={sales} width={60} height={60} alt="sales icon" />
-              <h4 className={styles.guideSectionCardTitle}>Sales</h4>
-            </div>
-
-            <ul className={styles.list}>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked symbol"
-                />
-                Qualify and segment leads
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked symbol"
-                />
-                Create personalize sales offer
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked symbol"
-                />
-                Pass leads to CRM
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked symbol"
-                />
-                Transfer qualified chat to sales representatives
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked symbol"
-                />
-                Schedule meetings
-              </li>
-            </ul>
-          </div>
-          <div className={styles.guideSectionCard}>
-            <div className={styles.guideSectionImageContainer}>
-              <Image
-                src={marketing}
-                width={60}
-                height={60}
-                alt="marketing icon"
-              />
-              <h4 className={styles.guideSectionCardTitle}>Marketing</h4>
-            </div>
-
-            <ul className={styles.list}>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked symbol"
-                />
-                Initiate conversations proactively with greeting
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked symbol"
-                />
-                Educate about products and services
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked symbol"
-                />
-                Collect leads and pass them to email marketing lists
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked symbol"
-                />
-                Launch AI bots on landing pages to boost conversations
-              </li>
-            </ul>
-          </div>
-          <div className={styles.guideSectionCard}>
-            <div className={styles.guideSectionImageContainer}>
-              <Image src={support} width={60} height={60} alt="support icon" />
-              <h4 className={styles.guideSectionCardTitle}>Support</h4>
-            </div>
-
-            <ul className={styles.list}>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked symbol"
-                />
-                Answer common questions with a virtual agent
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked symbol"
-                />
-                Resolve customer&apos;s problem
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked symbol"
-                />
-                Create support tickets
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked symbol"
-                />
-                Send links to help center articles or other educational content
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked symbol"
-                />
-                Transfer to live agents
-              </li>
-            </ul>
-          </div>
+        <div className="marketingCardsContainer">
+          <MarketingCard
+            title={"Sales"}
+            imageSrc={sales}
+            listItems={[
+              "Qualify and segment leads",
+              "Create personalize sales offer",
+              "Pass leads to CRM",
+              "Transfer qualified chat to sales representatives",
+              "Schedule meetings",
+            ]}
+          />
+          <MarketingCard
+            title={"Marketing"}
+            imageSrc={marketing}
+            listItems={[
+              "Initiate conversations proactively with greeting",
+              "Educate about products and services",
+              "Collect leads and pass them to email marketing lists",
+              "Launch AI bots on landing pages to boost conversations",
+              "Schedule meetings",
+            ]}
+          />
+          <MarketingCard
+            title={"Support"}
+            imageSrc={support}
+            listItems={[
+              "Answer common questions with a virtual agent",
+              "Resolve customer&apos;s problem",
+              "Create support tickets",
+              "Send links to help center articles or other educational content",
+              "Transfer to live agents",
+            ]}
+          />
         </div>
       </section>
 
       <section className={styles.guideSection}>
-        <div className="roundedContainer">
-          <p>AI Human Ressource Agent</p>
-        </div>
+        <RoundedWidget text={"AI Human Ressource Agent"} />
+
         <div className={styles.guideSectionContent}>
           <div className={styles.guideImageContainer}>
             <Image
-              src={chat}
-              width={600}
-              height={600}
+              src={screenshot2}
+              width={650}
+              height={480}
               alt="descriptive image"
             />
+            <div className="gradientCover gradientCoverLeft"></div>
+            <div
+              className={`${styles.blurContainer} ${styles.blurContainerLeft}`}
+            ></div>
           </div>
           <div className={styles.guideSectionText}>
             <h1 className="leftHeading">
@@ -476,169 +356,44 @@ export default function Home() {
             to the human resources department.
           </p>
         </div>
-        <div className={styles.guideCardsContainer}>
-          <div className={styles.guideSectionCard}>
-            <div className={styles.guideSectionImageContainer}>
-              <Image src={cahier} width={60} height={60} alt="cahier" />
-              <h4 className={styles.guideSectionCardTitle}>
-                Employee Assistance
-              </h4>
-            </div>
+        <div className="marketingCardsContainer">
+          <MarketingCard
+            title="Employee Assistance"
+            imageSrc={cahier}
+            listItems={[
+              "Resolve employees' problems",
+              "Send links, educational content, documents and help center articles",
+              "Transfer to live HR agents",
+            ]}
+          />
 
-            <ul className={styles.list}>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked"
-                />
-                Resolve employees&apos; problems
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked"
-                />
-                Send links ,educational content, documents and help center
-                articles
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked"
-                />
-                Transfer to live hr agents
-              </li>
-            </ul>
-          </div>
-          <div className={styles.guideSectionCard}>
-            <div className={styles.guideSectionImageContainer}>
-              <Image
-                src={assitance}
-                width={60}
-                height={60}
-                alt="assistance icon"
-              />
-              <h4 className={styles.guideSectionCardTitle}>
-                Request Management
-              </h4>
-            </div>
+          <MarketingCard
+            title="Request Management"
+            imageSrc={assitance}
+            listItems={[
+              "Automation of Recruitment Processes",
+              "Request Tracking",
+              "Collects urgent requests from employees",
+              "Launch AI bots on landing pages and employee portal to boost usage",
+            ]}
+          />
 
-            <ul className={styles.list}>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked"
-                />
-                Automation of Recruitment Processes
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked"
-                />
-                Request Tracking
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked"
-                />
-                collects urgent requests from employees
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked"
-                />
-                launch AI bots on landing pages and employee portal to boost
-                usage
-              </li>
-            </ul>
-          </div>
-          <div className={styles.guideSectionCard}>
-            <div className={styles.guideSectionImageContainer}>
-              <Image
-                src={performace}
-                width={60}
-                height={60}
-                alt="perfomance icon"
-              />
-              <h4 className={styles.guideSectionCardTitle}>
-                Performance Management
-              </h4>
-            </div>
-
-            <ul className={styles.list}>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked"
-                />
-                Data Analytics Dashboard
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked"
-                />
-                Data Scraper Integration
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked"
-                />
-                Collection and analysis of comments
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked"
-                />
-                Create support tickets
-              </li>
-            </ul>
-          </div>
+          <MarketingCard
+            title="Performance Management"
+            imageSrc={performace}
+            listItems={[
+              "Data Analytics Dashboard",
+              "Data Scraper Integration",
+              "Collection and analysis of comments",
+              "Create support tickets",
+            ]}
+          />
         </div>
       </section>
 
       <section className={styles.guideSection}>
-        <div className="roundedContainer">
-          <p>AI Virtual Tutor</p>
-        </div>
+        <RoundedWidget text={"AI Virtual Tutor"} />
+
         <div className={styles.guideSectionContent}>
           <div className={styles.guideSectionText}>
             <h1 className="leftHeading">
@@ -671,11 +426,13 @@ export default function Home() {
           </div>
           <div className={styles.guideImageContainer}>
             <Image
-              src={cards3}
-              width={565}
-              height={495}
+              src={screenshot3}
               alt="descriptive image"
+              width={674}
+              height={488}
             />
+            <div className="gradientCover"></div>
+            <div className={styles.blurContainer}></div>
           </div>
         </div>
 
@@ -690,199 +447,43 @@ export default function Home() {
             of reusable data to develop effective learning strategies.
           </p>
         </div>
-        <div className={styles.guideCardsContainer}>
-          <div className={styles.guideSectionCard}>
-            <div className={styles.guideSectionImageContainer}>
-              <Image
-                src={courseAssistance}
-                width={60}
-                height={60}
-                alt="descritive alt"
-              />
-              <h4 className={styles.guideSectionCardTitle}>
-                Course Assistance
-              </h4>
-            </div>
+        <div className="marketingCardsContainer">
+          <MarketingCard
+            title="Course Assistance"
+            imageSrc={courseAssistance}
+            listItems={[
+              "Answer common question about course with a virtual teacher agent",
+              "Resolve students' problems",
+              "Send articles and educational content",
+              "Create support tickets",
+            ]}
+          />
 
-            <ul className={styles.list}>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked"
-                />
-                Answer common question about course with a virtual teacher agent
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked"
-                />
-                Resolve students&apos; problems
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked"
-                />
-                Send articles and educational content
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked"
-                />
-                Create support tickets
-              </li>
-            </ul>
-          </div>
-          <div className={styles.guideSectionCard}>
-            <div className={styles.guideSectionImageContainer}>
-              <Image
-                src={personalize}
-                width={60}
-                height={60}
-                alt="descriptive alt"
-              />
-              <h4 className={styles.guideSectionCardTitle}>
-                personalize learning
-              </h4>
-            </div>
+          <MarketingCard
+            title="Personalize Learning"
+            imageSrc={personalize}
+            listItems={[
+              "Educate about courses related to the learning",
+              "Provides answers adapted to learning levels",
+              "Launch AI bots on student portal to boost usage",
+            ]}
+          />
 
-            <ul className={styles.list}>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked"
-                />
-                Educate about courses related to the learning
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked"
-                />
-                provides answers adapted to learning levels
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked"
-                />
-                launch Ai bots on student portal to boost usage
-              </li>
-            </ul>
-          </div>
-          <div className={styles.guideSectionCard}>
-            <div className={styles.guideSectionImageContainer}>
-              <Image
-                src={progresstracking}
-                width={60}
-                height={60}
-                alt="descriptive info"
-              />
-              <h4 className={styles.guideSectionCardTitle}>
-                progress tracking
-              </h4>
-            </div>
-
-            <ul className={styles.list}>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="checked"
-                />
-                Data Analytics Dashboard
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="icon"
-                />
-                Data Scraper Integration
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="icon"
-                />
-                Collection and analysis of comments
-              </li>
-              <li className={styles.listItem}>
-                <Image
-                  src={checked}
-                  width={15}
-                  height={15}
-                  className={styles.checkedIcon}
-                  alt="icon"
-                />
-                Create support tickets
-              </li>
-            </ul>
-          </div>
+          <MarketingCard
+            title="Progress Tracking"
+            imageSrc={progresstracking}
+            listItems={[
+              "Data Analytics Dashboard",
+              "Data Scraper Integration",
+              "Collection and analysis of comments",
+              "Create support tickets",
+            ]}
+          />
         </div>
       </section>
 
       <section className={styles.testimonalSection}>
-        <div className="roundedContainer">
-          <p>Widget Integration</p>
-        </div>
-        <div className={styles.stackContainer}>
-          <h4 className={styles.stackSubHeader}>
-            Simplify your work connect sorayia to your tech stack
-          </h4>
-          <div className={styles.testimonialIconsContainer}>
-            <div
-              className={`${styles.testimonialIconContainer} ${styles.firstTestimonialIconContainer}`}
-            >
-              <Image src={wix} width={60} height={60} alt="wix icon" />
-            </div>
-            <div className={styles.testimonialIconContainer}>
-              <Image src={wp} width={60} height={60} alt="wordpress" />
-            </div>
-            <div className={styles.testimonialIconContainer}>
-              <Image src={shopify} width={60} height={60} alt="shopify" />
-            </div>
-            <div
-              className={`${styles.testimonialIconContainer} ${styles.wTestimonialIconContainer}`}
-            >
-              <Image src={w} width={60} height={46} alt="w" />
-            </div>
-            <div className={styles.testimonialIconContainer}>
-              <Image src={square} width={60} height={60} alt="square space" />
-            </div>
-          </div>
-          <p className={styles.stackSubText}>More than 120+ tools integreted</p>
-        </div>
+        <Stack />
 
         <div className={styles.testimonialHeadingSection}>
           <h2 className="centralizedHeading">Testimonials</h2>
@@ -920,7 +521,7 @@ export default function Home() {
           </div>
 
           <div
-            className={`${styles.testimonyContainer} ${styles.testimonyContainerCenter}`}
+            className={`${styles.testimonyContainer} ${styles.testimonyContainerCenter} `}
           >
             <div className={styles.testimonyTop}>
               <Image

@@ -1,4 +1,11 @@
 /* Base style for all ellipses */
+.elipseContainer {
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
 .Elipse {
   width: 300px;
   height: 300px;

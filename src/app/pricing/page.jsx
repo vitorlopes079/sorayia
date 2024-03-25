@@ -160,7 +160,7 @@ const page = () => {
                     Basic
                   </h3>
                   <h3 className={`${styles.cardHeading} ${styles.centerColor}`}>
-                    $
+                    $99
                   </h3>
                   <p
                     className={`${styles.cardSubHeading} ${styles.centerColor}`}

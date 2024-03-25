@@ -53,6 +53,7 @@ body {
   color: #e2e8f0;
   line-height: 32px;
   margin: 12px 0;
+  text-transform: capitalize;
 }
 
 .leftHeading {
@@ -62,6 +63,12 @@ body {
   text-transform: capitalize;
   line-height: 44px;
   margin-bottom: 24px;
+}
+
+.biggerLeftHeading {
+  color: #f8fafc;
+  font-size: 32px;
+  font-weight: 800;
 }
 
 .leftText {
@@ -96,6 +103,7 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  max-height: 48px;
 }
 
 .buttonYellow {
@@ -108,6 +116,7 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  max-height: 48px;
 }
 
 .buttonMargin {
@@ -121,4 +130,47 @@ body {
 .yellowSpan {
   color: #f7ce46;
   text-transform: capitalize;
+}
+
+/* Styles when the bookmark is not active */
+.bookmarkInactive {
+  color: rgba(241, 245, 249, 1);
+  cursor: pointer;
+  margin-left: 16px;
+}
+
+/* Styles when the bookmark is active */
+.bookmarkActive {
+  color: rgba(241, 245, 249, 1);
+  cursor: pointer;
+  margin-left: 16px;
+}
+
+.marketingCardsContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.marketingCardsContainer > * {
+  flex: 1;
+}
+
+.gradientCover {
+  height: 190px;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.00) 0%,
+    rgba(18, 14, 40, 0.95) 95.08%
+  );
+  position: absolute;
+  bottom: 0px;
+  border-radius: 0 0 0 27.6px;
+}
+
+.gradientCoverLeft {
+  border-radius: 0 0 27.6px 0;
 }
