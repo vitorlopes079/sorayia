@@ -147,6 +147,7 @@
   border-radius: 4px;
   mix-blend-mode: screen;
   z-index: 1;
+  filter: brightness(1.7);
 }
 
 .blurContainer4 {
@@ -170,6 +171,7 @@
   border-radius: 4px;
   mix-blend-mode: screen;
   z-index: 1;
+  filter: brightness(1.7);
 }
 
 .blurContainer5 {
@@ -193,4 +195,5 @@
   border-radius: 4px;
   mix-blend-mode: screen;
   z-index: 1;
+  filter: brightness(1.7);
 }

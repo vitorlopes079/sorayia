@@ -5,6 +5,13 @@ import logo from "../images/checkout/logo.png";
 import CheckoutForm from "../_components/CheckoutForm";
 import apple from "../images/checkout/AppleLogo.png";
 
+export const metadata = {
+  title: "Sorayia",
+  icons: {
+    icon: "images/sorayia-fav-icon.png",
+  },
+};
+
 const page = () => {
   return (
     <div className={styles.container}>
