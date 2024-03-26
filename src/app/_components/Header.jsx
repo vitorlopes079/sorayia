@@ -6,7 +6,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "../css/header.module.css";
 import logo from "../images/logo.png";
-import arrowUp from "../images/navArrowUp.png";
 import arrowDown from "../images/navArrowDown.png";
 
 const Header = () => {
