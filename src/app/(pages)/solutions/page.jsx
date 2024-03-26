@@ -1,29 +1,29 @@
 import React from "react";
-import styles from "../css/solutions.module.css";
-import Elipse from "../_components/Elipse";
+import styles from "../../css/solutions.module.css";
+import Elipse from "../../_components/Elipse";
 import Image from "next/image";
-import product from "../images/product.png";
-import solutionsChat from "../images/solutions-chat.png";
-import onlineStore from "../images/online-store.png";
-import solutionsMarketing from "../images/solutions-marketing.png";
-import talk from "../images/talk.png";
-import preset from "../images/present.png";
-import solutions1 from "../images/solutions1.png";
-import solutions2 from "../images/solutions2.png";
-import solutions3 from "../images/solutions3.png";
-import arrowUp from "../images/arrow-up.png";
-import arrowDown from "../images/arrow-down.svg";
-import chat2 from "../images/chat2.png";
-import growth from "../images/growth.png";
-import continuous from "../images/continuous.png";
-import schedule2 from "../images/schedule2.png";
-import continuous2 from "../images/continuous2.png";
-import team2 from "../images/team2.png";
-import marketcall from "../images/marketcall.png";
-import spyware from "../images/spyware.png";
-import issue from "../images/issue.png";
-import MarketingCard from "../_components/MarketingCard";
-import RoundedWidget from "../_components/RoundedWidget";
+import product from "../../images/product.png";
+import solutionsChat from "../../images/solutions-chat.png";
+import onlineStore from "../../images/online-store.png";
+import solutionsMarketing from "../../images/solutions-marketing.png";
+import talk from "../../images/talk.png";
+import preset from "../../images/present.png";
+import solutions1 from "../../images/solutions1.png";
+import solutions2 from "../../images/solutions2.png";
+import solutions3 from "../../images/solutions3.png";
+import arrowUp from "../../images/arrow-up.png";
+import arrowDown from "../../images/arrow-down.svg";
+import chat2 from "../../images/chat2.png";
+import growth from "../../images/growth.png";
+import continuous from "../../images/continuous.png";
+import schedule2 from "../../images/schedule2.png";
+import continuous2 from "../../images/continuous2.png";
+import team2 from "../../images/team2.png";
+import marketcall from "../../images/marketcall.png";
+import spyware from "../../images/spyware.png";
+import issue from "../../images/issue.png";
+import MarketingCard from "../../_components/MarketingCard";
+import RoundedWidget from "../../_components/RoundedWidget";
 
 
 const page = () => {
@@ -34,13 +34,13 @@ const page = () => {
         <div className={styles.heroHeadingContainer}>
           <h1 className={styles.heroHeading}>
             Power up your <span className="yellowSpan">marketing strategy</span>{" "}
-            with Sorayia.com
+            with Sorayia.<span className="lowercase">com</span>
           </h1>
           <p className="centralizedText">
-            Revolutionize your marketing game with Sorayia.com! Elevate your
+            Revolutionize your marketing game with Sorayia.<span className="lowercase">com</span>! Elevate your
             brand&apos;s presence, engage your audience, and dominate your
             market with our cutting-edge solutions. Unleash the power of
-            Sorayia.com to propel your business to new heights of success.
+            Sorayia.<span className="lowercase">com</span> to propel your business to new heights of success.
           </p>
         </div>
 
@@ -137,12 +137,12 @@ const page = () => {
         <div className={styles.heroHeadingContainer}>
           <h1 className={styles.heroHeading}>
             <span className="yellowSpan">Optimizing Your Sales Process</span>{" "}
-            with Sorayia.com
+            with Sorayia.<span className="lowercase">com</span>
           </h1>
           <p className="centralizedText">
             In today&apos;s competitive market, optimizing the sales process is
             essential for driving revenue growth and enhancing customer
-            experience. Sorayia.com offers a cutting-edge solution that
+            experience. Sorayia.<span className="lowercase">com</span> offers a cutting-edge solution that
             leverages chatbots to automate and streamline your sales pipeline,
             from lead qualification to sales closing, providing personalized and
             instant support every step of the way.
@@ -159,7 +159,7 @@ const page = () => {
             <div className={styles.guideSectionText}>
               <h1 className="leftHeading">Fully Automated Chatbot for Sales</h1>
               <p className="leftText">
-                With Sorayia.com, you can implement a standalone chatbot
+                With Sorayia.<span className="lowercase">com</span>, you can implement a standalone chatbot
                 tailored specifically for your sales process. This intelligent
                 assistant handles various tasks seamlessly, ensuring efficient
                 lead generation, personalized recommendations, scheduling sales
@@ -209,7 +209,7 @@ const page = () => {
                 Grow Your Sales Together with a Chatbot
               </h1>
               <p className="leftText">
-                Collaboration is key to success in sales. Sorayia.com allows you
+                Collaboration is key to success in sales. Sorayia.<span className="lowercase">com</span> allows you
                 to add a smart assistant to your team, empowering your sales
                 reps to work more effectively. Effortlessly segment leads,
                 connect them with the right sales representatives in real-time,
@@ -233,7 +233,7 @@ const page = () => {
                 Automate Sales Processes and Scale Efficiently
               </h1>
               <p className="leftText">
-                By leveraging Sorayia.com&apos;s smart chatbot for sales, you can
+                By leveraging Sorayia.<span className="lowercase">com</span>&apos;s smart chatbot for sales, you can
                 scale your operations without adding unnecessary overhead.
                 Create new sales opportunities, drive your sales team&apos;s efforts
                 forward, diversify your lead generation strategy, and improve
@@ -241,13 +241,13 @@ const page = () => {
                 resources.
               </p>
               <p className="leftText">
-                Incorporating Sorayia.com into your sales strategy enables you
+                Incorporating Sorayia.<span className="lowercase">com</span> into your sales strategy enables you
                 to optimize your sales process, enhance customer experience, and
                 drive revenue growth. With automated chatbots, you can
                 streamline operations, empower your sales team, and focus on
                 what truly matters—building meaningful relationships with your
                 customers and closing more deals. Elevate your sales performance
-                with Sorayia.com today.
+                with Sorayia.<span className="lowercase">com</span> today.
               </p>
             </div>
           </div>
@@ -273,7 +273,7 @@ const page = () => {
             Anytime, Anywhere
           </h1>
           <p className="centralizedText">
-            Sorayia.com enables you to resolve problems faster by utilizing
+            Sorayia.<span className="lowercase">com</span> enables you to resolve problems faster by utilizing
             visuals and interactive forms to explain technical issues. Our
             chatbots streamline the resolution process, guiding customers
             through troubleshooting steps with clarity and efficiency,
@@ -333,14 +333,14 @@ const page = () => {
         <div className={styles.heroHeadingContainer}>
           <h1 className={styles.heroHeading}>
             <span className="yellowSpan">Automating HR Processes</span> with
-            Sorayia.com Chatbots
+            Sorayia.<span className="lowercase">com</span> Chatbots
           </h1>
           <p className="centralizedText">
             In the ever-evolving landscape of Human Resources (HR), efficiency
-            and streamlining processes are paramount. Sorayia.com, with its
+            and streamlining processes are paramount. Sorayia.<span className="lowercase">com</span>, with its
             advanced chatbot technology, offers a groundbreaking solution to
             automate various HR tasks, from initial recruitment to staff
-            training and leave management. Let&apos;s delve into how Sorayia.com can
+            training and leave management. Let&apos;s delve into how Sorayia.<span className="lowercase">com</span> can
             revolutionize HR practices, enhancing efficiency and reducing
             administrative burdens.
           </p>
@@ -362,7 +362,7 @@ const page = () => {
             imageSrc={continuous2}
             listItems={[
               "Efficient Candidate Screening",
-              "Sorayia.com&apos;s chatbots streamline the initial recruitment process by efficiently screening resumes based on predefined criteria",
+              "Sorayia.com's chatbots streamline the initial recruitment process by efficiently screening resumes based on predefined criteria",
               "Discuss how chatbots can schedule interviews with candidates, saving time for HR professionals",
             ]}
           />
@@ -395,14 +395,14 @@ const page = () => {
           <div className={styles.heroHeadingContainer}>
             <h1 className={styles.heroHeading}>
               Revolutionizing Education and Training with{" "}
-              <span className="yellowSpan">Sorayia.com Chatbots</span>
+              <span className="yellowSpan">Sorayia.<span className="lowercase">com</span> Chatbots</span>
             </h1>
             <p className="centralizedText">
               In the realm of education and training, innovation is key to
-              fostering engagement and improving learning outcomes. Sorayia.com
+              fostering engagement and improving learning outcomes. Sorayia.<span className="lowercase">com</span>
               introduces a groundbreaking solution with its advanced chatbot
               technology, revolutionizing the way learning and training are
-              conducted. Let&apos;s explore how Sorayia.com chatbots automate
+              conducted. Let&apos;s explore how Sorayia.<span className="lowercase">com</span> chatbots automate
               learning processes, provide personalized responses, and facilitate
               access to educational resources, enhancing the educational
               experience for both students and staff.

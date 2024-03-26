@@ -7,7 +7,7 @@ import Question from "../_components/Question";
 
 const FrequentelyAsked = () => {
   return (
-    <div className={styles.frequentelyAskedContainer}>
+    <div className={styles.frequentelyAskedContainer} id="frequently-asked-questions">
       <div className={styles.faqContainer}>
         <RoundedWidget text={"FAQ"} />
       </div>

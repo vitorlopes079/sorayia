@@ -1,12 +1,14 @@
 import React from "react";
-import styles from "../css/pricing.module.css";
+import styles from "../../css/pricing.module.css";
 import Image from "next/image";
-import checked from "../images/checked.svg";
-import checkedInverse from "../images/checkedInverse.svg";
-import emailIcon from "../images/email.svg";
-import locationIcon from "../images/location.svg";
-import PricingForm from "../_components/PricingForm";
-import Elipse from "../_components/Elipse";
+import checked from "../../images/checked.svg";
+import checkedInverse from "../../images/checkedInverse.svg";
+import emailIcon from "../../images/email.svg";
+import locationIcon from "../../images/location.svg";
+import PricingForm from "../../_components/PricingForm";
+import Elipse from "../../_components/Elipse";
+import Link from "next/link";
+
 const page = () => {
   return (
     <div className={styles.container}>
@@ -256,9 +258,11 @@ const page = () => {
                 <p className={styles.lineBreckGray}>_ _ _</p>
                 <p className={styles.lineBreckGray}>_ _ _</p>
 
-                <button className={`buttonYellow ${styles.buttonFullWidth}`}>
-                  Buy Now
-                </button>
+                <Link href={"/checkout"}>
+                  <button className={`buttonYellow ${styles.buttonFullWidth}`}>
+                    Buy Now
+                  </button>
+                </Link>
               </div>
             </div>
 

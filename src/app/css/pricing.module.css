@@ -126,6 +126,7 @@
   width: 895px;
   color: #e2e8f0;
   margin-top: 180px;
+  margin-bottom: 100px;
 }
 
 .formIconsContainer {
@@ -133,7 +134,6 @@
   align-items: center;
   justify-content: center;
   margin-top: 12px;
-  
 }
 
 .formIconContainer {
@@ -141,13 +141,12 @@
   flex-direction: row;
   align-items: center;
   margin: 12px 32px 0 32px;
-
 }
 
-.icon{
+.icon {
   margin-right: 8px;
 }
 
-.buttonFullWidth{
+.buttonFullWidth {
   width: 100%;
 }

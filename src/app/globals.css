@@ -26,7 +26,6 @@ body {
 
 .mainContainer {
   flex-grow: 1;
-  margin-bottom: 150px;
 }
 
 .centralizedHeading {
@@ -105,17 +104,17 @@ body {
   justify-content: center;
   align-items: center;
   max-height: 48px;
-  transition: transform 0.2s, background-color 0.2s; 
+  transition: transform 0.2s, background-color 0.2s;
 }
 
 .buttonGrey:hover {
-  transform: scale(1.03); 
-  background-color: rgba(255, 255, 255, 0.12); 
+  transform: scale(1.03);
+  background-color: rgba(255, 255, 255, 0.12);
 }
 
 .buttonGrey:active {
-  transform: scale(0.97); 
-  background-color: rgba(255, 255, 255, 0.06); 
+  transform: scale(0.97);
+  background-color: rgba(255, 255, 255, 0.06);
 }
 
 .buttonYellow {
@@ -129,17 +128,17 @@ body {
   justify-content: center;
   align-items: center;
   max-height: 48px;
-  transition: transform 0.2s, background-color 0.2s; 
+  transition: transform 0.2s, background-color 0.2s;
 }
 
 .buttonYellow:hover {
   transform: scale(1.03);
-  background-color: #f8d55a; 
+  background-color: #f8d55a;
 }
 
 .buttonYellow:active {
-  transform: scale(0.97); 
-  background-color: #e6be42; 
+  transform: scale(0.97);
+  background-color: #e6be42;
 }
 
 .buttonMargin {
@@ -196,4 +195,8 @@ body {
 
 .gradientCoverLeft {
   border-radius: 0 0 27.6px 0;
+}
+
+.lowercase {
+  text-transform: lowercase;
 }

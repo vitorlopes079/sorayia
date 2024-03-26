@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "../css/blogs.module.css";
-import BlogCard from "../_components/BlogCard";
-import arrowLeft from "../images/arrowLeft.svg";
-import arrowRight from "../images/arrowRight.svg";
+import styles from "../../css/blogs.module.css";
+import BlogCard from "../../_components/BlogCard";
+import arrowLeft from "../../images/arrowLeft.svg";
+import arrowRight from "../../images/arrowRight.svg";
 import Image from "next/image";
-import Elipse from "../_components/Elipse";
+import Elipse from "../../_components/Elipse";
 
 const page = () => {
   return (
@@ -42,9 +42,20 @@ const page = () => {
         </div>
       </div>
       <div className={styles.BlogCardsContainer}>
-        <BlogCard title={"HR Chatbots Revolution"} text={"Transforming Employee Experience"} nav={"chatbots-revolution"}/>
-        <BlogCard title={"Maximizing Customer Service Efficiency with Chatbots"} nav={"maximizing-customer-service"} />
-        <BlogCard title={"Revolutionizing Customer Interactions"} text={"The Power of Bespoke Chatbots"} nav={"revolutionizing-customer-interactions"} />
+        <BlogCard
+          title={"HR Chatbots Revolution"}
+          text={"Transforming Employee Experience"}
+          nav={"chatbots-revolution"}
+        />
+        <BlogCard
+          title={"Maximizing Customer Service Efficiency with Chatbots"}
+          nav={"maximizing-customer-service"}
+        />
+        <BlogCard
+          title={"Revolutionizing Customer Interactions"}
+          text={"The Power of Bespoke Chatbots"}
+          nav={"revolutionizing-customer-interactions"}
+        />
         <BlogCard />
         <BlogCard />
         <BlogCard />

@@ -1,16 +1,16 @@
 import React from "react";
-import styles from "../../css/post.module.css";
+import styles from "../../../css/post.module.css";
 import Image from "next/image";
-import articleImage from "../../images/maximazing-article.png";
-import QuizForm from "../../_components/QuizForm";
-import SaveArticle from "../../_components/SaveArticle";
-import PublishedDate from "../../_components/PublishedDate";
-import MoreArticlesCard from "../../_components/MoreArticlesCard";
-import moreBlogsImage1 from "../../images/moreBlogs1.png";
-import moreBlogsImage2 from "../../images/moreBlogs2.png";
-import moreBlogsImage3 from "../../images/moreBlogs3.png";
-import benefits from "../../images/benefits.png";
-import Breadcrumb from "../../_components/Breadcrumb";
+import articleImage from "../../../images/maximazing-article.png";
+import QuizForm from "../../../_components/QuizForm";
+import SaveArticle from "../../../_components/SaveArticle";
+import PublishedDate from "../../../_components/PublishedDate";
+import MoreArticlesCard from "../../../_components/MoreArticlesCard";
+import moreBlogsImage1 from "../../../images/moreBlogs1.png";
+import moreBlogsImage2 from "../../../images/moreBlogs2.png";
+import moreBlogsImage3 from "../../../images/moreBlogs3.png";
+import benefits from "../../../images/benefits.png";
+import Breadcrumb from "../../../_components/Breadcrumb";
 import Link from "next/link";
 
 const page = () => {

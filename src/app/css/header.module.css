@@ -16,10 +16,6 @@
   list-style-type: none;
 }
 
-.logoWrapper {
-  display: flex;
-}
-
 .logo {
   font-size: 32px;
   color: #f8fafc;
@@ -53,6 +49,10 @@
   color: #f8fafc;
   font-weight: 300;
   padding: 0 8px;
+}
+
+.link{
+  text-decoration: none;
 }
 
 .navlinkContainer {

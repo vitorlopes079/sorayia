@@ -1,27 +1,27 @@
 import React from "react";
-import styles from "../css/product.module.css";
-import Stack from "../_components/Stack";
+import styles from "../../css/product.module.css";
+import Stack from "../../_components/Stack";
 import Image from "next/image";
-import checked from "../images/checked.svg";
-import arrowUp from "../images/arrow-up.png";
-import MoreArticlesCard from "../_components/MoreArticlesCard";
-import RoundedWidget from "../_components/RoundedWidget";
-import FrequentelyAsked from "../_components/FrequentelyAsked";
-import productScreenshot from "../images/productScreenshot.png";
-import productScreenshot2 from "../images/productScreenshot2.png";
-import productScreenshot3 from "../images/productScreenshot3.png";
-import productScreenshot4 from "../images/productScreenshot4.png";
-import digitalBloom from "../images/digitalBloom.png";
-import digitalBloom2 from "../images/digitalBloom2.png";
-import digitalBloom3 from "../images/digitalBloom3.png";
-import Elipse from "../_components/Elipse";
+import checked from "../../images/checked.svg";
+import arrowUp from "../../images/arrow-up.png";
+import MoreArticlesCard from "../../_components/MoreArticlesCard";
+import RoundedWidget from "../../_components/RoundedWidget";
+import FrequentelyAsked from "../../_components/FrequentelyAsked";
+import productScreenshot from "../../images/productScreenshot.png";
+import productScreenshot2 from "../../images/productScreenshot2.png";
+import productScreenshot3 from "../../images/productScreenshot3.png";
+import productScreenshot4 from "../../images/productScreenshot4.png";
+import digitalBloom from "../../images/digitalBloom.png";
+import digitalBloom2 from "../../images/digitalBloom2.png";
+import digitalBloom3 from "../../images/digitalBloom3.png";
+import Elipse from "../../_components/Elipse";
 
 const page = () => {
   return (
     <div className={styles.container}>
-      <Elipse numberOfEllipses={7} />
+      <Elipse numberOfEllipses={6} />
 
-      <div className={styles.topContainer}>
+      <div className={styles.topContainer} id="integration">
         <Stack />
         <div className={styles.inputContainer}>
           <input className={styles.input} placeholder="Your Email Address" />
@@ -41,14 +41,13 @@ const page = () => {
             <div className="gradientCover"></div>
           </div>
           <div className={styles.guideSectionText}>
-            <div className="roundedContainer">
-              <p>Benefits</p>
-            </div>
+            <RoundedWidget text={"Benefits"} id="benefits" />
             <h1 className="leftHeading">Why choose Sorayia and not another</h1>
             <p className="leftText">
-              Discover the distinctive advantages of Sorayia.com compared to
-              other similar solutions on the market, highlighting our unique
-              features and exceptional customer service.
+              Discover the distinctive advantages of Sorayia.
+              <span className="lowercase">com</span> compared to other similar
+              solutions on the market, highlighting our unique features and
+              exceptional customer service.
             </p>
 
             <button className="buttonYellow">
@@ -60,12 +59,13 @@ const page = () => {
 
         <div className={styles.guideSectionContent}>
           <div className={styles.guideSectionText}>
-            <div className="roundedContainer">
-              <p>Features</p>
-            </div>
+            <RoundedWidget
+              text={"Artificial inteligence"}
+              id={"artificial-inteligence"}
+            />
             <h1 className="leftHeading">Technologies used in this AI</h1>
             <p className="leftText">
-              Dive into the details of Sorayia.com features by exploring the
+              Dive into the details of Sorayia.<span className="lowercase">com</span> features by exploring the
               cutting-edge technologies used to deliver optimal user experience
               and exceptional results.
             </p>
@@ -97,6 +97,8 @@ const page = () => {
             <div className="gradientCover"></div>
           </div>
           <div className={styles.guideSectionText}>
+            <RoundedWidget text={"3D influencer"} id={"3d-influencer"} />
+
             <h1 className="leftHeading">3D influencer widget</h1>
             <p className="leftText">
               Explore the power of avatars and their ability to communicate with
@@ -113,6 +115,8 @@ const page = () => {
 
         <div className={styles.guideSectionContent} id={"section1"}>
           <div className={styles.guideSectionText}>
+            <RoundedWidget text={"Personalities"} id={"personalities"} />
+
             <h1 className="leftHeading">Personalities</h1>
             <p className="leftText">
               Learn about the big three avatar personalities and their impact on
@@ -168,7 +172,7 @@ const page = () => {
       </section>
 
       <section className={styles.moreBlogsSection}>
-        <RoundedWidget text={"More About US"} />
+        <RoundedWidget text={"Features"} id={"features"} />
         <h1 className="centralizedHeading">More About Us</h1>
         <div className={styles.articlesContainer}>
           <MoreArticlesCard

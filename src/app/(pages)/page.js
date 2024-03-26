@@ -1,44 +1,44 @@
 import Image from "next/image";
-import styles from "./css/homepage.module.css";
-import star from "./images/star.png";
-import heroscreeshot from "./images/heroscreeshot.png";
-import arrowUp from "./images/arrow-up.png";
-import arrowDown from "./images/arrow-down.svg";
-import avatar from "./images/avatar.png";
-import foldIcon from "./images/foldIcon.png";
-import aiIcon from "./images/aiIcon.png";
-import dbdIcon from "./images/dbIcon.png";
-import screenshot from "./images/screenshot.png";
-import screenshot2 from "./images/screenshot2.png";
-import screenshot3 from "./images/screenshot3.png";
-import sales from "./images/sales.png";
-import checked from "./images/checked.svg";
-import support from "./images/support.png";
-import marketing from "./images/marketing.png";
-import assitance from "./images/assitance.png";
-import cahier from "./images/cahier.png";
-import performace from "./images/performace.png";
-import courseAssistance from "./images/courseAssistance.png";
-import progresstracking from "./images/progresstracking.png";
-import personalize from "./images/personalize.png";
-import testimonyPhoto from "./images/testmphoto.svg";
-import testimonyPhoto2 from "./images/testmphoto2.svg";
-import testimonyPhoto3 from "./images/testmphoto3.svg";
-import quotes from "./images/quotes.svg";
-import Elipse from "./_components/Elipse";
-import Stack from "./_components/Stack";
-import chatbotChatImage from "./images/chatbotConv.svg";
-import RoundedWidget from "./_components/RoundedWidget";
-import MarketingCard from "./_components/MarketingCard";
-import imageCover from "./images/imageCover.png";
+import styles from "../css/homepage.module.css";
+import star from "../images/star.png";
+import heroscreeshot from "../images/heroscreeshot.png";
+import arrowUp from "../images/arrow-up.png";
+import arrowDown from "../images/arrow-down.svg";
+import avatar from "../images/avatar.png";
+import foldIcon from "../images/foldIcon.png";
+import aiIcon from "../images/aiIcon.png";
+import dbdIcon from "../images/dbIcon.png";
+import screenshot from "../images/screenshot.png";
+import screenshot2 from "../images/screenshot2.png";
+import screenshot3 from "../images/screenshot3.png";
+import sales from "../images/sales.png";
+import checked from "../images/checked.svg";
+import support from "../images/support.png";
+import marketing from "../images/marketing.png";
+import assitance from "../images/assitance.png";
+import cahier from "../images/cahier.png";
+import performace from "../images/performace.png";
+import courseAssistance from "../images/courseAssistance.png";
+import progresstracking from "../images/progresstracking.png";
+import personalize from "../images/personalize.png";
+import testimonyPhoto from "../images/testmphoto.svg";
+import testimonyPhoto2 from "../images/testmphoto2.svg";
+import testimonyPhoto3 from "../images/testmphoto3.svg";
+import quotes from "../images/quotes.svg";
+import Elipse from "../_components/Elipse";
+import Stack from "../_components/Stack";
+import chatbotChatImage from "../images/chatbotConv.svg";
+import RoundedWidget from "../_components/RoundedWidget";
+import MarketingCard from "../_components/MarketingCard";
+import imageCover from "../images/imageCover.png";
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Elipse numberOfEllipses={8} />
+      <Elipse numberOfEllipses={7} />
       <section className={styles.hero}>
         <RoundedWidget
-          text={"Something here is Fast & Efficient with AI"}
+          text={"Fast & Efficient with AI"}
           star={true}
         />
 
@@ -80,7 +80,12 @@ export default function Home() {
           </div>
 
           <div className={styles.heroImageCoverContainer}>
-            <Image src={imageCover} width={273} height={345} alt="Ai-chat screenchot"/>
+            <Image
+              src={imageCover}
+              width={273}
+              height={345}
+              alt="Ai-chat screenchot"
+            />
           </div>
         </div>
       </section>

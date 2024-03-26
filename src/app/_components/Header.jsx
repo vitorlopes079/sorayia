@@ -102,10 +102,13 @@ const Header = () => {
 
   return (
     <header className={styles.container}>
-      <div className={styles.logoWrapper}>
-        <Image src={logo} alt="logo" width={undefined} height={undefined} />
-        <p className={`${styles.logo}`}>Sorayia</p>
-      </div>
+      <Link className={styles.link} href="/">
+        <div className={styles.logoWrapper}>
+          <Image src={logo} alt="logo" width={undefined} height={undefined} />
+          <p className={`${styles.logo}`}>Sorayia</p>
+        </div>
+      </Link>
+
       <nav>
         <div className={styles.navWrapper}>
           {["/product", "/pricing", "/resources", "/solutions", "/blog"].map(
@@ -126,12 +129,14 @@ const Header = () => {
                 </Link>
                 {isActive(path) && (
                   <Image
-                  src={arrowDown}
-                  alt="Active indicator"
+                    src={arrowDown}
+                    alt="Active indicator"
                     width={16}
                     height={16}
-                    className={`${styles.navIcon} ${visibleDropdown === path ? styles.rotate : ''}`}
-                    />
+                    className={`${styles.navIcon} ${
+                      visibleDropdown === path ? styles.rotate : ""
+                    }`}
+                  />
                 )}
                 {visibleDropdown === path && (
                   <div
