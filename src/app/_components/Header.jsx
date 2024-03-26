@@ -32,7 +32,13 @@ const Header = () => {
     "Frequently Asked Questions",
   ];
   const pricingSubLinks = ["Join Us", "Custom Prices"];
-  const resourcesSubLinks = ["AI Powered", "Your AI Assist", "Powered by AI"];
+  const resourcesSubLinks = [
+    { title: "Assistance Services", path: "/pricing#custom-prices" },
+    { title: "Integrations", path: "#" },
+    { title: "System Status", path: "#" },
+    { title: "Blog on Generic Topics", path: "/blog" },
+    { title: "FAQ", path: "/product#frequently-asked-questions" },
+  ];
   const solutionsSubLinks = [
     "Marketing",
     "Sales",
@@ -102,7 +108,7 @@ const Header = () => {
 
   return (
     <header className={styles.container}>
-      <Link className={styles.link} href="/">
+      <Link href="/" className={styles.link}>
         <div className={styles.logoWrapper}>
           <Image src={logo} alt="logo" width={undefined} height={undefined} />
           <p className={`${styles.logo}`}>Sorayia</p>
@@ -139,42 +145,57 @@ const Header = () => {
                   />
                 )}
                 {visibleDropdown === path && (
-                  <div
-                    className={styles.dropdownContent}
-                    onMouseEnter={handleDropdownMouseEnter}
-                    onMouseLeave={handleDropdownMouseLeave}
-                  >
-                    <div className={styles.dropdownLinks}>
-                      {subLinksMapping[path].map((item) => {
-                        if (path === "/blog") {
-                          const blogPath = `/blog/${item.path}`;
-                          return (
-                            <Link
-                              key={item.path}
-                              href={blogPath}
-                              className={styles.dropdownItem}
-                            >
-                              {item.title}
-                            </Link>
-                          );
-                        } else {
-                          const sectionId = item
-                            .toLowerCase()
-                            .replace(/ /g, "-");
-                          return (
-                            <a
-                              key={sectionId}
-                              onClick={(e) => scrollToSection(e, sectionId)}
-                              className={styles.dropdownItem}
-                            >
-                              {item}
-                            </a>
-                          );
-                        }
-                      })}
-                    </div>
-                  </div>
-                )}
+  <div
+    className={styles.dropdownContent}
+    onMouseEnter={handleDropdownMouseEnter}
+    onMouseLeave={handleDropdownMouseLeave}
+  >
+    <div className={styles.dropdownLinks}>
+      {subLinksMapping[path].map((item) => {
+        if (typeof item === "string") {
+          // Handling string-based links (for simple text links)
+          const sectionId = item.toLowerCase().replace(/ /g, "-");
+          return (
+            <a
+              key={sectionId}
+              href="#"
+              onClick={(e) => scrollToSection(e, sectionId)}
+              className={styles.dropdownItem}
+            >
+              {item}
+            </a>
+          );
+        } else {
+          // Handling object-based links (for complex links with titles and paths)
+          if (path === "/blog") {
+            // Special handling for blog links
+            return (
+              <Link
+                key={item.title}
+                href={`/blog/${item.path}`}
+                className={styles.dropdownItem}
+              >
+                {item.title}
+              </Link>
+            );
+          } else {
+            // General handling for other object-based links
+            // Assuming you want to direct users to a specific path without scrolling
+            return (
+              <Link
+                key={item.title}
+                href={item.path}
+                className={styles.dropdownItem}
+              >
+                {item.title}
+              </Link>
+            );
+          }
+        }
+      })}
+    </div>
+  </div>
+)}
               </div>
             )
           )}

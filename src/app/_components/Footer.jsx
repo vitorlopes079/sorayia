@@ -35,27 +35,52 @@ const Footer = () => {
           </p>
           <div className={styles.socialsContainer}>
             <div className={styles.socialSingleContainer}>
-              <Image src={inst} width={17} height={17} alt="instagram"/>
+              <a href="https://www.instagram.com/sorayiaweb/" target="_blank">
+                <Image src={inst} width={17} height={17} alt="instagram" />
+              </a>
             </div>
             <div className={styles.socialSingleContainer}>
-              <Image src={faceb} width={9} height={17} alt="facebook"/>
+              <a
+                href="https://www.facebook.com/profile.php?id=61553663938356&locale=fr_FR"
+                target="_blank"
+              >
+                <Image src={faceb} width={9} height={17} alt="facebook" />
+              </a>
             </div>
             <div className={styles.socialSingleContainer}>
-              <Image src={link} width={17} height={17} alt="linkedIn"/>
+              <a
+                href="https://www.linkedin.com/in/ernesto-le-goaziou-387b03287/"
+                target="_blank"
+              >
+                <Image src={link} width={17} height={17} alt="linkedIn" />
+              </a>
             </div>
             <div className={styles.socialSingleContainer}>
-              <Image src={x} width={17} height={17} alt="x"/>
+              <a href="https://twitter.com/Sorayia1523765" target="_blank">
+                <Image src={x} width={17} height={17} alt="x" />
+              </a>
             </div>
           </div>
         </div>
         <div className={styles.column}>
           <h2 className={styles.subLinkHeader}>Quick Links</h2>
           <div className={styles.list}>
-            <Link className={styles.link} href={"./"}>Home</Link>
-            <Link className={styles.link}  href={"./product"}>Products</Link>
-            <Link className={styles.link} href={"/solutions"}> Solutions</Link>
-            <Link className={styles.link} href={"/pricing"}>Pricing</Link>
-            <Link className={styles.link} href={"/resources"}>Resources</Link>
+            <Link className={styles.link} href={"./"}>
+              Home
+            </Link>
+            <Link className={styles.link} href={"./product"}>
+              Products
+            </Link>
+            <Link className={styles.link} href={"/solutions"}>
+              {" "}
+              Solutions
+            </Link>
+            <Link className={styles.link} href={"/pricing"}>
+              Pricing
+            </Link>
+            <Link className={styles.link} href={"/resources"}>
+              Resources
+            </Link>
             <p className={styles.link}>Login</p>
             <p className={styles.link}>Sign up</p>
           </div>
@@ -72,11 +97,15 @@ const Footer = () => {
         <div className={styles.column}>
           <h2 className={styles.subLinkHeader}>Support</h2>
           <div className={styles.iconWrapper}>
-            <Image src={emailIcon} className={styles.icon} alt="email icon"/>
+            <Image src={emailIcon} className={styles.icon} alt="email icon" />
             <p>Contact@Sorayia.com</p>
           </div>
           <div className={styles.iconWrapper}>
-            <Image src={locationIcon} className={styles.icon} alt="location icon"/>
+            <Image
+              src={locationIcon}
+              className={styles.icon}
+              alt="location icon"
+            />
             <p>US</p>
           </div>
         </div>

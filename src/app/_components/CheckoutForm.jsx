@@ -20,15 +20,27 @@ const CheckoutForm = () => {
     email: "",
     cardHolderName: "",
     cardDetails: "",
-    expiryMonth: "",
-    expiryYear: "",
-    cvv: "",
+    expiryDate: "",
+    cvc: "",
     country: "",
     zipCode: "",
   });
-
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    let { name, value } = e.target;
+
+    if (name === "cardDetails") {
+      // Formatting for card number: spaces after every 4 digits, max 16 digits
+      const digitsOnly = value.replace(/\D/g, '').slice(0, 16); // Adjusted for 16 digits
+      const formatted = digitsOnly.replace(/(.{4})/g, '$1 ').trim();
+      value = formatted;
+    } else if (name === "expiryDate") {
+      // Formatting for expiry date: MM/YY
+      const numbersOnly = value.replace(/\D/g, '').slice(0, 4);
+      const formatted = numbersOnly.length > 2 ? `${numbersOnly.slice(0, 2)}/${numbersOnly.slice(2)}` : numbersOnly;
+      value = formatted;
+    }
+
+    
     setFormData((prevState) => ({
       ...prevState,
       [name]: value,
@@ -99,8 +111,8 @@ const CheckoutForm = () => {
             type="text"
             name="expiryMonth"
             placeholder="MM/YY"
-            maxLength="4"
-            size="4"
+            maxLength="5"
+            size="5"
             value={formData.expiryMonth}
             onChange={handleChange}
             required
@@ -111,11 +123,11 @@ const CheckoutForm = () => {
           </div>
           <input
             type="text"
-            name="expiryYear"
+            name="cvc"
             placeholder="CVC"
             maxLength="3"
             size="3"
-            value={formData.expiryYear}
+            value={formData.cvc}
             onChange={handleChange}
             required
             className={styles.input}
@@ -135,7 +147,7 @@ const CheckoutForm = () => {
           required
           className={styles.input}
         >
-          <option value="" >Please select a country</option>
+          <option value="">Please select a country</option>
           {countries.map(({ name, code }) => (
             <option key={code} value={code}>
               {name}
@@ -157,7 +169,9 @@ const CheckoutForm = () => {
         />
       </div>
 
-      <button type="submit" className={styles.button}>Subscribe</button>
+      <button type="submit" className={styles.button}>
+        Subscribe
+      </button>
     </form>
   );
 };
