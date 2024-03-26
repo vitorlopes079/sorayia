@@ -12,7 +12,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 export const metadata = {
   title: "Sorayia",
   icons: {
-    icon: "sorayia-fav-icon",
+    icon: "images/sorayia-fav-icon.png",
   },
 };
 
