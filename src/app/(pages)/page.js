@@ -37,10 +37,7 @@ export default function Home() {
     <div className={styles.container}>
       <Elipse numberOfEllipses={7} />
       <section className={styles.hero}>
-        <RoundedWidget
-          text={"Fast & Efficient with AI"}
-          star={true}
-        />
+        <RoundedWidget text={"Fast & Efficient with AI"} star={true} />
 
         <div className={styles.heroHeadingContainer}>
           <h1 className="centralizedHeading">
@@ -339,6 +336,7 @@ export default function Home() {
                 height={15}
                 className={styles.checkedIcon}
                 alt="ckecked"
+                style={{ marginRight: "4px" }}
               />
               Answer common question with a virtual HR agent
             </p>
