@@ -5,31 +5,27 @@ import articleImage from "../../images/revolutionizing-article.png";
 import QuizForm from "../../_components/QuizForm";
 import SaveArticle from "../../_components/SaveArticle";
 import PublishedDate from "../../_components/PublishedDate";
-import MoreArticlesCard from "../../_components/MoreArticlesCard"
+import MoreArticlesCard from "../../_components/MoreArticlesCard";
 import moreBlogsImage1 from "../../images/moreBlogs1.png";
 import moreBlogsImage2 from "../../images/moreBlogs2.png";
 import moreBlogsImage3 from "../../images/moreBlogs3.png";
 import benefits from "../../images/graphic.png";
+import Breadcrumb from "../../_components/Breadcrumb";
+import Link from "next/link";
 
 const page = () => {
   return (
     <div className={styles.container}>
-      <nav className={styles.breadcrumbContainer}>
-        <ul className={styles.breadcrumb}>
-          <li className="breadcrumb-item">Blog</li>
-          <li> &gt; </li>
-          <li className="breadcrumb-item active">Article Page</li>
-        </ul>
-      </nav>
-
+      <Breadcrumb />
       <div className={styles.textContainer}>
         <h1 className={styles.title}>
           Revolutionizing Customer Interactions: The Power of Bespoke Chatbots
         </h1>
         <p className={styles.subTitle}>
-          In today&apos;s fast-paced digital landscape, businesses are constantly
-          seeking innovative ways to engage with their customers and streamline
-          operations. Enter the era of bespoke chatbots - dynamic virtual
+          In today&apos;s fast-paced digital landscape, businesses are
+          constantly seeking innovative ways to engage with their customers and
+          streamline operations. Enter the era of bespoke chatbots - dynamic
+          virtual
         </p>
         <div className={styles.horizontalLine}></div>
       </div>
@@ -114,11 +110,11 @@ const page = () => {
         <p className={styles.text}>
           In conclusion, bespoke chatbots are reshaping the way businesses
           interact with their customers, offering personalized experiences that
-          drive engagement and loyalty. Whether you&apos;re a small local business or
-          a global enterprise, integrating chatbots into your operations can
-          lead to tangible benefits and long-term success. Embrace the future of
-          customer interactions with bespoke chatbots and stay ahead of the
-          curve in today&apos;s dynamic business landscape
+          drive engagement and loyalty. Whether you&apos;re a small local
+          business or a global enterprise, integrating chatbots into your
+          operations can lead to tangible benefits and long-term success.
+          Embrace the future of customer interactions with bespoke chatbots and
+          stay ahead of the curve in today&apos;s dynamic business landscape
         </p>
 
         <div className={styles.bottomMeta}>
@@ -146,8 +142,9 @@ const page = () => {
           </div>
           <div className={styles.buttonContainer}>
             <div className={styles.smalHorizontalLine}></div>
-            <button className="buttonYellow">View All Articles</button>
-            <div className={styles.smalHorizontalLine}></div>
+            <Link href={"/blog"}>
+              <button className="buttonYellow">View All Articles</button>
+            </Link>            <div className={styles.smalHorizontalLine}></div>
           </div>
         </section>
       </div>

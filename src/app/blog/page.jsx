@@ -42,9 +42,9 @@ const page = () => {
         </div>
       </div>
       <div className={styles.BlogCardsContainer}>
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
+        <BlogCard title={"HR Chatbots Revolution"} text={"Transforming Employee Experience"} nav={"chatbots-revolution"}/>
+        <BlogCard title={"Maximizing Customer Service Efficiency with Chatbots"} nav={"maximizing-customer-service"} />
+        <BlogCard title={"Revolutionizing Customer Interactions"} text={"The Power of Bespoke Chatbots"} nav={"revolutionizing-customer-interactions"} />
         <BlogCard />
         <BlogCard />
         <BlogCard />

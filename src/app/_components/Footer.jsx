@@ -7,6 +7,7 @@ import x from "../images/x.png";
 import link from "../images/linkdin.png";
 import emailIcon from "../images/email-icon.png";
 import locationIcon from "../images/location-icon.png";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -22,7 +23,7 @@ const Footer = () => {
             <input className={styles.inputField} />
           </div>
 
-          <button className={styles.button}>Subscribe</button>
+          <button className="buttonYellow buttonMargin">Subscribe</button>
         </form>
       </section>
       <div className={styles.horizontalLine}></div>
@@ -49,24 +50,24 @@ const Footer = () => {
         </div>
         <div className={styles.column}>
           <h2 className={styles.subLinkHeader}>Quick Links</h2>
-          <ul className={styles.list}>
-            <li className={styles.link}>Home</li>
-            <li className={styles.link}>Products</li>
-            <li className={styles.link}>Solutions</li>
-            <li className={styles.link}>Pricing</li>
-            <li className={styles.link}>Resources</li>
-            <li className={styles.link}>Login</li>
-            <li className={styles.link}>Sign up</li>
-          </ul>
+          <div className={styles.list}>
+            <Link className={styles.link} href={"./"}>Home</Link>
+            <Link className={styles.link}  href={"./product"}>Products</Link>
+            <Link className={styles.link} href={"/solutions"}> Solutions</Link>
+            <Link className={styles.link} href={"/pricing"}>Pricing</Link>
+            <Link className={styles.link} href={"/resources"}>Resources</Link>
+            <p className={styles.link}>Login</p>
+            <p className={styles.link}>Sign up</p>
+          </div>
         </div>
         <div className={styles.column}>
           <h2 className={styles.subLinkHeader}>Support</h2>
-          <ul className={styles.list}>
-            <li className={styles.link}>Terms & Conditions</li>
-            <li className={styles.link}>Privacy Policy</li>
-            <li className={styles.link}>Retrun Policy</li>
-            <li className={styles.link}>Contact Us</li>
-          </ul>
+          <div className={styles.list}>
+            <p className={styles.link}>Terms & Conditions</p>
+            <p className={styles.link}>Privacy Policy</p>
+            <p className={styles.link}>Retrun Policy</p>
+            <p className={styles.link}>Contact Us</p>
+          </div>
         </div>
         <div className={styles.column}>
           <h2 className={styles.subLinkHeader}>Support</h2>

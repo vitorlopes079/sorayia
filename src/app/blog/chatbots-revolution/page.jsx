@@ -4,24 +4,18 @@ import Image from "next/image";
 import articleImage from "../../images/chatbot-article.png";
 import QuizForm from "../../_components/QuizForm";
 import SaveArticle from "../../_components/SaveArticle";
-
 import PublishedDate from "../../_components/PublishedDate";
 import MoreArticlesCard from "../../_components/MoreArticlesCard"
 import moreBlogsImage1 from "../../images/moreBlogs1.png";
 import moreBlogsImage2 from "../../images/moreBlogs2.png";
 import moreBlogsImage3 from "../../images/moreBlogs3.png";
+import Breadcrumb from "../../_components/Breadcrumb"
+import Link from "next/link";
 
 const page = () => {
   return (
     <div className={styles.container}>
-      <nav className={styles.breadcrumbContainer}>
-        <ul className={styles.breadcrumb}>
-          <li className="breadcrumb-item">Blog</li>
-          <li> &gt; </li>
-          <li className="breadcrumb-item active">Article Page</li>
-        </ul>
-      </nav>
-
+      <Breadcrumb />
       <div className={styles.textContainer}>
         <h1 className={styles.title}>
           HR Chatbots Revolution: Transforming Employee Experience
@@ -124,8 +118,9 @@ const page = () => {
           </div>
           <div className={styles.buttonContainer}>
             <div className={styles.smalHorizontalLine}></div>
-            <button className="buttonYellow">View All Articles</button>
-            <div className={styles.smalHorizontalLine}></div>
+            <Link href={"/blog"}>
+              <button className="buttonYellow">View All Articles</button>
+            </Link>            <div className={styles.smalHorizontalLine}></div>
           </div>
         </section>
       </div>

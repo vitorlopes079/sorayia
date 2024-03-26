@@ -23,13 +23,14 @@ import marketcall from "../images/marketcall.png";
 import spyware from "../images/spyware.png";
 import issue from "../images/issue.png";
 import MarketingCard from "../_components/MarketingCard";
+import RoundedWidget from "../_components/RoundedWidget";
 
 
 const page = () => {
   return (
     <div className={styles.container}>
       <Elipse numberOfEllipses={4} />
-      <section className={styles.hero}>
+      <section className={styles.hero} id="marketing">
         <div className={styles.heroHeadingContainer}>
           <h1 className={styles.heroHeading}>
             Power up your <span className="yellowSpan">marketing strategy</span>{" "}
@@ -132,9 +133,7 @@ const page = () => {
       </section>
 
       <section className={styles.textCallSection}>
-        <div className="roundedContainer">
-          <p>For Sales</p>
-        </div>
+       <RoundedWidget text={"For Sales"} id={"sales"}/>
         <div className={styles.heroHeadingContainer}>
           <h1 className={styles.heroHeading}>
             <span className="yellowSpan">Optimizing Your Sales Process</span>{" "}
@@ -267,9 +266,7 @@ const page = () => {
       </section>
 
       <section className={styles.textCallSection}>
-        <div className="roundedContainer">
-          <p>Customer Support</p>
-        </div>
+        <RoundedWidget text={"Customer Support"} id={"customer-support"} />
         <div className={styles.heroHeadingContainer}>
           <h1 className={styles.heroHeading}>
             Offer <span className="yellowSpan">Consistent Support,</span>{" "}
@@ -332,9 +329,7 @@ const page = () => {
       </section>
 
       <section className={styles.textCallSection}>
-        <div className="roundedContainer">
-          <p>Human Resources</p>
-        </div>
+        <RoundedWidget text="Human Resources" id="human-resources"/>
         <div className={styles.heroHeadingContainer}>
           <h1 className={styles.heroHeading}>
             <span className="yellowSpan">Automating HR Processes</span> with
@@ -396,9 +391,7 @@ const page = () => {
 
       <section className={styles.bottomSection}>
         <div className={styles.TextContainer}>
-          <div className="roundedContainer">
-            <p>Education and Formation</p>
-          </div>
+          <RoundedWidget text={"Education and Formation"} id={"education-and-formation"}/>
           <div className={styles.heroHeadingContainer}>
             <h1 className={styles.heroHeading}>
               Revolutionizing Education and Training with{" "}

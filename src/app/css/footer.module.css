@@ -76,6 +76,10 @@
   align-items: center;
 }
 
+.socialSingleContainer:hover{
+  cursor: pointer;
+}
+
 .quickLinks {
   display: flex;
   justify-content: space-between;
@@ -84,7 +88,8 @@
 }
 
 .list {
-  list-style-type: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .column {
@@ -114,6 +119,13 @@
 
 .link {
   padding: 6px 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .subLinkHeader {

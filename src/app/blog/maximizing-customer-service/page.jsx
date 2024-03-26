@@ -10,18 +10,13 @@ import moreBlogsImage1 from "../../images/moreBlogs1.png";
 import moreBlogsImage2 from "../../images/moreBlogs2.png";
 import moreBlogsImage3 from "../../images/moreBlogs3.png";
 import benefits from "../../images/benefits.png";
+import Breadcrumb from "../../_components/Breadcrumb";
+import Link from "next/link";
 
 const page = () => {
   return (
     <div className={styles.container}>
-      <nav className={styles.breadcrumbContainer}>
-        <ul className={styles.breadcrumb}>
-          <li className="breadcrumb-item">Blog</li>
-          <li> &gt; </li>
-          <li className="breadcrumb-item active">Article Page</li>
-        </ul>
-      </nav>
-
+      <Breadcrumb />
       <div className={styles.textContainer}>
         <h1 className={styles.title}>
           Maximizing Customer Service Efficiency with Chatbots
@@ -87,10 +82,10 @@ const page = () => {
           <span className={styles.highlightText}>Advanced Chatbots:</span> These
           highly intelligent virtual assistants leverage AI and seamlessly
           integrate with enterprise systems, enabling personalized interactions
-          and dynamic responses tailored to individual users&apos; needs. At Webotit,
-          we prioritize advanced chatbot solutions to ensure our clients benefit
-          from cutting-edge technology and deliver unparalleled customer
-          experiences.
+          and dynamic responses tailored to individual users&apos; needs. At
+          Webotit, we prioritize advanced chatbot solutions to ensure our
+          clients benefit from cutting-edge technology and deliver unparalleled
+          customer experiences.
         </p>
         <br />
         <br />
@@ -208,7 +203,7 @@ const page = () => {
           customers and organizations. Stay tuned for more insights and updates
           from Webotit. Subscribe to our newsletter to receive the latest
           articles and industry news directly to your inbox. Best Regards,
-        </p> 
+        </p>
 
         <div className={styles.bottomMeta}>
           <SaveArticle />
@@ -235,7 +230,9 @@ const page = () => {
           </div>
           <div className={styles.buttonContainer}>
             <div className={styles.smalHorizontalLine}></div>
-            <button className="buttonYellow">View All Articles</button>
+            <Link href={"/blog"}>
+              <button className="buttonYellow">View All Articles</button>
+            </Link>
             <div className={styles.smalHorizontalLine}></div>
           </div>
         </section>

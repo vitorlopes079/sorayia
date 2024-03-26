@@ -98,6 +98,12 @@
 
 .navIcon {
   margin-left: -8px;
+  transition: transform 0.3s ease; /* Smooth transition for the transform */
+
+}
+
+.rotate {
+  transform: rotate(180deg); /* Rotate the icon 180 degrees */
 }
 
 .dropdownContent {
@@ -127,9 +133,10 @@
 }
 
 .dropdownItem:hover {
-  border-left: 4px solid #64748b; /* A subtle yet visible change */
-  padding-left: 12px; /* Adjust padding to maintain alignment if adding a border */
-  background-color: #2b3442; /* Slightly lighter or darker than the original */
+  border-left: 4px solid #64748b;
+  padding-left: 12px; 
+  background-color: #2b3442; 
+  cursor: pointer;
 }
 
 .navlinkContainer:hover .dropdownContent {

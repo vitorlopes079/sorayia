@@ -111,7 +111,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className={styles.guideSectionContent}>
+        <div className={styles.guideSectionContent} id={"section1"}>
           <div className={styles.guideSectionText}>
             <h1 className="leftHeading">Personalities</h1>
             <p className="leftText">

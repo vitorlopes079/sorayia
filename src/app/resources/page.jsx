@@ -9,6 +9,7 @@ import gpt from "../images/gpt.png";
 import ready from "../images/ready.png";
 import arrowUp from "../images/arrow-up.png";
 import Elipse from "../_components/Elipse";
+import RoundedWidget from "../_components/RoundedWidget";
 
 const page = () => {
   return (
@@ -51,9 +52,7 @@ const page = () => {
       </section>
 
       <section className={styles.guideSection}>
-        <div className="roundedContainer">
-          <p>Your AI Assist</p>
-        </div>
+      <RoundedWidget text={"AI Powered"} id={"ai-powered"}/>
         <div className={styles.guideSectionContent}>
           <div className={styles.guideSectionText}>
             <h1 className="leftHeading">Unparalleled Customer Experience</h1>
@@ -76,7 +75,7 @@ const page = () => {
         </div>
       </section>
 
-      <section className={styles.avatarSection}>
+      <section className={styles.avatarSection} id="your-ai-assist">
         <div className={styles.avatarTopDiv}>
           <div className={styles.avatarContainer}>
             <div className={styles.speechBalloonsContainer}>
@@ -98,10 +97,8 @@ const page = () => {
               />
             </div>
           </div>
-          <div className={styles.avatarSectionTextContainer}>
-            <div className="roundedContainer">
-              <p>Your AI Assist</p>
-            </div>
+          <div className={styles.avatarSectionTextContainer} >
+            <RoundedWidget text={"Your AI Assist"} />
             <h2 className="leftHeading">Personalization and Creativity</h2>
             <p className="leftText">
               At Sorayia.com, we believe in the power of individual expression.
@@ -114,9 +111,7 @@ const page = () => {
       </section>
 
       <section className={styles.hero}>
-        <div className="roundedContainer">
-          <p>Powered by AI</p>
-        </div>
+        <RoundedWidget text={"Powered by AI"} id={"powered-by-ai"}/>
         <div className={styles.flexDiv}>
           <h1 className="centralizedSubHeading">Actionable Data for Growth </h1>
           <p className="centralizedText">

@@ -147,3 +147,7 @@
 .icon{
   margin-right: 8px;
 }
+
+.buttonFullWidth{
+  width: 100%;
+}

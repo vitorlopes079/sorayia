@@ -1,7 +1,6 @@
 .container {
   width: 411px;
   margin: 40px 15px;
-  
 }
 
 .imageContainer {
@@ -55,3 +54,14 @@
   text-transform: capitalize;
 }
 
+.link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link:hover,
+.link:focus {
+  text-decoration: underline; 
+  color: #e0e7f0;
+}

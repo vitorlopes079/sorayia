@@ -26,7 +26,7 @@ const page = () => {
         </div>
       </section>
 
-      <section>
+      <section id="join-us">
         <div>
           <div className={styles.cardsContainer}>
             <div>

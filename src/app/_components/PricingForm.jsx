@@ -26,7 +26,11 @@ const PricingForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className={styles.formContainer}>
+    <form
+      onSubmit={handleSubmit}
+      className={styles.formContainer}
+      id="custom-prices"
+    >
       <div className={styles.nameAndLastname}>
         <div className={styles.inputContainer}>
           <label htmlFor="name" className={styles.labelText}>
@@ -70,7 +74,9 @@ const PricingForm = () => {
         />
       </div>
       <div className={styles.inputContainer}>
-        <label className={styles.labelText} htmlFor="message">Message:</label>
+        <label className={styles.labelText} htmlFor="message">
+          Message:
+        </label>
         <textarea
           id="message"
           name="message"
