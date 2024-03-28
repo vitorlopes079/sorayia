@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "../css/homepage.module.css";
-import star from "../images/star.png";
 import heroscreeshot from "../images/heroscreeshot.png";
 import arrowUp from "../images/arrow-up.png";
 import arrowDown from "../images/arrow-down.svg";
@@ -23,14 +22,13 @@ import progresstracking from "../images/progresstracking.png";
 import personalize from "../images/personalize.png";
 import testimonyPhoto from "../images/testmphoto.svg";
 import testimonyPhoto2 from "../images/testmphoto2.svg";
-import testimonyPhoto3 from "../images/testmphoto3.svg";
-import quotes from "../images/quotes.svg";
 import Elipse from "../_components/Elipse";
 import Stack from "../_components/Stack";
 import chatbotChatImage from "../images/chatbotConv.svg";
 import RoundedWidget from "../_components/RoundedWidget";
 import MarketingCard from "../_components/MarketingCard";
 import imageCover from "../images/imageCover.png";
+import Testimonies from "../_components/testimonies";
 
 export default function Home() {
   return (
@@ -493,97 +491,7 @@ export default function Home() {
           <p className="centralizedText">what our customers say about us</p>
         </div>
 
-        <div className={styles.testimoniesContainer}>
-          <div className={styles.testimonyContainer}>
-            <div className={styles.testimonyTop}>
-              <Image
-                src={testimonyPhoto}
-                height={56}
-                width={56}
-                alt="descriptive photo"
-              />
-              <div className={styles.starsAndName}>
-                <p className={styles.nameText}>Alexa Horan S.</p>
-                <div className={styles.starsContainer}>
-                  <Image src={star} height={20} width={20} alt="star" />
-                  <Image src={star} height={20} width={20} alt="star" />
-                  <Image src={star} height={20} width={20} alt="star" />
-                  <Image src={star} height={20} width={20} alt="star" />
-                  <Image src={star} height={20} width={20} alt="star" />
-                </div>
-              </div>
-              <Image src={quotes} height={32} width={32} alt="quotes" />
-            </div>
-            <div>
-              <p className={styles.testimonyText}>
-                Implementing the chatbot has significantly reduced our customer
-                support costs. It&apos;s like having an extra team member
-                without the overhead.
-              </p>
-            </div>
-          </div>
-
-          <div
-            className={`${styles.testimonyContainer} ${styles.testimonyContainerCenter} `}
-          >
-            <div className={styles.testimonyTop}>
-              <Image
-                src={testimonyPhoto2}
-                height={56}
-                width={56}
-                alt="descriptive image"
-              />
-              <div className={styles.starsAndName}>
-                <p className={styles.nameText}>Michael Liu</p>
-                <div className={styles.starsContainer}>
-                  <Image src={star} height={20} width={20} alt="star" />
-                  <Image src={star} height={20} width={20} alt="star" />
-                  <Image src={star} height={20} width={20} alt="star" />
-                  <Image src={star} height={20} width={20} alt="star" />
-                  <Image src={star} height={20} width={20} alt="star" />
-                </div>
-              </div>
-              <Image src={quotes} height={32} width={32} alt="quotes" />
-            </div>
-            <div>
-              <p className={styles.testimonyText}>
-                Our customers appreciate the 24/7 availability of the chatbot.
-                Whether they&apos;re seeking product information,
-                troubleshooting, or just saying hello, the chatbot is there to
-                assist.
-              </p>
-            </div>
-          </div>
-
-          <div className={styles.testimonyContainer}>
-            <div className={styles.testimonyTop}>
-              <Image
-                src={testimonyPhoto3}
-                height={56}
-                width={56}
-                alt="descriptive image"
-              />
-              <div className={styles.starsAndName}>
-                <p className={styles.nameText}>Jeffrey Byrd</p>
-                <div className={styles.starsContainer}>
-                  <Image src={star} height={20} width={20} alt="star" />
-                  <Image src={star} height={20} width={20} alt="star" />
-                  <Image src={star} height={20} width={20} alt="star" />
-                  <Image src={star} height={20} width={20} alt="star" />
-                  <Image src={star} height={20} width={20} alt="star" />
-                </div>
-              </div>
-              <Image src={quotes} height={32} width={32} alt="quotes" />
-            </div>
-            <div>
-              <p className={styles.testimonyText}>
-                The chatbot&apos;s ability to understand and respond to user
-                input using NLP is impressive. It feels like having a real
-                conversation with a knowledgeable assistant.
-              </p>
-            </div>
-          </div>
-        </div>
+        <Testimonies />
       </section>
     </div>
   );
