@@ -178,6 +178,7 @@ body {
 
 .marketingCardsContainer > * {
   flex: 1;
+
 }
 
 .gradientCover {
@@ -200,4 +201,3 @@ body {
 .lowercase {
   text-transform: lowercase;
 }
-

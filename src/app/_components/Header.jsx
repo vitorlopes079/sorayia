@@ -3,91 +3,93 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import styles from "../css/header.module.css";
 import logo from "../images/logo.png";
 import arrowDown from "../images/navArrowDown.png";
 
 const Header = () => {
   const pathname = usePathname();
+  const router = useRouter();
+
   const [visibleDropdown, setVisibleDropdown] = useState(null);
   const [closeDropdownTimer, setCloseDropdownTimer] = useState(null);
 
-  const scrollToSection = (event, sectionId) => {
-    event.preventDefault();
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "start" });
+  const scrollToSection = (event, path) => {
+    const url = new URL(path, window.location.origin);
+    const targetPathname = url.pathname;
+    const hash = url.hash.substring(1);
+
+    if (pathname === targetPathname && hash) {
+      event.preventDefault();
+      const element = document.getElementById(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+        return;
+      }
     }
+
+    router.push(path);
   };
-
-  const productSubLinks = [
-    "Integration",
-    "Benefits",
-    "Artificial inteligence",
-    "3D Influencer",
-    "Personalities",
-    "Features",
-    "Frequently Asked Questions",
-  ];
-  const pricingSubLinks = ["Join Us", "Custom Prices"];
-  const resourcesSubLinks = [
-    { title: "Assistance Services", path: "/pricing#custom-prices" },
-    { title: "Integrations", path: "#" },
-    { title: "System Status", path: "#" },
-    { title: "Blog on Generic Topics", path: "/blog" },
-    { title: "FAQ", path: "/product#frequently-asked-questions" },
-  ];
-  const solutionsSubLinks = [
-    "Marketing",
-    "Sales",
-    "Customer support",
-    "Human Resources",
-    "Education and Formation",
-  ];
-
-  const blogSubLinks = [
-    { title: "Chatbots Revolution", path: "chatbots-revolution" },
-    {
-      title: "Maximizing Customer Service",
-      path: "maximizing-customer-service",
-    },
-    {
-      title: "Revolutionizing Customer Interactions",
-      path: "revolutionizing-customer-interactions",
-    },
-    { title: "All Blogs", path: "" },
-  ];
 
   const subLinksMapping = {
-    "/product": productSubLinks,
-    "/pricing": pricingSubLinks,
-    "/resources": resourcesSubLinks,
-    "/solutions": solutionsSubLinks,
-    "/blog": blogSubLinks,
+    "/product": [
+      { title: "Integration", path: "/product#integration" },
+      { title: "Benefits", path: "/product#benefits" },
+      {
+        title: "Artificial Intelligence",
+        path: "/product#artificial-intelligence",
+      },
+      { title: "3D Influencer", path: "/product#3d-influencer" },
+      { title: "Personalities", path: "/product#personalities" },
+      { title: "Features", path: "/product#features" },
+      {
+        title: "Frequently Asked Questions",
+        path: "/product#frequently-asked-questions",
+      },
+    ],
+    "/resources": [
+      { title: "Partner", path: "./partner" },
+      { title: "Assistance Services", path: "/pricing#custom-prices" },
+      { title: "Integrations", path: "#" },
+      { title: "System Status", path: "#" },
+      { title: "Blog on Generic Topics", path: "/blog" },
+      { title: "FAQ", path: "/product#frequently-asked-questions" },
+    ],
+    "/solutions": [
+      { title: "Marketing", path: "/solutions#marketing" },
+      { title: "Sales", path: "/solutions#sales" },
+      { title: "Customer Support", path: "/solutions#customer-support" },
+      { title: "Human Resources", path: "/solutions#human-resources" },
+      {
+        title: "Education and Formation",
+        path: "/solutions#education-and-formation",
+      },
+    ],
   };
 
-  const isActive = (path) => {
-    if (path === "/blog") {
-      return pathname.startsWith(path);
-    }
-    return pathname === path;
-  };
+  const navigationItems = [
+    "/product",
+    "/pricing",
+    "/resources",
+    "/solutions",
+    "/blog",
+  ];
+
+  const isActive = (path) => pathname === path || pathname.startsWith(path);
 
   const handleLinkMouseEnter = (path) => {
-    if (isActive(path)) {
-      if (closeDropdownTimer) {
-        clearTimeout(closeDropdownTimer);
-        setCloseDropdownTimer(null);
-      }
-      setVisibleDropdown(path);
+    if (closeDropdownTimer) {
+      clearTimeout(closeDropdownTimer);
+      setCloseDropdownTimer(null);
     }
+    setVisibleDropdown(path);
   };
 
   const handleLinkMouseLeave = () => {
     const timer = setTimeout(() => {
       setVisibleDropdown(null);
-    }, 5000);
+    }, 500);
     setCloseDropdownTimer(timer);
   };
 
@@ -99,105 +101,71 @@ const Header = () => {
   };
 
   const handleDropdownMouseLeave = () => {
-    const timer = setTimeout(() => {
-      setVisibleDropdown(null);
-    }, 500);
-    setCloseDropdownTimer(timer);
+    if (visibleDropdown) {
+      const timer = setTimeout(() => {
+        setVisibleDropdown(null);
+      }, 500);
+      setCloseDropdownTimer(timer);
+    }
   };
 
   return (
     <header className={styles.container}>
-      <Link href="/" className={styles.link}>
-        <div className={styles.logoWrapper}>
-          <Image src={logo} alt="logo" width={undefined} height={undefined} />
-          <p className={`${styles.logo}`}>Sorayia</p>
-        </div>
+      <Link href="/" legacyBehavior>
+        <a className={styles.link}>
+          <div className={styles.logoWrapper}>
+            <Image src={logo} alt="logo" width={undefined} height={undefined} />
+            <p className={styles.logo}>Sorayia</p>
+          </div>
+        </a>
       </Link>
 
       <nav>
         <div className={styles.navWrapper}>
-          {["/product", "/pricing", "/resources", "/solutions", "/blog"].map(
-            (path) => (
+          {navigationItems.map((path) => {
+            const hasDropdown = Boolean(subLinksMapping[path]);
+            const isResources = path === "/resources";
+
+            return (
               <div
                 key={path}
                 className={styles.navlinkContainer}
                 onMouseEnter={() => handleLinkMouseEnter(path)}
                 onMouseLeave={handleLinkMouseLeave}
               >
-                <Link
-                  href={path}
-                  className={`${styles.navLink} ${
-                    isActive(path) ? styles.active : ""
-                  }`}
-                >
-                  {path.substring(1)}
-                </Link>
-                {isActive(path) && (
-                  <Image
-                    src={arrowDown}
-                    alt="Active indicator"
-                    width={16}
-                    height={16}
-                    className={`${styles.navIcon} ${
-                      visibleDropdown === path ? styles.rotate : ""
+                <Link href={isResources ? "/partner" : path} legacyBehavior>
+                  <a
+                    className={`${styles.navLink} ${
+                      isActive(path) ? styles.active : ""
                     }`}
-                  />
+                  >
+                    {path.substring(1)}
+                  </a>
+                </Link>
+
+                {visibleDropdown === path && hasDropdown && (
+                  <div
+                    className={styles.dropdownContent}
+                    onMouseEnter={handleDropdownMouseEnter}
+                    onMouseLeave={handleDropdownMouseLeave}
+                  >
+                    <div className={styles.dropdownLinks}>
+                      {subLinksMapping[path]?.map((item, index) => (
+                        <Link key={index} href={item.path} legacyBehavior>
+                          <a
+                            onClick={(e) => scrollToSection(e, item.path)}
+                            className={styles.dropdownItem}
+                          >
+                            {item.title}
+                          </a>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
                 )}
-                {visibleDropdown === path && (
-  <div
-    className={styles.dropdownContent}
-    onMouseEnter={handleDropdownMouseEnter}
-    onMouseLeave={handleDropdownMouseLeave}
-  >
-    <div className={styles.dropdownLinks}>
-      {subLinksMapping[path].map((item) => {
-        if (typeof item === "string") {
-          // Handling string-based links (for simple text links)
-          const sectionId = item.toLowerCase().replace(/ /g, "-");
-          return (
-            <a
-              key={sectionId}
-              href="#"
-              onClick={(e) => scrollToSection(e, sectionId)}
-              className={styles.dropdownItem}
-            >
-              {item}
-            </a>
-          );
-        } else {
-          // Handling object-based links (for complex links with titles and paths)
-          if (path === "/blog") {
-            // Special handling for blog links
-            return (
-              <Link
-                key={item.title}
-                href={`/blog/${item.path}`}
-                className={styles.dropdownItem}
-              >
-                {item.title}
-              </Link>
-            );
-          } else {
-            // General handling for other object-based links
-            // Assuming you want to direct users to a specific path without scrolling
-            return (
-              <Link
-                key={item.title}
-                href={item.path}
-                className={styles.dropdownItem}
-              >
-                {item.title}
-              </Link>
-            );
-          }
-        }
-      })}
-    </div>
-  </div>
-)}
               </div>
-            )
-          )}
+            );
+          })}
         </div>
       </nav>
       <div className={styles.buttonsWrapper}>

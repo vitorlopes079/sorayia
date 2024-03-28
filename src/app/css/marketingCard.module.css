@@ -6,6 +6,8 @@
   padding: 16px;
   border-radius: 10px;
   border: 1px solid #103f61;
+  box-shadow: -30px -30px 100px 0px rgba(117, 93, 154, 0.13), 30px 30px 100px 0px rgba(163, 92, 201, 0.13);
+
 }
 
 .introMediaContainer {
