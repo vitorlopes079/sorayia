@@ -6,12 +6,42 @@
   padding: 16px;
   border-radius: 10px;
   border: 1px solid #103f61;
-  box-shadow: -30px -30px 100px 0px rgba(117, 93, 154, 0.13), 30px 30px 100px 0px rgba(163, 92, 201, 0.13);
 
 }
 
+.purpleShadow {
+  box-shadow: -35px -35px 100px rgba(133, 49, 243, 0.13),
+    35px 35px 100px rgba(114, 58, 216, 0.13);
+}
+
 .blueShadow {
-  box-shadow: -35px -35px 100px 0px rgba(58, 160, 242, 0.13), 35px 35px 100px 0px rgba(72, 207, 229, 0.13);
+  box-shadow: -35px -35px 100px 0px rgba(58, 160, 242, 0.13),
+    35px 35px 100px 0px rgba(72, 207, 229, 0.13);
+}
+
+.pinkShadow {
+  box-shadow: -30px -30px 100px 0px rgba(158, 68, 152, 0.13),
+    35px 35px 100px 0px rgba(224, 106, 136, 0.13);
+}
+
+.subtleBlue {
+  box-shadow: 35px 35px 100px 0px rgba(87, 123, 173, 0.13),
+    -35px -35px 100px 0px rgba(22, 200, 223, 0.08);
+}
+
+.softPurple {
+  box-shadow: -30px -30px 100px 0px rgba(117, 93, 154, 0.13),
+    30px 30px 100px 0px rgba(163, 92, 201, 0.13);
+}
+
+.lavender {
+  box-shadow: 30px 30px 100px 0px rgba(172, 108, 204, 0.13),
+    -30px -30px 100px 0px rgba(205, 135, 224, 0.13);
+}
+
+.violet {
+  box-shadow: -30px -30px 100px 0px rgba(114, 63, 153, 0.13),
+    30px 30px 100px 0px rgba(177, 85, 219, 0.13);
 }
 
 .introMediaContainer {

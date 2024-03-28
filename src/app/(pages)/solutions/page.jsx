@@ -54,7 +54,7 @@ const page = () => {
               "Use the chatbot for lead generation.",
               "Generate more qualified leads through conversations and automatically qualify your prospects.",
             ]}
-            solutions={true}
+            shadow={"purpleShadow"}
           />
 
           <MarketingCard
@@ -65,7 +65,7 @@ const page = () => {
               "Build better relationships with real-time communication and get more satisfied customers",
               "Support Visitors at Every Stage of their Decision-Making Process and Dispel their Doubts in an Instant",
             ]}
-            solutions={true}
+            shadow={"purpleShadow"}
           />
 
           <MarketingCard
@@ -77,7 +77,7 @@ const page = () => {
               "Open new customer acquisition channels",
               "Automate and enhance your marketing with AI chatbots",
             ]}
-            solutions={true}
+            shadow={"purpleShadow"}
           />
         </div>
 
@@ -89,7 +89,7 @@ const page = () => {
               "Engage more visitors on your website",
               "Add a conversation widget to your website in just a few clicks and automate communication with potential customers.",
             ]}
-            solutions={true}
+            shadow={"purpleShadow"}
           />
           <MarketingCard
             title="Chatbots for Better Customer Experience"
@@ -100,7 +100,7 @@ const page = () => {
               "Engage more customers with the chatbot",
               "Proactively engage visitors. Turn prospects into satisfied customers",
             ]}
-            solutions={true}
+            shadow={"purpleShadow"}
           />
           <MarketingCard
             title="Showcase your Products"
@@ -111,7 +111,7 @@ const page = () => {
               "Use personalized greetings and rich messages to inform users about seasonal discounts and promotional campaigns",
               "Create support tickets",
             ]}
-            solutions={true}
+            shadow={"purpleShadow"}
           />
         </div>
 
@@ -300,7 +300,7 @@ const page = () => {
             chatbots streamline the resolution process, guiding customers
             through troubleshooting steps with clarity and efficiency,
             ultimately reducing resolution time and enhancing satisfaction.`}
-            solutions={true}
+            shadow={"blueShadow"}
           />
 
           <MarketingCard
@@ -312,7 +312,7 @@ const page = () => {
             convenience, day or night. Our chatbots are available 24/7,
             ensuring that no customer query goes unanswered and delivering a
             seamless support experience across all touchpoints.`}
-            solutions={true}
+            shadow={"blueShadow"}
           />
 
           <MarketingCard
@@ -324,7 +324,7 @@ const page = () => {
             Our chatbots handle common inquiries swiftly and accurately,
             freeing up valuable time for your team to address complex issues
             and provide personalized support where it&apos;s needed most.`}
-            solutions={true}
+            shadow={"blueShadow"}
           />
         </div>
 
@@ -368,7 +368,7 @@ const page = () => {
               "Brief overview of Sorayia.com and its role in automating HR processes",
               "Highlight the benefits of using chatbots for HR tasks",
             ]}
-            solutions={true}
+            shadow={"pinkShadow"}
           />
 
           <MarketingCard
@@ -379,7 +379,7 @@ const page = () => {
               "Sorayia.com's chatbots streamline the initial recruitment process by efficiently screening resumes based on predefined criteria",
               "Discuss how chatbots can schedule interviews with candidates, saving time for HR professionals",
             ]}
-            solutions={true}
+            shadow={"pinkShadow"}
           />
 
           <MarketingCard
@@ -390,7 +390,7 @@ const page = () => {
               "Sorayia.com facilitates automated leave request submissions for employees, ensuring seamless approval processes",
               "Discuss the reduction in administrative tasks and the accuracy of leave tracking with Sorayia.com.",
             ]}
-            solutions={true}
+            shadow={"pinkShadow"}
           />
         </div>
         <div className={styles.buttonContainer}>
@@ -444,7 +444,7 @@ const page = () => {
               "Overview of Sorayia.com&apos;s role in transforming traditional learning and training methods",
               "Highlight the benefits of using chatbots for interactive and personalized learning experiences",
             ]}
-            solutions={true}
+            shadow={"subtleBlue"}
           />
 
           <MarketingCard
@@ -455,7 +455,7 @@ const page = () => {
               "Sorayia.com&apos;s chatbots facilitate access to a wide range of educational resources, including textbooks, articles, and multimedia materials",
               "Discuss the advantages of interactive learning in enhancing student engagement and retention",
             ]}
-            solutions={true}
+            shadow={"subtleBlue"}
           />
         </div>
 
@@ -468,7 +468,7 @@ const page = () => {
               "Sorayia.com&apos;s chatbots provide personalized responses to student or staff inquiries, addressing their specific needs and concerns",
               "Explore how personalized support improves learning outcomes and boosts confidence",
             ]}
-            solutions={true}
+            shadow={"subtleBlue"}
           />
           <MarketingCard
             title="Automating Learning Processes"
@@ -478,7 +478,7 @@ const page = () => {
               "Sorayia.com&apos;s chatbots deliver interactive lessons and modules tailored to individual learning styles and preferences",
               "Discuss the advantages of interactive learning in enhancing student engagement and retention",
             ]}
-            solutions={true}
+            shadow={"subtleBlue"}
           />
         </div>
 

@@ -267,6 +267,7 @@ export default function Home() {
               "Transfer qualified chat to sales representatives",
               "Schedule meetings",
             ]}
+            shadow={"softPurple"}
           />
           <MarketingCard
             title={"Marketing"}
@@ -278,6 +279,7 @@ export default function Home() {
               "Launch AI bots on landing pages to boost conversations",
               "Schedule meetings",
             ]}
+            shadow={"softPurple"}
           />
           <MarketingCard
             title={"Support"}
@@ -289,6 +291,7 @@ export default function Home() {
               "Send links to help center articles or other educational content",
               "Transfer to live agents",
             ]}
+            shadow={"softPurple"}
           />
         </div>
       </section>
@@ -366,6 +369,7 @@ export default function Home() {
               "Send links, educational content, documents and help center articles",
               "Transfer to live HR agents",
             ]}
+            shadow={"lavender"}
           />
 
           <MarketingCard
@@ -377,6 +381,7 @@ export default function Home() {
               "Collects urgent requests from employees",
               "Launch AI bots on landing pages and employee portal to boost usage",
             ]}
+            shadow={"lavender"}
           />
 
           <MarketingCard
@@ -388,6 +393,7 @@ export default function Home() {
               "Collection and analysis of comments",
               "Create support tickets",
             ]}
+            shadow={"lavender"}
           />
         </div>
       </section>
@@ -458,6 +464,7 @@ export default function Home() {
               "Send articles and educational content",
               "Create support tickets",
             ]}
+            shadow={"violet"}
           />
 
           <MarketingCard
@@ -468,6 +475,7 @@ export default function Home() {
               "Provides answers adapted to learning levels",
               "Launch AI bots on student portal to boost usage",
             ]}
+            shadow={"violet"}
           />
 
           <MarketingCard
@@ -479,6 +487,7 @@ export default function Home() {
               "Collection and analysis of comments",
               "Create support tickets",
             ]}
+            shadow={"violet"}
           />
         </div>
       </section>

@@ -9,10 +9,10 @@ const MarketingCard = ({
   listItems,
   centralized = false,
   text = "",
-  solutions = false
+  shadow,
 }) => {
   return (
-    <div className={`${styles.marketingCard} ${solutions ? styles.blueShadow : ""}`}>
+    <div className={`${styles.marketingCard} ${shadow ? styles[shadow] : ""}`}>
       <div
         className={`${styles.introMediaContainer} ${
           centralized ? styles.centralizedImage : ""
