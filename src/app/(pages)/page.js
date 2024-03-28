@@ -28,7 +28,7 @@ import chatbotChatImage from "../images/chatbotConv.svg";
 import RoundedWidget from "../_components/RoundedWidget";
 import MarketingCard from "../_components/MarketingCard";
 import imageCover from "../images/imageCover.png";
-import Testimonies from "../_components/testimonies";
+import Testimonies from "../_components/Testimonies";
 
 export default function Home() {
   return (
