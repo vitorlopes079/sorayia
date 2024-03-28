@@ -10,6 +10,10 @@
 
 }
 
+.blueShadow {
+  box-shadow: -35px -35px 100px 0px rgba(58, 160, 242, 0.13), 35px 35px 100px 0px rgba(72, 207, 229, 0.13);
+}
+
 .introMediaContainer {
   margin-bottom: 16px;
 }

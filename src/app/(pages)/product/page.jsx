@@ -75,7 +75,7 @@ const page = () => {
               <Image src={arrowUp} width={32} height={32} alt="arrow up" />
             </button>
           </div>
-          <div className={styles.guideImageContainer}>
+          <div className={`${styles.guideImageContainer} ${styles.borderOposite}`}>
             <Image
               src={productScreenshot2}
               width={628}
@@ -159,7 +159,7 @@ const page = () => {
               <Image src={arrowUp} width={32} height={32} alt="arrow up" />
             </button>
           </div>
-          <div className={styles.guideImageContainer}>
+          <div className={`${styles.guideImageContainer} ${styles.borderOposite}`}>
             <Image
               src={productScreenshot4}
               width={628}
