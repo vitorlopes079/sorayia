@@ -32,6 +32,8 @@ const Testimonies = () => {
           photo={testimony.photo}
           name={testimony.name}
           text={testimony.text}
+          containerStyle={index === 1 ? styles.testimonyContainerCenter : styles.testimonyContainer}
+
         />
       ))}
     </div>

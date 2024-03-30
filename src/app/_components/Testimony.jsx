@@ -4,8 +4,8 @@ import star from "../images/star.png";
 import quotes from "../images/quotes.svg";
 import styles from "../css/homepage.module.css";
 
-const Testimony = ({ photo, name, text }) => (
-  <div className={styles.testimonyContainer}>
+const Testimony = ({ photo, name, text, containerStyle = styles.testimonyContainer }) => (
+  <div className={containerStyle}>
     <div className={styles.testimonyTop}>
       <Image src={photo} height={56} width={56} alt="Profile photo" />
       <div className={styles.starsAndName}>

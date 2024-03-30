@@ -78,7 +78,7 @@ const Footer = () => {
             <Link className={styles.link} href={"/pricing"}>
               Pricing
             </Link>
-            <Link className={styles.link} href={"/resources"}>
+            <Link className={styles.link} href={"/partner"}>
               Resources
             </Link>
             <p className={styles.link}>Login</p>
