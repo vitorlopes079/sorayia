@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   padding: 0 80px;
+  overflow: hidden;
 }
 
 /* Hero Section */
@@ -238,7 +239,6 @@
   margin: 100px 0;
 }
 
-
 .testimonialHeadingSection {
   margin-top: 108px;
   margin-bottom: 38px;
@@ -378,8 +378,8 @@
 
 .testimonyContainerCenter {
   width: 410px;
-  height: 264px;  border: 1px solid rgba(255, 255, 255, 0.08);
+  height: 264px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   padding: 32px;
   margin: 0 14px;
- 
 }
