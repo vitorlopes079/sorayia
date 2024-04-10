@@ -1,0 +1,106 @@
+.marketingCard {
+  background: linear-gradient(rgba(178, 190, 255, 0.2), rgba(16, 63, 97, 0.2));
+  min-width: 360px;
+  max-width: 580px;
+  min-height: 450px;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #103f61;
+
+}
+
+.purpleShadow {
+  box-shadow: -35px -35px 100px rgba(133, 49, 243, 0.13),
+    35px 35px 100px rgba(114, 58, 216, 0.13);
+}
+
+.blueShadow {
+  box-shadow: -35px -35px 100px 0px rgba(58, 160, 242, 0.13),
+    35px 35px 100px 0px rgba(72, 207, 229, 0.13);
+}
+
+.pinkShadow {
+  box-shadow: -30px -30px 100px 0px rgba(158, 68, 152, 0.13),
+    35px 35px 100px 0px rgba(224, 106, 136, 0.13);
+}
+
+.subtleBlue {
+  box-shadow: 35px 35px 100px 0px rgba(87, 123, 173, 0.13),
+    -35px -35px 100px 0px rgba(22, 200, 223, 0.08);
+}
+
+.softPurple {
+  box-shadow: -30px -30px 100px 0px rgba(117, 93, 154, 0.13),
+    30px 30px 100px 0px rgba(163, 92, 201, 0.13);
+}
+
+.lavender {
+  box-shadow: 30px 30px 100px 0px rgba(172, 108, 204, 0.13),
+    -30px -30px 100px 0px rgba(205, 135, 224, 0.13);
+}
+
+.violet {
+  box-shadow: -30px -30px 100px 0px rgba(114, 63, 153, 0.13),
+    30px 30px 100px 0px rgba(177, 85, 219, 0.13);
+}
+
+.introMediaContainer {
+  margin-bottom: 16px;
+}
+
+.centralizedImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imageContainer {
+  width: 85px;
+  height: 85px;
+  border-radius: 4px;
+  border: 1px solid #103f61;
+  background: linear-gradient(
+    180deg,
+    rgba(178, 190, 255, 0.2) 0%,
+    rgba(16, 63, 97, 0.2) 100%
+  );
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 4px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  color: #f8fafc;
+  text-transform: capitalize;
+}
+
+.centralizedCardTitle {
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+}
+
+.listItem {
+  color: #e2e8f0;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.centralizedCardText {
+  color: #e2e8f0;
+  text-align: center;
+  line-height: 24px;
+}
+
+.checkedIcon {
+  margin-right: 8px;
+  display: block;
+}

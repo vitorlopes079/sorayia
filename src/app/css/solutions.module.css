@@ -1,0 +1,200 @@
+.container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 80px;
+  overflow: hidden;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 180px;
+  margin-bottom: 115px;
+  margin-top: 100px;
+}
+
+.heroHeadingContainer {
+  margin-bottom: 28px;
+}
+
+.heroHeading {
+  position: relative;
+  color: #ffffff;
+  font-size: 44px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.underCardsText {
+  margin-top: 100px;
+}
+
+/* -------------------this will be a global style------------------- */
+
+.textCallSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 180px;
+}
+
+.heroHeadingContainer {
+  margin-bottom: 28px;
+}
+
+.heroHeading {
+  position: relative;
+  color: #ffffff;
+  padding-bottom: 10px;
+  font-size: 44px;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 70px;
+}
+
+/* ---------------------------- */
+
+/* this will be a global css */
+
+.guideSectionContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.guideSectionText {
+  padding: 0 25px;
+}
+
+.iconAndText {
+  flex: 1;
+  display: flex;
+}
+
+.guideImageContainer {
+  width: 628px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/*  ------------------------*/
+
+.solutionsPosts {
+  display: flex;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.guideSectionImageContainer {
+  margin-bottom: 16px;
+}
+
+.buttonContainer {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.TextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 180px;
+}
+
+.bottomSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.widerCard {
+  background: linear-gradient(rgba(178, 190, 255, 0.2), rgba(16, 63, 97, 0.2));
+  width: 550px;
+  min-height: 440px;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #103f61;
+}
+
+.blurContainer3 {
+  width: 380px;
+  height: 487px;
+  padding: 36px 91px;
+  position: absolute; /* Confirmed as absolute */
+  border-radius: 4px;
+  bottom: -200px;
+  right: -40px;
+}
+
+.blurContainer3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/blurimage3.png") no-repeat; /* Adjusted background-size */
+  border-radius: 4px;
+  mix-blend-mode: screen;
+  z-index: 1;
+  filter: brightness(1.7);
+}
+
+.blurContainer4 {
+  width: 380px;
+  height: 487px;
+  padding: 36px 91px;
+  position: absolute; /* Confirmed as absolute */
+  border-radius: 4px;
+  bottom: -150px;
+  left: -90px;
+}
+
+.blurContainer4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/blurimage4.png") no-repeat; /* Adjusted background-size */
+  border-radius: 4px;
+  mix-blend-mode: screen;
+  z-index: 1;
+  filter: brightness(1.7);
+}
+
+.blurContainer5 {
+  width: 380px;
+  height: 487px;
+  padding: 36px 91px;
+  position: absolute; /* Confirmed as absolute */
+  border-radius: 4px;
+  bottom: -200px;
+  right: -30px;
+}
+
+.blurContainer5::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/blurimage5.png") no-repeat; /* Adjusted background-size */
+  border-radius: 4px;
+  mix-blend-mode: screen;
+  z-index: 1;
+  filter: brightness(1.7);
+}

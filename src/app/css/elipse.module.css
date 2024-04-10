@@ -1,0 +1,62 @@
+/* Base style for all ellipses */
+.elipseContainer {
+  position: absolute;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.Elipse {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(217, 217, 217, 0.32);
+
+  filter: blur(150px);
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+/* Positioning ellipses with varied horizontal offsets */
+.Elipse1 {
+  left: -155px; /* Slightly adjust left */
+  top: 450px; /* Starting at the top */
+}
+
+.Elipse2 {
+  right: -170px; /* Adjust right more */
+  top: 1343px; /* 1st interval */
+}
+
+.Elipse3 {
+  left: -140px; /* Less adjustment on left */
+  top: 2486px; /* 2nd interval */
+}
+
+.Elipse4 {
+  right: -165px; /* Slightly less adjustment on right */
+  top: 3429px; /* 3rd interval */
+}
+
+.Elipse5 {
+  left: -130px; /* Even less adjustment on left */
+  top: 4572px; /* 4th interval */
+}
+
+.Elipse6 {
+  right: -160px; /* Slightly adjust right */
+  top: 5715px; /* 5th interval */
+}
+
+.Elipse7 {
+  left: -125px; /* Minimal adjustment on left */
+  top: 6858px; /* 6th interval */
+}
+
+.Elipse8 {
+  right: -150px; /* Back to original offset for right */
+  top: 8000px; /* 7th interval, at the bottom */
+}

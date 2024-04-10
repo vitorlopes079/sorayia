@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes at least the viewport's full height */
+  background: repeating-linear-gradient(
+    180deg,
+    #0a0017 0px,
+    #191f3f 1125px,
+    #0a0017 2250px,
+    #191f3f 3375px,
+    #0a0017 4500px,
+    #191f3f 5625px,
+    #0a0017 6750px,
+    #191f3f 7875px,
+    #0a0017 9000px
+  );
+}
+
+.mainContainer {
+  flex-grow: 1;
+}
+
+.centralizedHeading {
+  position: relative;
+  color: #ffffff;
+  margin: 12px 0;
+  font-size: 44px;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 70px;
+}
+
+.centralizedSubHeading {
+  position: relative;
+  color: #ffffff;
+  margin: 12px 0;
+  font-size: 32px;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 70px;
+}
+
+.centralizedText {
+  text-align: center;
+  color: #e2e8f0;
+  line-height: 32px;
+  margin: 12px 0;
+  text-transform: capitalize;
+}
+
+.leftHeading {
+  color: #f8fafc;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 44px;
+  margin-bottom: 24px;
+}
+
+.biggerLeftHeading {
+  color: #f8fafc;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.leftText {
+  text-transform: capitalize;
+  color: #e2e8f0;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+
+.roundedContainer {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 6px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #cbd5e1;
+  color: #cbd5e1;
+  font-size: 12px;
+  margin-bottom: 24px;
+  width: fit-content;
+}
+
+.buttonGrey {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
+  margin: 12px;
+  border: none;
+  cursor: pointer;
+  color: #f8fafc;
+  padding: 12px 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 48px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.buttonGrey:hover {
+  transform: scale(1.03);
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.buttonGrey:active {
+  transform: scale(0.97);
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.buttonYellow {
+  background-color: #f7ce46;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: #191f3f;
+  padding: 12px 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 48px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.buttonYellow:hover {
+  transform: scale(1.03);
+  background-color: #f8d55a;
+}
+
+.buttonYellow:active {
+  transform: scale(0.97);
+  background-color: #e6be42;
+}
+
+.buttonMargin {
+  margin: 12px;
+}
+
+.buttonFullWidth {
+  width: 100%;
+}
+
+.yellowSpan {
+  color: #f7ce46;
+  text-transform: capitalize;
+}
+
+/* Styles when the bookmark is not active */
+.bookmarkInactive {
+  color: rgba(241, 245, 249, 1);
+  cursor: pointer;
+  margin-left: 16px;
+}
+
+/* Styles when the bookmark is active */
+.bookmarkActive {
+  color: rgba(241, 245, 249, 1);
+  cursor: pointer;
+  margin-left: 16px;
+}
+
+.marketingCardsContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.marketingCardsContainer > * {
+  flex: 1;
+
+}
+
+.gradientCover {
+  height: 190px;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(18, 14, 40, 0.95) 95.08%
+  );
+  position: absolute;
+  bottom: 0px;
+  border-radius: 0 0 0 27.6px;
+}
+
+.gradientCoverLeft {
+  border-radius: 0 0 27.6px 0;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}

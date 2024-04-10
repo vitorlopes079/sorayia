@@ -1,0 +1,151 @@
+.container {
+  background-color: rgba(255, 255, 255, 0.08);
+  width: 100%;
+  color: #e2e8f0;
+  padding: 0 80px;
+  margin-top: auto;
+  overflow: hidden;
+}
+
+.newsLetter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 125px;
+  padding: 32px 0;
+}
+
+.call {
+  font-size: 32px;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+.callText {
+  margin: 0 40px;
+  max-width: 450px;
+  line-height: 1.5;
+}
+
+.formWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputField {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #e2e8f0;
+  margin-top: 5px;
+}
+
+.inputField:focus {
+  outline: none;
+  border-bottom: 1px solid #f7ce46;
+  color: #f8fafc;
+}
+
+.button {
+  background-color: #f7ce46;
+  border-radius: 5px;
+  margin: 12px;
+  border: none;
+  cursor: pointer;
+  color: #191f3f;
+  padding: 12px 24px;
+}
+
+.socialsContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.socialSingleContainer {
+  height: 30px;
+  width: 30px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialSingleContainer:hover{
+  cursor: pointer;
+}
+
+.quickLinks {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 72px;
+  padding-bottom: 40px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.column {
+  max-width: 295px;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.linkHeader {
+  font-size: 24px;
+  color: white;
+  font-weight: 600;
+  padding-bottom: 16px;
+}
+
+.linktext {
+  padding: 12px 0;
+}
+
+.link {
+  padding: 6px 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.subLinkHeader {
+  font-weight: 500;
+  padding-bottom: 16px;
+}
+
+.copyright {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.horizontalLine {
+  height: 1px;
+  background-color: #e2e8f0;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}

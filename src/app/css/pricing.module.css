@@ -1,0 +1,152 @@
+.container {
+  margin-top: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 180px;
+  margin-bottom: 115px;
+}
+
+.heroHeadingContainer {
+  margin-bottom: 28px;
+}
+
+.heroHeading {
+  position: relative;
+  color: #ffffff;
+  padding-bottom: 10px;
+  font-size: 44px;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 70px;
+}
+
+.card {
+  padding: 32px 16px;
+  background-color: rgba(255, 255, 255, 0.08);
+  height: 740px;
+  width: 298px;
+  border-radius: 10px;
+  filter: blur(5px);
+}
+
+.cardCenter {
+  background-color: #f8fafc;
+  height: 840px;
+  filter: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.listItem {
+  color: #e2e8f0;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.checkedIcon {
+  margin-right: 8px;
+  display: block;
+}
+
+.cardTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 32px;
+  gap: 8px;
+}
+
+.cardHeading {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  text-transform: capitalize;
+  color: #f8fafc;
+}
+
+.cardSubHeading {
+  color: #f8fafc;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.lineBreck {
+  margin-top: 10px;
+  margin-bottom: 38px;
+  text-align: center;
+  color: #f8fafc;
+}
+
+.lineBreckGray {
+  margin-bottom: 25px;
+  text-align: center;
+  color: #0f172a;
+}
+
+.cardsContainer {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.centerColor {
+  color: #0f172a;
+}
+
+.textOverCard {
+  color: #f8fafc;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px; /* 142.857% */
+  text-transform: capitalize;
+  width: 295px;
+  margin-bottom: 135px;
+}
+
+.textOverCardCenter {
+  margin-bottom: 15px;
+}
+
+/*  Form Section */
+
+.formSection {
+  width: 895px;
+  color: #e2e8f0;
+  margin-top: 180px;
+  margin-bottom: 100px;
+}
+
+.formIconsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.formIconContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 12px 32px 0 32px;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.buttonFullWidth {
+  width: 100%;
+}
