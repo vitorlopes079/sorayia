@@ -1,0 +1,67 @@
+.container {
+  width: 411px;
+  margin: 40px 15px;
+}
+
+.imageContainer {
+  margin-bottom: 15px;
+}
+
+.subTitle {
+  color: #94a3b8;
+  line-height: 32px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.cardHeading {
+  color: #f8fafc;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.cardText {
+  color: #e2e8f0;
+  line-height: 32px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.authorContainer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.timeContainer {
+  display: flex;
+  align-items: center;
+  color: #e2e8f0;
+  line-height: 32px;
+  text-transform: capitalize;
+}
+
+.time {
+  margin-left: 4px;
+}
+
+.nameAndDate {
+  color: #e2e8f0;
+  line-height: 25px;
+  text-transform: capitalize;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link:hover,
+.link:focus {
+  text-decoration: underline; 
+  color: #e0e7f0;
+}

@@ -1,0 +1,151 @@
+.container {
+  min-height: 100vh;
+  width: 100%;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: Montserrat;
+  color: #333;
+
+}
+
+
+.column {
+  flex: 1;
+  max-width: 50%;
+  padding: 20px 80px;
+}
+
+.firstColumn {
+  border-right: 1px solid #e5e5e5; 
+}
+
+.logoContainer {
+  margin: 20px 0 20px -60px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.headingOne {
+  font-size: 21.88px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.headingTwo {
+  font-size: 17.88px;
+  font-weight: 600;
+}
+
+.type {
+  color: #1d3e80;
+  font-weight: 500;
+  font-size: 21.88px;
+}
+
+.price {
+  color: #1d3e80;
+  font-size: 50px;
+  font-weight: 600;
+  margin-right: 20px;
+  margin-top: 14px;
+}
+
+.priceSpan {
+  font-size: 27.88px;
+  font-weight: 500;
+  margin-right: 6px;
+}
+
+.priceUs {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.priceMonth {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.note {
+  color: #1d3e80;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.horizontalLine {
+  background-color: #e5e5e5;
+  height: 1px;
+  margin: 20px 0;
+}
+
+.subContainer {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gray {
+  color: #666;
+}
+
+.appleIconContainer {
+  width: 425px;
+  height: 50px;
+  background: #000;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: Montserrat;
+  cursor: pointer;
+  margin: 22px auto;
+}
+
+.divisorContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.smallHorizontalLine {
+  width: 105px;
+  height: 1px;
+  background-color: #999;
+}
+
+.bottomText {
+  color: #666;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+
+}
+
+.stripe {
+  color: #1d3e80;
+
+}
+
+.textGap{
+  margin-bottom: 15px;
+}
