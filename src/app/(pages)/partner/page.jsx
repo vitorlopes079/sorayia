@@ -13,18 +13,27 @@ import RoundedWidget from "../../_components/RoundedWidget";
 
 const page = () => {
   return (
-    <div className={styles.container}>
-      <Elipse numberOfEllipses={4} />
+    <div className="container containerPaddingCustom">
+      <Elipse
+        background={"#0C1569"}
+        top={"1020px"}
+        right={"-190px"}
+        height={"510px"}
+        width={"495px"}
+      />
+
       <section className={styles.hero}>
         <div className={styles.heroHeadingContainer}>
           <h1 className={styles.heroHeading}>
-            Sorayia.<span className="lowercase">com</span> Redefining Customer Experience
+            Sorayia.<span className="lowercase">com</span> Redefining Customer
+            Experience
           </h1>
           <p className="centralizedText">
             In a world where technology shapes every aspect of our daily lives,
-            Sorayia.<span className="lowercase">com</span> emerges as a pioneer of innovation in customer
-            experience. Partnering with leading artificial intelligence (AI)
-            experts such as OpenAI and Ready Player Me, Sorayia.<span className="lowercase">com</span> offers a
+            Sorayia.<span className="lowercase">com</span> emerges as a pioneer
+            of innovation in customer experience. Partnering with leading
+            artificial intelligence (AI) experts such as OpenAI and Ready Player
+            Me, Sorayia.<span className="lowercase">com</span> offers a
             revolutionary solution that transforms how businesses interact with
             their customers.
           </p>
@@ -42,9 +51,10 @@ const page = () => {
 
           <p className="centralizedText">
             In a world where technology shapes every aspect of our daily lives,
-            Sorayia.<span className="lowercase">com</span> emerges as a pioneer of innovation in customer
-            experience. Partnering with leading artificial intelligence (AI)
-            experts such as OpenAI and Ready Player Me, Sorayia.<span className="lowercase">com</span> offers a
+            Sorayia.<span className="lowercase">com</span> emerges as a pioneer
+            of innovation in customer experience. Partnering with leading
+            artificial intelligence (AI) experts such as OpenAI and Ready Player
+            Me, Sorayia.<span className="lowercase">com</span> offers a
             revolutionary solution that transforms how businesses interact with
             their customers.
           </p>
@@ -52,7 +62,7 @@ const page = () => {
       </section>
 
       <section className={styles.guideSection}>
-      <RoundedWidget text={"AI Powered"} id={"ai-powered"}/>
+        <RoundedWidget text={"AI Powered"} id={"ai-powered"} />
         <div className={styles.guideSectionContent}>
           <div className={styles.guideSectionText}>
             <h1 className="leftHeading">Unparalleled Customer Experience</h1>
@@ -60,8 +70,8 @@ const page = () => {
               Through our groundbreaking platform, businesses can now
               communicate with their customers in a more human and engaging
               manner than ever before. Our 3D avatar chatbots, powered by Open
-              AI&apos;s AI intelligence, understand and respond to customer inquiries
-              with exceptional accuracy and speed.
+              AI&apos;s AI intelligence, understand and respond to customer
+              inquiries with exceptional accuracy and speed.
             </p>
           </div>
           <div className={styles.guideImageContainer}>
@@ -97,31 +107,32 @@ const page = () => {
               />
             </div>
           </div>
-          <div className={styles.avatarSectionTextContainer} >
+          <div className={styles.avatarSectionTextContainer}>
             <RoundedWidget text={"Your AI Assist"} />
             <h2 className="leftHeading">Personalization and Creativity</h2>
             <p className="leftText">
-              At Sorayia.<span className="lowercase">com</span>, we believe in the power of individual expression.
-              That&apos;s why we&apos;ve integrated Ready Player Me&apos;s 3D avatar creation
-              technology into our platform, allowing our clients to customize
-              their avatars according to their preferences and unique style.
+              At Sorayia.<span className="lowercase">com</span>, we believe in
+              the power of individual expression. That&apos;s why we&apos;ve
+              integrated Ready Player Me&apos;s 3D avatar creation technology
+              into our platform, allowing our clients to customize their avatars
+              according to their preferences and unique style.
             </p>
           </div>
         </div>
       </section>
 
       <section className={styles.hero}>
-        <RoundedWidget text={"Powered by AI"} id={"powered-by-ai"}/>
+        <RoundedWidget text={"Powered by AI"} id={"powered-by-ai"} />
         <div className={styles.flexDiv}>
           <h1 className="centralizedSubHeading">Actionable Data for Growth </h1>
           <p className="centralizedText">
             In addition to delivering an exceptional customer experience,
-            Sorayia.<span className="lowercase">com</span> also provides valuable data to businesses to help them
-            better understand their customers and make informed decisions. With
-            our ability to collect and analyze data on customer interaction with
-            our 3D avatar chatbots, we provide actionable insights that can be
-            used to enhance products, optimize marketing strategies, and drive
-            business growth.
+            Sorayia.<span className="lowercase">com</span> also provides
+            valuable data to businesses to help them better understand their
+            customers and make informed decisions. With our ability to collect
+            and analyze data on customer interaction with our 3D avatar
+            chatbots, we provide actionable insights that can be used to enhance
+            products, optimize marketing strategies, and drive business growth.
           </p>
           <div className={styles.imagesContainer}>
             <div className={styles.image1Container}>
@@ -139,12 +150,13 @@ const page = () => {
           </div>
 
           <p className="centralizedText">
-            Sorayia.<span className="lowercase">com</span> stands at the forefront of innovation in customer
-            experience, offering a comprehensive solution that combines
-            cutting-edge technology, personalization, and strategic data. Join
-            us today and discover how Sorayia.<span className="lowercase">com</span> can transform your customer
-            interaction for the better, while propelling your business to new
-            heights of success.
+            Sorayia.<span className="lowercase">com</span> stands at the
+            forefront of innovation in customer experience, offering a
+            comprehensive solution that combines cutting-edge technology,
+            personalization, and strategic data. Join us today and discover how
+            Sorayia.<span className="lowercase">com</span> can transform your
+            customer interaction for the better, while propelling your business
+            to new heights of success.
           </p>
           <div className={styles.buttonContainer}>
             <button className="buttonYellow ">

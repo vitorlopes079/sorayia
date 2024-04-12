@@ -11,8 +11,30 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <div className={styles.container}>
-      <Elipse numberOfEllipses={3} />
+    <div className="container">
+      <Elipse
+        background={
+          "linear-gradient(180deg, #F7CE46 0%, #985180 100%)"
+        }
+        top={"390px"}
+        right={"-80px"}
+        height={"354px"}
+        width={"309px"}
+      />
+      <Elipse
+        background={"linear-gradient(180deg, rgba(255, 224, 0, 0.29) 0%, rgba(153, 0, 147, 0.29) 100%)"}
+        top={"980px"}
+        left={"-120px"}
+        height={"383px"}
+        width={"407px"}
+      />
+      <Elipse
+        background={"linear-gradient(180deg, rgba(247, 206, 70, 0.47) 0%, #914E29 100%)"}
+        top={"2100px"}
+        right={"-120px"}
+        height={"356px"}
+        width={"320px"}
+      />
       <section className={styles.hero}>
         <div className={styles.heroHeadingContainer}>
           <h1 className={styles.heroHeading}>

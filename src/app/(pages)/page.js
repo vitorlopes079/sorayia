@@ -1,8 +1,7 @@
-'use client'
+"use client";
 import Image from "next/image";
 import styles from "../css/homepage.module.css";
 import arrowUp from "../images/arrow-up.png";
-import avatar from "../images/avatar.png";
 import foldIcon from "../images/foldIcon.png";
 import aiIcon from "../images/aiIcon.png";
 import dbdIcon from "../images/dbIcon.png";
@@ -29,57 +28,116 @@ import MarketingCard from "../_components/MarketingCard";
 import Testimonies from "../_components/Testimonies";
 import HeroHomePage from "../_components/HeroHomePage";
 import { motion } from "framer-motion";
+import VideoContainer from "../_components/VideoContainer";
 
 export default function Home() {
   return (
-    <motion.div className={styles.container}>
-      <Elipse numberOfEllipses={7} />
+    <motion.div className="container">
+      <Elipse
+        background={
+          "linear-gradient(180deg, rgba(210, 120, 234, 0.45) 25%, #D0A2BE 100%)"
+        }
+        top={"360px"}
+        left={"-150px"}
+        height={"390px"}
+        width={"407px"}
+      />
+      <Elipse
+        background={"rgba(4, 28, 184, 0.64)"}
+        top={"800px"}
+        right={"-150px"}
+        height={"435px"}
+        width={"481px"}
+      />
+      <Elipse
+        background={"rgba(106, 70, 120, 0.71)"}
+        top={"2200px"}
+        left={"-120px"}
+        height={"424px"}
+        width={"457px"}
+      />
+      <Elipse
+        background={"rgba(9, 25, 137, 0.73)"}
+        top={"4250px"}
+        right={"-150px"}
+        height={"341px"}
+        width={"376px"}
+      />
+      <Elipse
+        background={"rgba(217, 217, 217, 0.32)"}
+        top={"6350px"}
+        right={"-60px"}
+        height={"379px"}
+        width={"405px"}
+      />
+      <Elipse
+        background={"rgba(107, 70, 121, 0.82)"}
+        top={"7200px"}
+        left={"-150px"}
+        height={"341px"}
+        width={"376px"}
+      />
+      <Elipse
+        background={"#161D5F"}
+        top={"8000px"}
+        right={"-150px"}
+        height={"300px"}
+        width={"300px"}
+      />
+
       <HeroHomePage />
-      
+
       <section className={styles.avatarSection}>
         <div className={styles.avatarTopDiv}>
           <div className={styles.avatarSectionTextContainer}>
             <RoundedWidget text={"Your 3D Avatar"} />
 
-            <motion.h2 initial={{x: -50 ,opacity:0 }} whileInView={{x:0,opacity:1}} viewport={{once:true}} transition={{duration:1 , delay:0.5, ease:'easeOut'}} className="leftHeading">
+            <motion.h2
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+              className="leftHeading"
+            >
               Transform yourself into a Virtual Star:
               <span className="yellowSpan"> Create a 3D Avatar</span> that looks
               like you!
             </motion.h2>
-            <motion.p  initial={{x: -50 ,opacity:0 }} whileInView={{x:0,opacity:1}} viewport={{once:true}} transition={{duration:1 , delay:0.5, ease:'easeOut'}}  className="leftText">
+            <motion.p
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+              className="leftText"
+            >
               Utilize our advanced 3D modeling technology to create an
               interactive 3D avatar. Design a virtual influencer that closely
               mirrors your appearance and personality, offering users an
               immersive and relatable experience.
             </motion.p>
           </div>
-          <div className={styles.avatarContainer}>
-            <div className={styles.speechBalloonsContainer}>
-              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{}} transition={{duration:1 , delay:0.5, ease:'easeOut'}} className={styles.speechBalloon}>
-                <p>I&apos;m your virtual 3D avatar</p>
-              </motion.div>
-              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{}} transition={{duration:1 , delay:0 , ease:'easeOut'}} className={styles.speechBalloon}>
-                <p>Hi there!</p>
-              </motion.div>
-            </div>
 
-            <motion.div  className={styles.imageContainer}>
-              <Image
-                src={avatar}
-                width={322}
-                height={475}
-                className={styles.avatarImage}
-                alt="3D avatar"
-              />
-            </motion.div>
-          </div>
+          <VideoContainer />
         </div>
+        
         <div>
-          <div  className={styles.subheadingContainer}>
-            <motion.h2 initial={{opacity:0,y:-30}} whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{duration:1.5 , delay:0.5 , ease:'easeOut'}} className="centralizedHeading">
-              <span  className="yellowSpan">Chat-Bot </span>AI Assist
+          <div className={styles.subheadingContainer}>
+            <motion.h2
+              initial={{ opacity: 0, y: -30 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.5, delay: 0.5, ease: "easeOut" }}
+              className="centralizedHeading"
+            >
+              <span className="yellowSpan">Chat-Bot </span>AI Assist
             </motion.h2>
-            <motion.p initial={{opacity:0,y:-30}} whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{duration:1.5 , delay:0.5 , ease:'easeOut'}} className="centralizedText">
+            <motion.p
+              initial={{ opacity: 0, y: -30 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.5, delay: 0.5, ease: "easeOut" }}
+              className="centralizedText"
+            >
               Your own generative aI large language model framework designed and{" "}
               <br />
               launched in minutes without coding based on your resources.
@@ -87,7 +145,13 @@ export default function Home() {
           </div>
 
           <div className={styles.cardsContainer}>
-            <motion.div initial={{opacity:0,x:-200}} whileInView={{x:0,opacity:1}} viewport={{once:true}} transition={{duration:1 , delay:0.5 , ease:'easeOut'}} className={styles.card}>
+            <motion.div
+              initial={{ opacity: 0, x: -200 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+              className={styles.card}
+            >
               <div className={styles.figureContainer}>
                 <Image
                   src={aiIcon}
@@ -102,7 +166,13 @@ export default function Home() {
                 Bard or Bing AI.
               </p>
             </motion.div>
-            <motion.div  initial={{opacity:0,x:-200}} whileInView={{x:0,opacity:1}} viewport={{once:true}} transition={{duration:1 , delay:0.5 , ease:'easeOut'}} className={styles.card}>
+            <motion.div
+              initial={{ opacity: 0, x: -200 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+              className={styles.card}
+            >
               <div className={styles.figureContainer}>
                 <div className={`${styles.chatbotChat} ${styles.chat1}`}>
                   <Image src={testimonyPhoto2} width={32} height={32} />
@@ -125,7 +195,13 @@ export default function Home() {
                 Bard or Bing AI.
               </p>
             </motion.div>
-            <motion.div  initial={{opacity:0,x:200}} whileInView={{x:0,opacity:1}} viewport={{once:true}} transition={{duration:1 , delay:0.5 , ease:'easeOut'}} className={styles.card}>
+            <motion.div
+              initial={{ opacity: 0, x: 200 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+              className={styles.card}
+            >
               <div className={styles.figureContainer}>
                 <Image
                   src={foldIcon}
@@ -140,7 +216,13 @@ export default function Home() {
                 Bard or Bing AI.
               </p>
             </motion.div>
-            <motion.div  initial={{opacity:0,x:200}} whileInView={{x:0,opacity:1}} viewport={{once:true}} transition={{duration:1 , delay:0.5 , ease:'easeOut'}} className={styles.card}>
+            <motion.div
+              initial={{ opacity: 0, x: 200 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+              className={styles.card}
+            >
               <div className={styles.figureContainer}>
                 <Image src={dbdIcon} width={94} height={94} alt="db icon" />
               </div>
@@ -158,7 +240,13 @@ export default function Home() {
         <RoundedWidget text={"AI customer service agent"} />
 
         <div className={styles.guideSectionContent}>
-          <motion.div  initial={{x: -50 ,opacity:0 }} whileInView={{x:0,opacity:1}} viewport={{once:true}} transition={{duration:1 , delay:0.5, ease:'easeOut'}} className={styles.guideSectionText}>
+          <motion.div
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+            className={styles.guideSectionText}
+          >
             <h1 className="leftHeading">
               The virtual guide who help you to{" "}
               <span className="yellowSpan">growing business</span>
@@ -183,7 +271,7 @@ export default function Home() {
               <Image src={arrowUp} width={32} height={32} alt="arrow up" />
             </button>
           </motion.div>
-          <div   className={styles.guideImageContainer}>
+          <div className={styles.guideImageContainer}>
             <Image
               src={screenshot}
               width={628}
@@ -191,7 +279,13 @@ export default function Home() {
               alt="Descriptive Alt Text"
             />
             <div className="gradientCover"></div>
-            <motion.div initial={{opacity:0  }} whileInView={{opacity:1}} viewport={{once:true}} transition={{duration:0 , delay:1,ease:'easeOut'}} className={styles.blurContainer}></motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 1, ease: "easeOut" }}
+              className={styles.blurContainer}
+            ></motion.div>
           </div>
         </div>
 
@@ -251,7 +345,13 @@ export default function Home() {
         <RoundedWidget text={"AI Human Ressource Agent"} />
 
         <div className={styles.guideSectionContent}>
-          <motion.div initial={{opacity:0 , scale:0.5 }} whileInView={{opacity:1,scale:1}} viewport={{once:true}} transition={{duration:1 , delay:0.5,ease:'easeOut'}} className={styles.guideImageContainer}>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+            className={styles.guideImageContainer}
+          >
             <Image
               src={screenshot2}
               width={650}
@@ -259,11 +359,21 @@ export default function Home() {
               alt="descriptive image"
             />
             <div className="gradientCover gradientCoverLeft"></div>
-            <div
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 1.4, ease: "easeOut" }}
               className={`${styles.blurContainer} ${styles.blurContainerLeft}`}
-            ></div>
+            ></motion.div>
           </motion.div>
-          <motion.div  initial={{x: 50 ,opacity:0 }} whileInView={{x:0,opacity:1}} viewport={{once:true}} transition={{duration:1 , delay:0.5, ease:'easeOut'}} className={styles.guideSectionText}>
+          <motion.div
+            initial={{ x: 50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+            className={styles.guideSectionText}
+          >
             <h1 className="leftHeading">
               The Virtual Agent Simplifying HR Processes
             </h1>
@@ -299,7 +409,12 @@ export default function Home() {
           </motion.div>
         </div>
 
-        <motion.div initial={{y: -50 ,opacity:0 }} whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{duration:1 , delay:0.5, ease:'easeOut'}} >
+        <motion.div
+          initial={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+        >
           <h1 className="centralizedSubHeading">
             Streamline human resource-related inquiries with{" "}
             <span className="yellowSpan">Seamless automation</span>
@@ -353,7 +468,13 @@ export default function Home() {
         <RoundedWidget text={"AI Virtual Tutor"} />
 
         <div className={styles.guideSectionContent}>
-          <motion.div  initial={{x: -50 ,opacity:0 }} whileInView={{x:0,opacity:1}} viewport={{once:true}} transition={{duration:1 , delay:0.5, ease:'easeOut'}} className={styles.guideSectionText}>
+          <motion.div
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+            className={styles.guideSectionText}
+          >
             <h1 className="leftHeading">
               The Virtual Tutor Revolutionizing Student Learning
             </h1>
@@ -382,7 +503,13 @@ export default function Home() {
               <Image src={arrowUp} width={32} height={32} alt="arrow up" />
             </button>
           </motion.div>
-          <motion.div initial={{opacity:0 , scale:0.5 }} whileInView={{opacity:1,scale:1}} viewport={{once:true}} transition={{duration:1 , delay:0.5,ease:'easeOut'}} className={styles.guideImageContainer}>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+            className={styles.guideImageContainer}
+          >
             <Image
               src={screenshot3}
               alt="descriptive image"
@@ -390,11 +517,22 @@ export default function Home() {
               height={488}
             />
             <div className="gradientCover"></div>
-            <div className={styles.blurContainer}></div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 1.4, ease: "easeOut" }}
+              className={styles.blurContainer}
+            ></motion.div>
           </motion.div>
         </div>
 
-        <motion.div initial={{y: -50 ,opacity:0 }} whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{duration:1 , delay:0.5, ease:'easeOut'}} >
+        <motion.div
+          initial={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+        >
           <h1 className="centralizedSubHeading">
             Instruct and address students&apos; inquiries to{" "}
             <span className="yellowSpan">Enhance Their Knowledge</span>
@@ -446,7 +584,13 @@ export default function Home() {
       <section className={styles.testimonalSection}>
         <Stack />
 
-        <motion.div initial={{y: -50 ,opacity:0 }} whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{duration:1 , delay:0.5, ease:'easeOut'}} className={styles.testimonialHeadingSection}>
+        <motion.div
+          initial={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+          className={styles.testimonialHeadingSection}
+        >
           <h2 className="centralizedHeading">Testimonials</h2>
           <p className="centralizedText">what our customers say about us</p>
         </motion.div>

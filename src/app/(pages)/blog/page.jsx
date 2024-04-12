@@ -4,12 +4,10 @@ import BlogCard from "../../_components/BlogCard";
 import arrowLeft from "../../images/arrowLeft.svg";
 import arrowRight from "../../images/arrowRight.svg";
 import Image from "next/image";
-import Elipse from "../../_components/Elipse";
 
 const page = () => {
   return (
     <div className={styles.container}>
-      <Elipse numberOfEllipses={2} />
 
       <div className={styles.TextContainer}>
         <div className="roundedContainer">

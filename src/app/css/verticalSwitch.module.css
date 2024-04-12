@@ -1,0 +1,17 @@
+.verticalLine {
+  width: 250px;
+  height: 4px;
+  transform: rotate(90deg);
+  background: linear-gradient(
+    270deg,
+    rgba(54, 161, 206, 0.74) 0%,
+    rgba(146, 86, 244, 0.75) 100%
+  );
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  margin-left: -15px;
+}

@@ -1,12 +1,3 @@
-.container {
-  margin-top: 180px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 80px;
-  overflow: hidden;
-}
 
 /* Hero Section */
 
@@ -82,35 +73,38 @@
 
 .avatarSection {
   width: 100%;
-  margin-top: 120px;
+  margin-top: 220px;
 }
 
 .avatarTopDiv {
   display: flex;
-  justify-content: space-around;
+  margin-bottom: 100px;
 }
 
 .avatarSectionTextContainer {
-  width: 628px;
+  max-width: 550px;
+  margin-right: 100px;
 }
 
 .avatarContainer {
-  width: 560px;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .speechBalloonsContainer {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  width: 44%;
+  position: absolute;
+  top: -90px;
+  left: 140px;
 }
 
 .speechBalloon {
   background-color: rgba(255, 255, 255, 0.08);
   color: #f8fafc;
   padding: 10px 20px;
-  border-radius: 25px 25px 0 25px;
-  position: relative;
+  border-radius: 15px 15px 0 15px;
   width: min-content;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin-top: 10px;
@@ -119,24 +113,52 @@
   white-space: nowrap;
 }
 
+.Iam{
+  margin-left: 20px;
+}
+
+.videoContainer {
+  position: absolute;
+  z-index: 50;
+  left: 70px;
+}
+
+.gradientCover{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 3.8%, rgba(18, 14, 40, 0.95) 96.75%);
+  width: 630px;
+  height: 108px;
+
+  position: absolute;
+  left: -40px;
+  bottom: 26px;
+  z-index: 1000;
+  border-radius: 10px;
+}
+
+.video {
+  box-shadow: 4px 4px 4px 0px rgba(108, 131, 248, 0.3),
+    -4px -4px 4px 0px rgba(235, 67, 56, 0.3);
+}
+
 .imageContainer {
-  height: 401.5px;
-  width: 344px;
+  height: 430px;
+  width: 263px;
   border-radius: 50%;
-  margin-left: 170px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
+  left: -50px;
+  top: -104px;
 }
 
 .imageContainer::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  top: 75px;
+  left: -10;
+  height: 300px;
+  width: 307px;
   border-radius: 50%;
   background-image: url("../images/avatarBackground.png");
   background-size: cover;
@@ -146,12 +168,8 @@
 }
 
 .avatarImage {
-  position: absolute; /* Positions the image absolutely within its container */
-  bottom: 0px; /* Adjusts to overlap or position within the container as desired */
-  z-index: 1; /* Ensures the image is above the pseudo-background */
-  width: 322px; /* Assuming a specific width for the image */
-  height: 475px; /* Assuming a specific height for the image */
-  /* Add additional styles for the image here, if necessary */
+  position: absolute;
+  z-index: 100;
 }
 
 .cardsContainer {
@@ -287,6 +305,12 @@
   border-radius: 4px;
   bottom: -120px;
   right: -90px;
+  background: url("../images/blurimage1.png") center / 97% 100% no-repeat; /* Adjusted background-size */
+  border-radius: 4px;
+  mix-blend-mode: screen;
+  z-index: 1;
+  filter: brightness(1);
+  opacity: 1;
 }
 
 .blurContainer::before {
@@ -296,12 +320,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../images/blurimage1.png") center / 97% 100% no-repeat; /* Adjusted background-size */
-  border-radius: 4px;
-  mix-blend-mode:screen;
-  z-index: 1;
-  filter: brightness(1);
-  opacity: 1;
 }
 
 .blurContainerLeft {

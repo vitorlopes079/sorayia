@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import styles from "../../css/solutions.module.css";
@@ -26,11 +26,50 @@ import spyware from "../../images/spyware.png";
 import issue from "../../images/issue.png";
 import MarketingCard from "../../_components/MarketingCard";
 import RoundedWidget from "../../_components/RoundedWidget";
+import VerticalSwitch from "../../_components/VerticalSwitch"
 
 const page = () => {
   return (
-    <div className={styles.container}>
-      <Elipse numberOfEllipses={4} />
+    <div className="container containerPaddingCustom">
+      <Elipse
+        background={"rgba(217, 217, 217, 0.32)"}
+        top={"260px"}
+        left={"-150px"}
+        height={"326px"}
+        width={"270px"}
+      />
+
+      <Elipse
+        background={"linear-gradient(180deg, #A14BE5 0%, #2252B1 100%)"}
+        top={"2350px"}
+        right={"-100px"}
+        height={"354px"}
+        width={"309px"}
+      />
+
+      <Elipse
+        background={"rgba(217, 217, 217, 0.32)"}
+        top={"3500px"}
+        left={"-70px"}
+        height={"354px"}
+        width={"309px"}
+      />
+
+      <Elipse
+        background={"linear-gradient(180deg, #3961AE 0%, #6587C9 100%)"}
+        top={"4600px"}
+        right={"-150px"}
+        height={"307px"}
+        width={"271px"}
+      />
+
+      <Elipse
+        background={"rgba(217, 217, 217, 0.32)"}
+        top={"5600px"}
+        left={"-50px"}
+        height={"333px"}
+        width={"333px"}
+      />
       <section className={styles.hero} id="marketing">
         <div className={styles.heroHeadingContainer}>
           <h1 className={styles.heroHeading}>
@@ -164,6 +203,7 @@ const page = () => {
         <div className={styles.iconAndText}>
           <div>
             <Image src={chat2} width={60} height={60} />
+            <VerticalSwitch  />
           </div>
           <div className={styles.guideSectionContent}>
             <div className={styles.guideSectionText}>

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import styles from "../../css/product.module.css";
 import Stack from "../../_components/Stack";
@@ -19,26 +19,39 @@ import Elipse from "../../_components/Elipse";
 import { motion } from "framer-motion";
 const page = () => {
   return (
-    <>
-      <motion.div initial={
-        {
-          x: -1000
-
-        }
-      }
+    <div className="container">
+      <Elipse
+        background={"#694676"}
+        top={"450px"}
+        right={"-150px"}
+        height={"406px"}
+        width={"406px"}
+      />
+      <Elipse
+        background={"#453158"}
+        top={"2300px"}
+        left={"-80px"}
+        height={"403px"}
+        width={"381px"}
+      />
+      <Elipse
+        background={"#443057"}
+        top={"3600px"}
+        right={"-150px"}
+        height={"389px"}
+        width={"401px"}
+      />
+      <motion.div
+        initial={{
+          x: -1000,
+        }}
         animate={{
-          x: 0
+          x: 0,
         }}
-
         transition={{
-          duration: 1
+          duration: 1,
         }}
-
-
-
-        className={styles.container}>
-        <Elipse numberOfEllipses={6} />
-
+      >
         <div className={styles.topContainer} id="integration">
           <Stack />
           <div className={styles.inputContainer}>
@@ -49,18 +62,11 @@ const page = () => {
 
         <section className={styles.mainSection}>
           <div className={styles.guideSectionContent}>
-            <div className={styles.guideImageContainer}>
-              <Image
-                src={productScreenshot}
-                width={628}
-                height={392}
-                alt="descriptive image"
-              />
-              <div className="gradientCover"></div>
-            </div>
             <div className={styles.guideSectionText}>
               <RoundedWidget text={"Benefits"} id="benefits" />
-              <h1 className="leftHeading">Why choose Sorayia and not another</h1>
+              <h1 className="leftHeading">
+                Why choose Sorayia and not another
+              </h1>
               <motion.p className="leftText">
                 Discover the distinctive advantages of Sorayia.
                 <span className="lowercase">com</span> compared to other similar
@@ -73,27 +79,21 @@ const page = () => {
                 <Image src={arrowUp} width={32} height={32} alt="arrow up" />
               </button>
             </div>
+            <div className={styles.guideImageContainer}>
+              <Image
+                src={productScreenshot}
+                width={628}
+                height={392}
+                alt="login page screenshot"
+              />
+              <div className="gradientCover"></div>
+            </div>
           </div>
 
           <div className={styles.guideSectionContent}>
-            <div className={styles.guideSectionText}>
-              <RoundedWidget
-                text={"Artificial inteligence"}
-                id={"artificial-inteligence"}
-              />
-              <h1 className="leftHeading">Technologies used in this AI</h1>
-              <p className="leftText">
-                Dive into the details of Sorayia.<span className="lowercase">com</span> features by exploring the
-                cutting-edge technologies used to deliver optimal user experience
-                and exceptional results.
-              </p>
-
-              <button className="buttonYellow">
-                Learn more about us
-                <Image src={arrowUp} width={32} height={32} alt="arrow up" />
-              </button>
-            </div>
-            <div className={`${styles.guideImageContainer} ${styles.borderOposite}`}>
+            <div
+              className={`${styles.guideImageContainer} ${styles.borderOposite}`}
+            >
               <Image
                 src={productScreenshot2}
                 width={628}
@@ -102,9 +102,42 @@ const page = () => {
               />
               <div className="gradientCover gradientCoverLeft"></div>
             </div>
+            <div className={styles.guideSectionText}>
+              <RoundedWidget
+                text={"Artificial inteligence"}
+                id={"artificial-inteligence"}
+              />
+              <h1 className="leftHeading">Technologies used in this AI</h1>
+              <p className="leftText">
+                Dive into the details of Sorayia.
+                <span className="lowercase">com</span> features by exploring the
+                cutting-edge technologies used to deliver optimal user
+                experience and exceptional results.
+              </p>
+
+              <button className="buttonYellow">
+                Learn more about us
+                <Image src={arrowUp} width={32} height={32} alt="arrow up" />
+              </button>
+            </div>
           </div>
 
           <div className={styles.guideSectionContent}>
+            <div className={styles.guideSectionText}>
+              <RoundedWidget text={"3D influencer"} id={"3d-influencer"} />
+
+              <h1 className="leftHeading">3D influencer widget</h1>
+              <p className="leftText">
+                Explore the power of avatars and their ability to communicate
+                with your customers, especially through our 3D influencer
+                widget, enabling immersive and engaging interaction.
+              </p>
+
+              <button className="buttonYellow">
+                Learn more about us
+                <Image src={arrowUp} width={32} height={32} alt="arrow up" />
+              </button>
+            </div>
             <div className={styles.guideImageContainer}>
               <Image
                 src={productScreenshot3}
@@ -114,31 +147,27 @@ const page = () => {
               />
               <div className="gradientCover"></div>
             </div>
-            <div className={styles.guideSectionText}>
-              <RoundedWidget text={"3D influencer"} id={"3d-influencer"} />
-
-              <h1 className="leftHeading">3D influencer widget</h1>
-              <p className="leftText">
-                Explore the power of avatars and their ability to communicate with
-                your customers, especially through our 3D influencer widget,
-                enabling immersive and engaging interaction.
-              </p>
-
-              <button className="buttonYellow">
-                Learn more about us
-                <Image src={arrowUp} width={32} height={32} alt="arrow up" />
-              </button>
-            </div>
           </div>
 
           <div className={styles.guideSectionContent} id={"section1"}>
+            <div
+              className={`${styles.guideImageContainer} ${styles.borderOposite}`}
+            >
+              <Image
+                src={productScreenshot4}
+                width={628}
+                height={458}
+                alt="Dashoboard screenshot"
+              />
+              <div className="gradientCover gradientCoverLeft"></div>
+            </div>
             <div className={styles.guideSectionText}>
               <RoundedWidget text={"Personalities"} id={"personalities"} />
 
               <h1 className="leftHeading">Personalities</h1>
               <p className="leftText">
-                Learn about the big three avatar personalities and their impact on
-                their respective markets, highlighting their unique
+                Learn about the big three avatar personalities and their impact
+                on their respective markets, highlighting their unique
                 characteristics and specific actions
               </p>
 
@@ -176,15 +205,6 @@ const page = () => {
                 Learn more about us
                 <Image src={arrowUp} width={32} height={32} alt="arrow up" />
               </button>
-            </div>
-            <div className={`${styles.guideImageContainer} ${styles.borderOposite}`}>
-              <Image
-                src={productScreenshot4}
-                width={628}
-                height={458}
-                alt="Dashoboard screenshot"
-              />
-              <div className="gradientCover gradientCoverLeft"></div>
             </div>
           </div>
         </section>
@@ -250,7 +270,7 @@ const page = () => {
         </section>
         <FrequentelyAsked />
       </motion.div>
-    </>
+    </div>
   );
 };
 

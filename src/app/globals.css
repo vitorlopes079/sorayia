@@ -9,7 +9,8 @@ body {
   display: flex;
   position: relative;
   flex-direction: column;
-  min-height: 100vh; /* Ensure the body takes at least the viewport's full height */
+  min-height: 100vh;
+  
   background: repeating-linear-gradient(
     180deg,
     #0a0017 0px,
@@ -26,6 +27,21 @@ body {
 
 .mainContainer {
   flex-grow: 1;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 180px 80px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.containerPaddingCustom{
+  padding-top: 100px;
 }
 
 .centralizedHeading {

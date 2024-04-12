@@ -14,7 +14,7 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <div className={styles.container}>
+    <div className="container">
       <Breadcrumb />
       <div className={styles.textContainer}>
         <h1 className={styles.title}>

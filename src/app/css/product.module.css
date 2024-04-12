@@ -1,12 +1,4 @@
-.container {
-  margin-top: 180px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 80px;
-  overflow: hidden;
-}
+
 
 .topContainer {
   margin-bottom: 85px;
