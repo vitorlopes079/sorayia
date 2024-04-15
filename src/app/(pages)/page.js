@@ -405,8 +405,8 @@ export default function Home() {
           transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
         >
           <h1 className="centralizedSubHeading">
-            Streamline human resource-related inquiries with{" "}
-            <span className="gradient-text">Seamless automation</span>
+            Streamline human resource-related inquiries with <br/>
+            <span className="gradient-text"> Seamless automation </span>
             at every stage.
           </h1>
           <p className="centralizedText">
