@@ -65,6 +65,8 @@
   position: absolute;
   z-index: 50;
   left: 70px;
+  box-shadow: 4px -4px 4px 0px rgba(108, 131, 248, 0.30), -4px -4px 4px 0px rgba(235, 67, 56, 0.30);
+
 }
 
 .gradientCover {
@@ -73,11 +75,11 @@
     rgba(255, 255, 255, 0) 3.8%,
     rgba(18, 14, 40, 0.95) 96.75%
   );
-  width: 630px;
+  width: 617px;
   height: 108px;
   position: absolute;
-  left: -40px;
-  bottom: 26px;
+  left: -30px;
+  bottom: 34px;
   z-index: 1000;
   border-radius: 10px;
 }
