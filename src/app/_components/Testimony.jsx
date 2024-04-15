@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import star from "../images/star.png";
 import quotes from "../images/quotes.svg";
-import styles from "../css/homepage.module.css";
+import styles from "../css/testimonies.module.css";
 import { motion } from "framer-motion";
 
 const Testimony = ({ photo, name, text, containerStyle = styles.testimonyContainer }) => (

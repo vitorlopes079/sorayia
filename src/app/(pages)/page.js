@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import styles from "../css/homepage.module.css";
 import arrowUpBlack from "../images/arrowUpBlack.svg"
 import foldIcon from "../images/foldIcon.png";
@@ -20,15 +21,15 @@ import progresstracking from "../images/progresstracking.png";
 import personalize from "../images/personalize.png";
 import testimonyPhoto from "../images/testmphoto.svg";
 import testimonyPhoto2 from "../images/testmphoto2.svg";
+import chatbotChatImage from "../images/chatbotConv.svg";
 import Elipse from "../_components/Elipse";
 import Stack from "../_components/Stack";
-import chatbotChatImage from "../images/chatbotConv.svg";
 import RoundedWidget from "../_components/RoundedWidget";
 import MarketingCard from "../_components/MarketingCard";
 import Testimonies from "../_components/Testimonies";
 import HeroHomePage from "../_components/HeroHomePage";
-import { motion } from "framer-motion";
 import VideoContainer from "../_components/VideoContainer"
+
 
 export default function Home() {
   return (
@@ -115,12 +116,12 @@ export default function Home() {
               immersive and relatable experience.
             </motion.p>
           </div>
-          
-          <VideoContainer/>
+       
+          <VideoContainer/> 
 
         </div>
         <div>
-          <div className={styles.subheadingContainer}>
+           <div className={styles.subheadingContainer}>
             <motion.h2
               initial={{ opacity: 0, y: -30 }}
               whileInView={{ y: 0, opacity: 1 }}
@@ -141,10 +142,10 @@ export default function Home() {
               <br />
               launched in minutes without coding based on your resources.
             </motion.p>
-          </div>
+          </div> 
 
           <div className={styles.cardsContainer}>
-            <motion.div
+             <motion.div
               initial={{ opacity: 0, x: -200 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
@@ -164,8 +165,8 @@ export default function Home() {
                 No dependencies on third party providers like Open AI, Google
                 Bard or Bing AI.
               </p>
-            </motion.div>
-            <motion.div
+            </motion.div> 
+        <motion.div
               initial={{ opacity: 0, x: -200 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
@@ -194,7 +195,7 @@ export default function Home() {
                 Bard or Bing AI.
               </p>
             </motion.div>
-            <motion.div
+          <motion.div
               initial={{ opacity: 0, x: 200 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
@@ -230,12 +231,12 @@ export default function Home() {
                 No dependencies on third party providers like Open AI, Google
                 Bard or Bing AI.
               </p>
-            </motion.div>
+            </motion.div> 
           </div>
         </div>
       </section>
 
-      <section className={styles.guideSection}>
+       <section className={styles.guideSection}>
         <RoundedWidget text={"AI customer service agent"} />
 
         <div className={styles.guideSectionContent}>
@@ -340,7 +341,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.guideSection}>
+       <section className={styles.guideSection}>
         <RoundedWidget text={"AI Human Ressource Agent"} />
 
         <div className={styles.guideSectionContent}>
@@ -452,8 +453,7 @@ export default function Home() {
           />
         </div>
       </section>
-
-      <section className={styles.guideSection}>
+       <section className={styles.guideSection}>
         <RoundedWidget text={"AI Virtual Tutor"} />
 
         <div className={styles.guideSectionContent}>
@@ -573,7 +573,7 @@ export default function Home() {
         </motion.div>
 
         <Testimonies />
-      </section>
+      </section> 
     </motion.div>
   );
 }

@@ -3,7 +3,8 @@ import Testimony from "./Testimony";
 import testimonyPhoto from "../images/testmphoto.svg";
 import testimonyPhoto2 from "../images/testmphoto2.svg";
 import testimonyPhoto3 from "../images/testmphoto3.svg";
-import styles from "../css/homepage.module.css";
+import styles from "../css/testimonies.module.css";
+
 
 const Testimonies = () => {
   const testimoniesData = [

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import styles from "../css/homepage.module.css";
+import styles from "../css/heroHomePage.module.css"
 import RoundedWidget from "../_components/RoundedWidget";
 import Image from "next/image";
 import heroscreeshot from "../images/heroscreeshot.png";

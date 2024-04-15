@@ -1,0 +1,61 @@
+.testimoniesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.testimonyContainer {
+  width: 410px;
+  height: 240px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 32px;
+  margin: 0 14px;
+}
+
+.starsAndName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.testimonyText {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 24px;
+  font-family: Inter;
+}
+
+.nameText {
+  margin-top: 4px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.testimonyTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.testimonyContainerCenter {
+  width: 410px;
+  height: 264px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 32px;
+  margin: 0 14px;
+}
+
+
+@media screen and (max-width: 784px){
+  .testimoniesContainer {
+    flex-direction: column;
+  }
+
+  .testimonyContainer {
+    margin: 0;
+  }
+}

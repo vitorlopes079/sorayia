@@ -142,14 +142,14 @@
   flex-direction: column;
   justify-content: center;
   transform-origin: top;
-  padding: 5px 0; /* Adjust padding to ensure content has space when scaled */
-  margin-left: 20px; /* Add margin to the left of the content if needed */
+  padding: 5px 0; 
+  margin-left: 20px; 
 }
 
 .answerContainerExpanded .answerContent {
   opacity: 1;
   transform: scaleY(1);
-  /* Transition for max-height removed to simplify and focus on transform and opacity */
+
 }
 
 .questionText {
