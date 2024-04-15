@@ -150,7 +150,7 @@ const page = () => {
             <h1 className="leftHeading">Personalization and Creativity</h1>
             <p className="leftText">
               At Sorayia.com, we believe in the power of individual expression.
-              That's why we've integrated Ready Player Me's 3D avatar creation
+              That&aposs why we&aposve integrated Ready Player Me&aposs 3D avatar creation
               technology into our platform, allowing our clients to customize
               their avatars according to their preferences and unique style.
             </p>
