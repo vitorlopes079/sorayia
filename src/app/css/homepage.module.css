@@ -7,7 +7,6 @@
   align-items: center;
 }
 
-
 .heroHeadingLine,
 .firstLine {
   position: relative;
@@ -81,7 +80,6 @@
   max-width: 550px;
   margin-right: 100px;
 }
-
 
 .cardsContainer {
   display: flex;
@@ -227,7 +225,7 @@
   height: 100%;
   background: url("../images/blurimage1.png") center / 97% 100% no-repeat; /* Adjusted background-size */
   border-radius: 4px;
-  mix-blend-mode:screen;
+  mix-blend-mode: screen;
   z-index: 1;
   filter: brightness(1);
   opacity: 1;
@@ -315,21 +313,21 @@
 }
 
 @media screen and (max-width: 784px) {
-  .container{
+  .container {
     display: block;
     padding: 0;
   }
 
-  .avatarTopDiv{
-    flex-direction:column
+  .avatarTopDiv {
+    flex-direction: column;
   }
 
-  .avatarSectionTextContainer{
+  .avatarSectionTextContainer {
     width: 100%;
     padding-left: 12px;
   }
 
-  .imageContainer{
+  .imageContainer {
     height: 401.5px;
     width: 344px;
     border-radius: 50%;
@@ -341,34 +339,33 @@
     position: relative;
   }
 
-  .cardsContainer{
+  .cardsContainer {
     flex-direction: column;
     align-items: center;
   }
 
-  .heroscreeshotContainer{
+  .heroscreeshotContainer {
     width: 370px;
   }
 
-  .testimoniesContainer{
+  .testimoniesContainer {
     flex-direction: column;
   }
 
-  .testimonyContainer{
+  .testimonyContainer {
     margin: 0;
   }
 
-  .testimonyContainerCenter{
+  .testimonyContainerCenter {
     margin: 0;
   }
 
-  .guideSection{
+  .guideSection {
     align-items: start;
   }
 
-  .guideSectionContent{
+  .guideSectionContent {
     flex-direction: column;
     width: 400px;
   }
 }
-

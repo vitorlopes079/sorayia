@@ -8,14 +8,29 @@ import { motion } from "framer-motion";
 
 const FrequentelyAsked = () => {
   return (
-    <div className={styles.frequentelyAskedContainer} id="frequently-asked-questions">
+    <div
+      className={styles.frequentelyAskedContainer}
+      id="frequently-asked-questions"
+    >
       <div className={styles.faqContainer}>
         <RoundedWidget text={"FAQ"} />
       </div>
-      <motion.h1 initial={{ opacity: 0, y: -30 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 1.5, delay: 0.5, ease: 'easeOut' }}
-        className="centralizedSubHeading">Frequently Asked Questions</motion.h1>
-      <motion.div initial={{ x: -50, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 1, delay: 0.5, ease: 'easeOut' }}
-        className={styles.questionsTextContainer}>
+      <motion.h1
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1.5, delay: 0.5, ease: "easeOut" }}
+        className="centralizedSubHeading"
+      >
+        Frequently Asked Questions
+      </motion.h1>
+      <motion.div
+        initial={{ x: -50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+        className={styles.questionsTextContainer}
+      >
         <p className="centralizedText">
           Hi there, here are some top asked questions about Sorayia.AI
         </p>

@@ -137,7 +137,7 @@ body {
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  color: #0F172A;
+  color: #0f172a;
   font-weight: 500;
   padding: 12px 24px;
   display: inline-flex;
@@ -171,11 +171,9 @@ body {
   max-height: 48px;
   margin: 12px;
   transition: transform 0.2s, border-color 0.2s ease-in-out;
-
 }
 
 .buttonBorderGradient:hover {
-
   background: linear-gradient(#2e324a, #2e324a) padding-box,
     linear-gradient(60deg, rgba(132, 81, 152, 1), rgba(247, 206, 70, 1))
       border-box;
@@ -188,12 +186,12 @@ body {
   transform: scale(0.97);
 }
 
-
 .buttonGradient {
-  background: linear-gradient(90deg, #F7CE46 0%, #CFA1BF 100%);  border-radius: 5px;
+  background: linear-gradient(90deg, #f7ce46 0%, #cfa1bf 100%);
+  border-radius: 5px;
   border: none;
   cursor: pointer;
-  color: #0F172A;
+  color: #0f172a;
   font-weight: 500;
   padding: 12px 24px;
   display: inline-flex;
@@ -205,7 +203,6 @@ body {
 
 .buttonGradient:hover {
   transform: scale(1.03);
-  
 }
 
 .buttonGradient:active {
@@ -225,7 +222,6 @@ body {
 .buttonFullWidth {
   width: 100%;
 }
-
 
 .bookmarkInactive {
   color: rgba(241, 245, 249, 1);
