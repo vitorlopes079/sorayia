@@ -44,7 +44,6 @@ const page = () => {
         height={"389px"}
         width={"401px"}
       />
-      <Elipse numberOfEllipses={6} />
 
       <div className={styles.topContainer} id="integration">
         <Stack />
