@@ -38,7 +38,7 @@ const VideoContainer = () => {
         />
       </motion.div>
 
-      <motion.div
+      <div
         initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
@@ -54,14 +54,14 @@ const VideoContainer = () => {
           height={296}
           className={styles.video}
         />
-      </motion.div>
-      <motion.div
+      </div>
+      <div
         initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
         className={styles.gradientCover}
-      ></motion.div>
+      ></div>
     </div>
   );
 };
