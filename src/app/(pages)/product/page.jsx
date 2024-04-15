@@ -158,7 +158,7 @@ const page = () => {
               enabling immersive and engaging interaction.
             </p>
 
-            <button className="buttonGradient">
+            <button className="buttonYellow">
               Learn more about us
               <Image src={arrowUpBlack} width={32} height={32} alt="arrow up" />
             </button>

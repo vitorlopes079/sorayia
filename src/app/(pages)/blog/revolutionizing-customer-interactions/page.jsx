@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import styles from "../../../css/post.module.css";
@@ -146,7 +146,8 @@ const page = () => {
             <div className={styles.smalHorizontalLine}></div>
             <Link href={"/blog"}>
               <button className="buttonYellow">View All Articles</button>
-            </Link>            <div className={styles.smalHorizontalLine}></div>
+            </Link>{" "}
+            <div className={styles.smalHorizontalLine}></div>
           </div>
         </section>
       </div>

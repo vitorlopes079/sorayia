@@ -7,8 +7,6 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import styles from "../css/header.module.css";
 import logo from "../images/logo.png";
-import arrowDown from "../images/navArrowDown.png";
-import { type } from "os";
 
 const Header = () => {
   const pathname = usePathname();
@@ -112,11 +110,16 @@ const Header = () => {
   };
 
   return (
-    <motion.header initial={{y:-100,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:1.5,ease:"easeOut", delay:0.5}} className={styles.container}>
+    <motion.header
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1.5, ease: "easeOut", delay: 0.5 }}
+      className={styles.container}
+    >
       <Link href="/" legacyBehavior>
         <a className={styles.link}>
           <div className={styles.logoWrapper}>
-            <Image src={logo} alt="logo" width={undefined} height={undefined} />
+             <Image src={logo} alt="logo" width={35} height={40} /> 
             <p className={styles.logo}>Sorayia</p>
           </div>
         </a>
