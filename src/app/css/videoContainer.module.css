@@ -1,0 +1,83 @@
+.avatarContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.speechBalloonsContainer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: -90px;
+  left: 140px;
+}
+
+.speechBalloon {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #f8fafc;
+  padding: 10px 20px;
+  border-radius: 15px 15px 0 15px;
+  width: min-content;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  max-width: 100%;
+  display: inline-flex;
+  white-space: nowrap;
+}
+
+.Iam {
+  margin-left: 20px;
+}
+
+.imageContainer {
+  height: 430px;
+  width: 263px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -50px;
+  top: -104px;
+}
+
+.imageContainer::before {
+  content: "";
+  position: absolute;
+  top: 75px;
+  left: -10;
+  height: 300px;
+  width: 307px;
+  border-radius: 50%;
+  background-image: url("../images/avatarBackground.png");
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: screen;
+  z-index: -1; 
+}
+
+.avatarImage {
+  position: absolute;
+  z-index: 100;
+}
+
+.videoContainer {
+  position: absolute;
+  z-index: 50;
+  left: 70px;
+}
+
+.gradientCover {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 3.8%,
+    rgba(18, 14, 40, 0.95) 96.75%
+  );
+  width: 630px;
+  height: 108px;
+  position: absolute;
+  left: -40px;
+  bottom: 26px;
+  z-index: 1000;
+  border-radius: 10px;
+}

@@ -1,0 +1,56 @@
+.formContainer {
+  margin-top: 40px;
+}
+
+.nameAndLastname {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--Neutral-500, #64748b);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
+  margin-bottom: 32px;
+  height: 40px;
+  color: #e2e8f0;
+  font-size: 20px;
+  padding: 4px 10px;
+}
+
+.textareaInput {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--Neutral-500, #64748b);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
+  margin-bottom: 32px;
+  resize: none;
+  height: 160px;
+  color: #e2e8f0;
+  font-size: 20px;
+  padding: 4px 10px;
+}
+
+.labelText {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width:784px) {
+  .nameAndLastname{
+    flex-direction: column;
+  }
+
+  .inputContainer{
+    align-items: center;
+  }
+}
+

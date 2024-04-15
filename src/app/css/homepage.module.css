@@ -1,0 +1,374 @@
+/* Hero Section */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.heroHeadingLine,
+.firstLine {
+  position: relative;
+  display: inline-block;
+}
+
+.firstLine::after {
+  content: "";
+  display: block;
+  width: calc(100% + 100px);
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(247, 206, 70, 1),
+    rgba(247, 206, 70, 0)
+  );
+  position: absolute;
+  bottom: 10px; /* Adjusted from -1.5px to 0px */
+  left: 0;
+}
+
+.heroImageContainer {
+  position: relative;
+  margin: 40px 0 100px 0;
+}
+
+.heroscreeshotContainer {
+  width: 870px;
+  height: 622px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+
+.heroImage {
+  border-radius: 8px;
+}
+
+.gradientCoverHero {
+  border-radius: 0 0 8px 0;
+}
+
+.heroImageCoverContainer {
+  position: absolute;
+  border-radius: 15px;
+  overflow: hidden;
+  bottom: -110px;
+  right: -110px;
+  width: 273px;
+  height: 345px;
+  border-radius: 23px 23px 20px 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    -35px -35px 100px 10px rgba(0, 0, 0, 0.25);
+  border: 3px solid rgba(102, 102, 102, 0.75);
+}
+
+/* Avatar Container section */
+
+.avatarSection {
+  width: 100%;
+  margin-top: 220px;
+}
+
+.avatarTopDiv {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.avatarSectionTextContainer {
+  max-width: 550px;
+  margin-right: 100px;
+}
+
+
+.cardsContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.figureContainer {
+  width: 280px;
+  height: 190px;
+  background: linear-gradient(rgba(178, 190, 255, 0.2), rgba(16, 63, 97, 0.2));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  position: relative;
+}
+
+.cardTitle {
+  color: #f8fafc;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  margin: 0 10px;
+}
+
+.subheadingContainer {
+  margin-bottom: 40px;
+}
+
+/*  Group Section */
+
+.guideSection {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.guideImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.guideSectionContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 55px;
+  margin-bottom: 105px;
+}
+
+.guideSectionText {
+  padding: 0 25px;
+  flex: 1;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.testimonalSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 100px 0;
+}
+
+.testimonialHeadingSection {
+  margin-top: 108px;
+  margin-bottom: 38px;
+}
+
+.chatbotChat {
+  height: 40px;
+  border-radius: 8px 8px 16px 16px;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 4px 8px 4px 8px;
+  border: 0.5px solid rgba(255, 255, 255, 0.16);
+  display: flex;
+  align-items: center;
+}
+
+.chatbotText {
+  max-width: 140px;
+  margin-left: 4px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.chat1 {
+  position: absolute;
+  top: 18px;
+  left: 24px;
+}
+
+.chat2 {
+  position: absolute;
+  top: 75px;
+  right: 24px;
+}
+
+.chat3 {
+  position: absolute;
+  bottom: 18px;
+  left: 24px;
+}
+
+.blurContainer {
+  width: 380px;
+  height: 487px;
+  padding: 36px 91px;
+  position: absolute; /* Confirmed as absolute */
+  border-radius: 4px;
+  bottom: -120px;
+  right: -90px;
+}
+
+.blurContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/blurimage1.png") center / 97% 100% no-repeat; /* Adjusted background-size */
+  border-radius: 4px;
+  mix-blend-mode:screen;
+  z-index: 1;
+  filter: brightness(1);
+  opacity: 1;
+}
+
+.blurContainerLeft {
+  left: -90px;
+}
+
+.blurContainer2 {
+  width: 380px;
+  height: 487px;
+  padding: 36px 91px;
+  position: absolute; /* Confirmed as absolute */
+  border-radius: 4px;
+  bottom: -120px;
+  right: -90px;
+}
+
+.blurContaine2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/blurimage2.png") center / 97% 100% no-repeat; /* Adjusted background-size */
+  border-radius: 4px;
+  mix-blend-mode: screen;
+  z-index: 1;
+  filter: brightness(1.7);
+}
+
+/* Testimonies Component */
+
+.testimoniesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.testimonyContainer {
+  width: 410px;
+  height: 240px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 32px;
+  margin: 0 14px;
+}
+
+.testimonyTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.starsAndName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nameText {
+  margin-top: 4px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.testimonyText {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 24px;
+  font-family: Inter;
+}
+
+.testimonyContainerCenter {
+  width: 410px;
+  height: 264px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 32px;
+  margin: 0 14px;
+}
+
+@media screen and (max-width: 784px) {
+  .container{
+    display: block;
+    padding: 0;
+  }
+
+  .avatarTopDiv{
+    flex-direction:column
+  }
+
+  .avatarSectionTextContainer{
+    width: 100%;
+    padding-left: 12px;
+  }
+
+  .imageContainer{
+    height: 401.5px;
+    width: 344px;
+    border-radius: 50%;
+    margin-top: 77px;
+    margin-left: 27px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+  }
+
+  .cardsContainer{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heroscreeshotContainer{
+    width: 370px;
+  }
+
+  .testimoniesContainer{
+    flex-direction: column;
+  }
+
+  .testimonyContainer{
+    margin: 0;
+  }
+
+  .testimonyContainerCenter{
+    margin: 0;
+  }
+
+  .guideSection{
+    align-items: start;
+  }
+
+  .guideSectionContent{
+    flex-direction: column;
+    width: 400px;
+  }
+}
+
