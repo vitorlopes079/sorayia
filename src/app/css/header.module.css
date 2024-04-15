@@ -11,10 +11,6 @@
   padding: 0 80px;
 }
 
-/* .navWrapper {
-  display: flex;
-  list-style-type: none;
-} */
 
 .logo {
   font-size: 32px;
@@ -64,30 +60,33 @@
 
 .navLink {
   position: relative;
-  padding: 0 16px;
+  /* padding: 0 16px; */
+  margin: 0 16px;
   font-size: 20px;
   color: inherit;
   text-decoration: none;
   text-transform: capitalize;
   transition: font-weight 0.3s ease;
+    display: inline-block; 
+
 }
 
 .navLink::after {
   content: "";
   position: absolute;
   width: 0;
-  height: 1px;
-  bottom: 0px;
-  left: 50%;
+  height: 2px;
+  bottom: -2px;
+  left: 0; 
   background-color: #f8fafc;
-  transition: width 0.3s ease, left 0.3s ease;
+  transition: width 0.3s ease;
+  transform: translateX(0%); 
 }
 
 .navLink:hover::after {
-  width: 80%;
-  left: 10%;
+  width: 100%; 
+  transform: translateX(0%); 
 }
-
 .navLink.active {
   font-weight: bold;
 }

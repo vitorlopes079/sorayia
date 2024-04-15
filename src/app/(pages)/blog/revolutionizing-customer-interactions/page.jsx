@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import styles from "../../../css/post.module.css";
 import Image from "next/image";
