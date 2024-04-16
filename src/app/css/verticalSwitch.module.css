@@ -1,6 +1,6 @@
 .verticalLine {
   width: 4px;
-  height: 100%;
+  min-height: 100%;
   margin-top: 15px;
   background: linear-gradient(
     to bottom,

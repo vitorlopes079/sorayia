@@ -231,24 +231,31 @@ const page = () => {
           transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
           className={styles.iconAndText}
         >
-          <div className={styles.iconAndSwitchContainer}>
+          <div className={styles.iconAndTitle}>
             <div className={styles.iconContainer}>
               <Image src={chat2} width={60} height={60} />
             </div>
-            <VerticalSwitch variant="first" />
+            <h1 className="leftHeading">Fully Automated Chatbot for Sales</h1>
           </div>
           <div className={styles.guideSectionContent}>
             <div className={styles.guideSectionText}>
-              <h1 className="leftHeading">Fully Automated Chatbot for Sales</h1>
-              <p className="leftText">
-                With Sorayia.<span className="lowercase">com</span>, you can
-                implement a standalone chatbot tailored specifically for your
-                sales process. This intelligent assistant handles various tasks
-                seamlessly, ensuring efficient lead generation, personalized
-                recommendations, scheduling sales calls and meetings,
-                transforming web forms into engaging conversations, and
-                seamlessly integrating data into your CRM system.
-              </p>
+              <div className={styles.verticalContainer}>
+
+                <VerticalSwitch variant="first" />
+
+              </div>
+              <div className={styles.guideTextContainer}>
+                <p className="leftText">
+                  With Sorayia.<span className="lowercase">com</span>, you can
+                  implement a standalone chatbot tailored specifically for your
+                  sales process. This intelligent assistant handles various tasks
+                  seamlessly, ensuring efficient lead generation, pers onalized
+                  recommendations, scheduling sales calls and meetings,
+                  transforming web forms into engaging conversations, and
+                  seamlessly integrating data into your CRM system.
+                </p>
+              </div>
+
             </div>
           </div>
         </motion.div>
@@ -260,7 +267,6 @@ const page = () => {
             alt="descriptive image"
           />
           <div className="gradientCover"></div>
-          {/* <div className={styles.blurContainer3}></div> */}
         </div>
       </section>
 
@@ -273,7 +279,6 @@ const page = () => {
             alt="descriptive image"
           />
           <div className="gradientCover gradientCoverLeft"> </div>
-          {/* <div className={styles.blurContainer4}></div> */}
         </div>
         <motion.div
           initial={{ x: 50, opacity: 0 }}
@@ -282,26 +287,34 @@ const page = () => {
           transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
           className={styles.iconAndText}
         >
-         <div className={styles.iconAndSwitchContainer} style={{marginLeft: "25px"}}>
+          <div className={styles.iconAndTitle} style={{ marginLeft: "25px" }}>
             <div className={styles.iconContainer}>
               <Image src={growth2} width={60} height={60} />
             </div>
-            <VerticalSwitch variant="first" />
+            <h1 className="leftHeading">
+              Grow Your Sales Together with a Chatbot
+            </h1>
           </div>
-          <div className={styles.guideSectionContent}>
-            <div className={styles.guideSectionText}>
-              <h1 className="leftHeading">
-                Grow Your Sales Together with a Chatbot
-              </h1>
-              <p className="leftText">
-                Collaboration is key to success in sales. Sorayia.
-                <span className="lowercase">com</span> allows you to add a smart
-                assistant to your team, empowering your sales reps to work more
-                effectively. Effortlessly segment leads, connect them with the
-                right sales representatives in real-time, simplify the process
-                of sending sales inquiries, and even enable customers to call
-                you directly from the chat widget for immediate assistance.
-              </p>
+          <div className={styles.guideSectionContent} style={{ marginLeft: "25px" }}> 
+
+
+
+            <div className={styles.guideSectionText} >
+              <div className={styles.verticalContainer}>
+                <VerticalSwitch variant="first" />
+              </div>
+              <div className={styles.guideTextContainer}>
+                <p className="leftText">
+                  Collaboration is key to success in sales. Sorayia.
+                  <span className="lowercase">com</span> allows you to add a smart
+                  assistant to your team, empowering your sales reps to work more
+                  effectively. Effortlessly segment leads, connect them with the
+                  right sales representatives in real-time, simplify the process
+                  of sending sales inquiries, and even enable customers to call
+                  you directly from the chat widget for immediate assistance.
+                </p>
+              </div>
+
             </div>
           </div>
         </motion.div>
@@ -315,36 +328,41 @@ const page = () => {
           transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
           className={styles.iconAndText}
         >
-          <div className={styles.iconAndSwitchContainer}>
+          <div className={styles.iconAndTitle}>
             <div className={styles.iconContainer}>
               <Image src={continuous} width={60} height={60} />
             </div>
-            <VerticalSwitch variant="first" />
+            <h1 className="leftHeading">
+              Automate Sales Processes and Scale Efficiently
+            </h1>
           </div>
           <div className={styles.guideSectionContent}>
             <div className={styles.guideSectionText}>
-              <h1 className="leftHeading">
-                Automate Sales Processes and Scale Efficiently
-              </h1>
-              <p className="leftText">
-                By leveraging Sorayia.<span className="lowercase">com</span>
-                &apos;s smart chatbot for sales, you can scale your operations
-                without adding unnecessary overhead. Create new sales
-                opportunities, drive your sales team&apos;s efforts forward,
-                diversify your lead generation strategy, and improve sales
-                efficiency—all without the need to increase headcount or
-                resources.
-              </p>
-              <p className="leftText">
-                Incorporating Sorayia.<span className="lowercase">com</span>{" "}
-                into your sales strategy enables you to optimize your sales
-                process, enhance customer experience, and drive revenue growth.
-                With automated chatbots, you can streamline operations, empower
-                your sales team, and focus on what truly matters—building
-                meaningful relationships with your customers and closing more
-                deals. Elevate your sales performance with Sorayia.
-                <span className="lowercase">com</span> today.
-              </p>
+              <div className={styles.verticalContainer}>
+                <VerticalSwitch variant="first" />
+              </div>
+              <div className={styles.guideTextContainer}>
+                <p className="leftText">
+                  By leveraging Sorayia.<span className="lowercase">com</span>
+                  &apos;s smart chatbot for sales, you can scale your operations
+                  without adding unnecessary overhead. Create new sales
+                  opportunities, drive your sales team&apos;s efforts forward,
+                  diversify your lead generation strategy, and improve sales
+                  efficiency—all without the need to increase headcount or
+                  resources.
+                </p>
+                <p className="leftText">
+                  Incorporating Sorayia.<span className="lowercase">com</span>{" "}
+                  into your sales strategy enables you to optimize your sales
+                  process, enhance customer experience, and drive revenue growth.
+                  With automated chatbots, you can streamline operations, empower
+                  your sales team, and focus on what truly matters—building
+                  meaningful relationships with your customers and closing more
+                  deals. Elevate your sales performance with Sorayia.
+                  <span className="lowercase">com</span> today.
+                </p>
+              </div>
+
             </div>
           </div>
         </motion.div>

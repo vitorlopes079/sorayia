@@ -47,15 +47,21 @@
 .guideSectionContent {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 .guideSectionText {
-  padding: 0 25px;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  width: 100%;
 }
 
 .iconAndText {
   flex: 1;
   display: flex;
+  flex-direction: column;
+  padding-right: 20px;
 }
 
 .guideImageContainer {
@@ -81,15 +87,13 @@
   justify-content: center;
   align-items: center;
   border: 1px solid #103f61;
-
 }
 
-.iconAndSwitchContainer{
+.iconAndTitle {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px
+  gap: 30px;
 }
 
 .solutionsPosts {
@@ -102,12 +106,21 @@
   margin-bottom: 16px;
 }
 
+.verticalContainer {
+  min-width: 75px;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 .TextContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.guideTextContainer {
 }
 
 .bottomSection {
@@ -125,78 +138,6 @@
   padding: 16px;
   border-radius: 10px;
   border: 1px solid #103f61;
-}
-
-.blurContainer3 {
-  width: 380px;
-  height: 487px;
-  padding: 36px 91px;
-  position: absolute; /* Confirmed as absolute */
-  border-radius: 4px;
-  bottom: -200px;
-  right: -40px;
-}
-
-.blurContainer3::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("../images/blurimage3.png") no-repeat; /* Adjusted background-size */
-  border-radius: 4px;
-  mix-blend-mode: screen;
-  z-index: 1;
-  filter: brightness(1.7);
-}
-
-.blurContainer4 {
-  width: 380px;
-  height: 487px;
-  padding: 36px 91px;
-  position: absolute; /* Confirmed as absolute */
-  border-radius: 4px;
-  bottom: -150px;
-  left: -90px;
-}
-
-.blurContainer4::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("../images/blurimage4.png") no-repeat; /* Adjusted background-size */
-  border-radius: 4px;
-  mix-blend-mode: screen;
-  z-index: 1;
-  filter: brightness(1.7);
-}
-
-.blurContainer5 {
-  width: 380px;
-  height: 487px;
-  padding: 36px 91px;
-  position: absolute; /* Confirmed as absolute */
-  border-radius: 4px;
-  bottom: -200px;
-  right: -30px;
-}
-
-.blurContainer5::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("../images/blurimage5.png") no-repeat; /* Adjusted background-size */
-  border-radius: 4px;
-  mix-blend-mode: screen;
-  z-index: 1;
-  filter: brightness(1.7);
 }
 
 @media screen and (max-width: 784px) {
