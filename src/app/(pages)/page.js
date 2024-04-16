@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import styles from "../css/homepage.module.css";
-import arrowUpBlack from "../images/arrowUpBlack.svg"
+import arrowUpBlack from "../images/arrowUpBlack.svg";
 import foldIcon from "../images/foldIcon.png";
 import aiIcon from "../images/aiIcon.png";
 import dbdIcon from "../images/dbIcon.png";
@@ -28,8 +28,7 @@ import RoundedWidget from "../_components/RoundedWidget";
 import MarketingCard from "../_components/MarketingCard";
 import Testimonies from "../_components/Testimonies";
 import HeroHomePage from "../_components/HeroHomePage";
-import VideoContainer from "../_components/VideoContainer"
-
+import VideoContainer from "../_components/VideoContainer";
 
 export default function Home() {
   return (
@@ -100,8 +99,8 @@ export default function Home() {
               className="leftHeading"
             >
               Transform yourself into a Virtual Star:
-              <span className="gradient-text"> Create a 3D Avatar</span> that looks
-              like you!
+              <span className="gradient-text"> Create a 3D Avatar</span> that
+              looks like you!
             </motion.h2>
             <motion.p
               initial={{ x: -50, opacity: 0 }}
@@ -116,12 +115,11 @@ export default function Home() {
               immersive and relatable experience.
             </motion.p>
           </div>
-       
-          <VideoContainer/> 
 
+          <VideoContainer />
         </div>
         <div>
-           <div className={styles.subheadingContainer}>
+          <div className={styles.subheadingContainer}>
             <motion.h2
               initial={{ opacity: 0, y: -30 }}
               whileInView={{ y: 0, opacity: 1 }}
@@ -142,10 +140,10 @@ export default function Home() {
               <br />
               launched in minutes without coding based on your resources.
             </motion.p>
-          </div> 
+          </div>
 
           <div className={styles.cardsContainer}>
-             <motion.div
+            <motion.div
               initial={{ opacity: 0, x: -200 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
@@ -165,8 +163,8 @@ export default function Home() {
                 No dependencies on third party providers like Open AI, Google
                 Bard or Bing AI.
               </p>
-            </motion.div> 
-        <motion.div
+            </motion.div>
+            <motion.div
               initial={{ opacity: 0, x: -200 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
@@ -195,7 +193,7 @@ export default function Home() {
                 Bard or Bing AI.
               </p>
             </motion.div>
-          <motion.div
+            <motion.div
               initial={{ opacity: 0, x: 200 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
@@ -231,12 +229,12 @@ export default function Home() {
                 No dependencies on third party providers like Open AI, Google
                 Bard or Bing AI.
               </p>
-            </motion.div> 
+            </motion.div>
           </div>
         </div>
       </section>
 
-       <section className={styles.guideSection}>
+      <section className={styles.guideSection}>
         <RoundedWidget text={"AI customer service agent"} />
 
         <div className={styles.guideSectionContent}>
@@ -248,8 +246,7 @@ export default function Home() {
             className={styles.guideSectionText}
           >
             <h1 className="leftHeading">
-              The virtual guide who help you to{" "}
-              <span className="gradient-text">growing business</span>
+              The virtual guide who help you to growing business
             </h1>
             <p className="leftText">
               Sorayia.com guarantees swift response times, resolving customer
@@ -291,7 +288,9 @@ export default function Home() {
 
         <div>
           <h1 className="centralizedSubHeading">
-            <span className="gradient-text">Seamlessly automate engagement </span>
+            <span className="gradient-text">
+              Seamlessly automate engagement{" "}
+            </span>
             across every <br />
             stage of the customer journey
           </h1>
@@ -341,7 +340,7 @@ export default function Home() {
         </div>
       </section>
 
-       <section className={styles.guideSection}>
+      <section className={styles.guideSection}>
         <RoundedWidget text={"AI Human Ressource Agent"} />
 
         <div className={styles.guideSectionContent}>
@@ -406,7 +405,7 @@ export default function Home() {
           transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
         >
           <h1 className="centralizedSubHeading">
-            Streamline human resource-related inquiries with <br/>
+            Streamline human resource-related inquiries with <br />
             <span className="gradient-text"> Seamless automation </span>
             at every stage.
           </h1>
@@ -453,7 +452,7 @@ export default function Home() {
           />
         </div>
       </section>
-       <section className={styles.guideSection}>
+      <section className={styles.guideSection}>
         <RoundedWidget text={"AI Virtual Tutor"} />
 
         <div className={styles.guideSectionContent}>
@@ -573,7 +572,7 @@ export default function Home() {
         </motion.div>
 
         <Testimonies />
-      </section> 
+      </section>
     </motion.div>
   );
 }

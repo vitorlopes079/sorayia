@@ -260,7 +260,7 @@ const page = () => {
             alt="descriptive image"
           />
           <div className="gradientCover"></div>
-          <div className={styles.blurContainer3}></div>
+          {/* <div className={styles.blurContainer3}></div> */}
         </div>
       </section>
 
@@ -273,7 +273,7 @@ const page = () => {
             alt="descriptive image"
           />
           <div className="gradientCover gradientCoverLeft"> </div>
-          <div className={styles.blurContainer4}></div>
+          {/* <div className={styles.blurContainer4}></div> */}
         </div>
         <motion.div
           initial={{ x: 50, opacity: 0 }}
@@ -356,7 +356,7 @@ const page = () => {
             alt="descriptive image"
           />
           <div className="gradientCover"></div>
-          <div className={styles.blurContainer5}></div>
+          {/* <div className={styles.blurContainer5}></div> */}
         </div>
       </section>
 

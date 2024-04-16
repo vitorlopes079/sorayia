@@ -265,7 +265,7 @@ const page = () => {
         <div className={styles.articlesContainer}>
           <MoreArticlesCard
             title={"Dynamic Responses"}
-            image={analitics}
+            image={dynamic}
             text={
               "Explore our dynamic response features, including text-to-speech and voice recognition, enabling seamless, interactive interaction between your business and your customers."
             }
@@ -281,7 +281,7 @@ const page = () => {
           />
           <MoreArticlesCard
             title={"Analytic"}
-            image={dynamic}
+            image={analitics}
             text={
               "Explore our advanced analytical tools, offering graphs tailored to each major avatar personality, for a deep understanding of your data and valuable insights."
             }

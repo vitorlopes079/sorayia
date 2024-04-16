@@ -12,10 +12,9 @@ export const metadata = {
 const Layout = ({ children }) => (
   <>
     <Header />
-    <div></div>
     {children}
     <Footer />
-    
+
   </>
 );
 
